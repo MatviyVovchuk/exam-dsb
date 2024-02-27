@@ -1,1 +1,14 @@
 version: "3"
+services:
+  # PHPMyAdmin
+  pma:
+    hostname: pma
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - "8080:80" # Maps container port 80 to your host machine's port 8080
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: root
+    labels:
+      - "io.docksal.virtual-host=pma-portalshop"
