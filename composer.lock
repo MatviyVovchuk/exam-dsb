@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d16029fbd7258a16c5097b3445299008",
+    "content-hash": "8f36ea5a70d7d4671d641d3708c2df6e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1918,6 +1918,103 @@
             "homepage": "https://www.drupal.org/project/entity_reference_revisions",
             "support": {
                 "source": "https://git.drupalcode.org/project/entity_reference_revisions"
+            }
+        },
+        {
+            "name": "drupal/extrafield_views_integration",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/extrafield_views_integration.git",
+                "reference": "2.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/extrafield_views_integration-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "f0e96166e8645909a182e013d9c066f1916eb6b1"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.0",
+                    "datestamp": "1668434363",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "abramm",
+                    "homepage": "https://www.drupal.org/user/3216035"
+                },
+                {
+                    "name": "dasRicardo",
+                    "homepage": "https://www.drupal.org/user/1127630"
+                },
+                {
+                    "name": "keerthana13",
+                    "homepage": "https://www.drupal.org/user/3649305"
+                }
+            ],
+            "description": "Integrate Drupal Core extrafields from type display in views.",
+            "homepage": "https://www.drupal.org/project/extrafield_views_integration",
+            "support": {
+                "source": "https://git.drupalcode.org/project/extrafield_views_integration"
+            }
+        },
+        {
+            "name": "drupal/likeit",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/likeit.git",
+                "reference": "3.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/likeit-3.1.0.zip",
+                "reference": "3.1.0",
+                "shasum": "824ca057427d406ca12e0357abaf725fdf15fd65"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10",
+                "drupal/extrafield_views_integration": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.1.0",
+                    "datestamp": "1678271310",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "andrew_tspkh",
+                    "homepage": "https://www.drupal.org/user/3302731"
+                }
+            ],
+            "description": "Provides functionality to like the entity.",
+            "homepage": "https://www.drupal.org/project/likeit",
+            "support": {
+                "source": "https://git.drupalcode.org/project/likeit"
             }
         },
         {
