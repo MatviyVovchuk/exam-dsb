@@ -5,10 +5,17 @@ core: 8.x
 core_version_requirement: x
 base theme: bootstrap5
 
+libraries:
+  - exam/global
+
+stylesheets-remove:
+  - '@bootstrap5/css/style.css'
+
 regions:
-  header: Header
+  baner: Baner
   nav_branding: 'Navigation branding region'
   nav_main: 'Main navigation region'
+  header: Header
   nav_additional: 'Additional navigation region (eg search form, social icons, etc)'
   breadcrumb: Breadcrumbs
   content: 'Main content'

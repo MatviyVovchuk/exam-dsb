@@ -1,0 +1,93 @@
+@import "variables";
+
+@mixin social-link {
+    color: white;
+    background-color: $blue;
+    font-size: 15px;
+    margin-left: 50px;
+}
+@mixin style-h2 {
+    text-align: center;
+    font-size: 30px;
+    width: 178px;
+    background-color: white;
+    margin: $center;
+}
+@mixin style-line-title {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: black;
+    opacity: 0.2;
+    position: absolute;
+    width: 1250px;
+    margin-top: 18px;
+    z-index: -2;
+    margin-left: 18px;
+}
+@mixin style-line-about {
+    content: "";
+    display: block;
+    height: 4px;
+    position: absolute;
+    width: 1270px;
+    z-index: -2;
+}
+@mixin style-button-link {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+@mixin style-img {
+    width: 290px;
+    height: 290px;
+}
+@mixin style-fa {
+    color: white;
+    background-color: $blue;
+    width: 25px;
+    height: 25px;
+    font-size: 18px;
+    padding-top: 5px;
+}
+@mixin news-name {
+    font-size: 12px;
+    padding-right: 4px;
+    margin-top: 7px;
+}
+@mixin background {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@mixin flag {
+    text-align: end;
+    margin-top: 20px;
+    margin-right: 65px;
+}
+@mixin flag-a {
+    color: transparent;
+    background-image: url(../img/heart.png);
+    font-size: 12px;
+    @include background;
+}
+@mixin edit-submit {
+    position: absolute;
+    background-image: url(../img/symbol.png);
+    background-color: transparent;
+    border-color: black;
+    font-size: 15px;
+    height: $height-form;
+    color: transparent;
+    opacity: 0.2;
+    @include background;
+    margin-top: -56px;
+    margin-left: 205px;
+    width: 43px;
+}
+@mixin grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    .views-col {
+        width: 100% !important;
+    }
+}
