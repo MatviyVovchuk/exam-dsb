@@ -12943,8 +12943,9 @@ code {
 }
 
 header {
-  background-image: url(../img/header.png);
+  background-image: url("../img/header.png");
   min-height: 700px;
+  width: 100%;
   background-position: center;
   background-position-y: top;
   background-size: contain;
@@ -12962,52 +12963,153 @@ header .region-nav-branding {
 header .region-nav-main {
   display: flex;
 }
-header .navbar-nav a {
-  color: rgb(60, 60, 69);
+header .region-nav-additional {
+  display: flex;
 }
-header .navbar-nav .nav-item::after {
-  content: "";
-  display: block;
-  height: 7px;
-  background-color: #6c89b3;
-  position: absolute;
-  bottom: 0;
-  width: 0%;
-  transition: width ease-in-out 400ms;
-  margin-bottom: 7px;
-  margin-left: -12px;
-}
-header .navbar-nav .nav-item:hover::after {
-  width: 4%;
-}
-header .navbar-nav :first-child a {
-  background-image: url(../img/Homepage-menu.png);
-  color: transparent;
-  background-size: contain;
-  background-repeat: no-repeat;
-  font-size: 9px;
-  margin-top: 4px;
+header .region-nav-additional .block-social-media-links {
   margin-right: 10px;
 }
-header .navbar-nav :first-child .nav-item::after {
-  content: "";
-  display: block;
-  height: 7px;
-  background-color: #6c89b3;
-  position: absolute;
-  bottom: 0;
-  width: 0%;
-  transition: width ease-in-out 400ms;
-  margin-bottom: 7px;
-  margin-left: -12px;
+header .contextual-region > .text-formatted,
+header .block-block-content > .text-formatted {
+  margin: 0 auto;
+  width: 1250px;
+  text-transform: uppercase;
+  padding-left: 119px;
+  font-family: "Avenir LT Pro";
 }
-header .navbar-nav :first-child .nav-item:hover::after {
-  width: 2%;
+@media (max-width: 1250px) {
+  header .contextual-region > .text-formatted,
+  header .block-block-content > .text-formatted {
+    width: 100vw;
+  }
+}
+header .contextual-region > .text-formatted h1, header .contextual-region > .text-formatted .h1,
+header .block-block-content > .text-formatted h1,
+header .block-block-content > .text-formatted .h1 {
+  margin: 124px 0 0;
+  font-size: 67px;
+  height: 65px;
+  color: #fff;
+}
+header .contextual-region > .text-formatted h2, header .contextual-region > .text-formatted .h2,
+header .block-block-content > .text-formatted h2,
+header .block-block-content > .text-formatted .h2 {
+  font-size: 40px;
+  height: 46px;
+  margin-bottom: 4px;
+  padding-right: 5px;
+}
+header .contextual-region > .text-formatted p,
+header .block-block-content > .text-formatted p {
+  font-size: 14px;
+  color: #6f9ccb;
+  width: 360px;
+  line-height: 16px;
+  padding-right: 5px;
+}
+@media (max-width: 678px) {
+  header .contextual-region > .text-formatted,
+  header .block-block-content > .text-formatted {
+    text-align: center;
+    padding-left: 0;
+  }
+  header .contextual-region > .text-formatted h1, header .contextual-region > .text-formatted .h1,
+  header .contextual-region > .text-formatted h2,
+  header .contextual-region > .text-formatted .h2,
+  header .block-block-content > .text-formatted h1,
+  header .block-block-content > .text-formatted .h1,
+  header .block-block-content > .text-formatted h2,
+  header .block-block-content > .text-formatted .h2 {
+    height: auto;
+  }
+  header .contextual-region > .text-formatted p,
+  header .block-block-content > .text-formatted p {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 478px) {
+  header .contextual-region > .text-formatted h1, header .contextual-region > .text-formatted .h1,
+  header .block-block-content > .text-formatted h1,
+  header .block-block-content > .text-formatted .h1 {
+    font-size: 56px;
+    margin-top: 70px;
+  }
+  header .contextual-region > .text-formatted p,
+  header .block-block-content > .text-formatted p {
+    margin: 0 auto;
+    width: auto;
+  }
+}
+header .navbar {
+  justify-content: center;
+  text-transform: uppercase;
+}
+header .navbar .navbar-brand {
+  padding: 0;
+  margin-right: 0;
+  margin-top: 0;
+}
+header .navbar .navbar-brand img {
+  height: 115px;
+  width: 240px;
+}
+header .navbar .region-nav-main {
+  display: contents;
+}
+header .navbar .region-nav-main ul {
+  margin-top: 41px;
+}
+header .navbar .region-nav-main ul li a.nav-link, header .navbar .region-nav-main ul li .media-library-view--widget .view-header a, .media-library-view--widget .view-header header .navbar .region-nav-main ul li a {
+  padding-right: 0.6rem;
+  padding-left: 0.75rem;
+  font-size: 14px;
+  color: #373645;
+  transition: all 0.3s ease;
+  border-bottom: 7px solid transparent;
+  padding-bottom: 38px;
+}
+header .navbar .region-nav-main ul li a.nav-link:hover, header .navbar .region-nav-main ul li .media-library-view--widget .view-header a:hover, .media-library-view--widget .view-header header .navbar .region-nav-main ul li a:hover {
+  border-bottom: 7px solid #6f9ccb;
+}
+header .navbar .region-nav-main ul li:first-child {
+  font-size: 0;
+  background-image: url("../img/Homepage-menu.png");
+  background-repeat: no-repeat;
+  padding: 0 10px 0 0;
+  margin: 0 10px 0 -5px;
+}
+header .navbar .region-nav-main ul li:first-child a.nav-link, header .navbar .region-nav-main ul li:first-child .media-library-view--widget .view-header a, .media-library-view--widget .view-header header .navbar .region-nav-main ul li:first-child a {
+  font-size: 0;
+  padding-left: 16px;
+  padding-bottom: 59px;
+}
+header .navbar form > div.form-actions {
+  background-image: url("../img/search.png");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
+  margin-top: 8px;
+  margin-left: 0 !important;
+}
+header .navbar form input.btn-primary {
+  font-size: 0;
+  border: 1px solid #cccccc;
+  padding-top: 23px;
+  padding-bottom: 15px;
+  border-radius: 0 3px 3px 0;
+  padding-right: 25px;
+  background-color: transparent;
+}
+header .navbar form input.form-search {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-right-width: 0;
 }
 header .navbar-collapse {
   background-color: white;
   min-height: 114px;
   margin-top: 32px;
+  justify-content: center !important;
 }
 header .navbar-brand {
   margin-top: 18px;
@@ -13054,26 +13156,4 @@ header .form-item-search {
   margin-right: -14px;
   width: 173px;
   margin-top: 2em;
-}
-
-.region-breadcrumb {
-  margin-top: -410px;
-  margin-left: 140px;
-  margin-bottom: 395px;
-  line-height: 1;
-  position: absolute;
-}
-
-.creativity__title {
-  font-size: 4em;
-  color: white;
-}
-.creativity__slogan {
-  font-size: 2.5em;
-}
-.creativity__text {
-  font-size: 0.875em;
-  margin-top: 8px;
-  margin-left: 4px;
-  color: #6c89b3;
 }
