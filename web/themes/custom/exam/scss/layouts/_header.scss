@@ -4,7 +4,7 @@
 @import "../variables/mixins";
 
 header {
-  background-image: url("../img/header.png");
+  // background-image: url("../img/header.png");
   min-height: 700px;
   width: 100%;
   background-position: center;
@@ -16,7 +16,7 @@ header {
   .region-nav {
     &-branding {
       min-height: 114px;
-      margin-top: 33px;
+      // margin-top: 33px;
       width: 240px;
       background-color: $grey;
     }
@@ -27,33 +27,45 @@ header {
       display: flex;
       .block-social-media-links {
         margin-right: 10px;
+        a {
+          color: #6e9bca;
+        }
       }
     }
   }
 
   .contextual-region,
   .block-block-content {
-    //height: 100%;
+    // height: 100%;
+    .field--name-field-image {
+      img {
+        width: 100%;
+      }
+    }
+
     & > .text-formatted {
       margin: 0 auto;
       width: 1250px;
       text-transform: uppercase;
       padding-left: 119px;
-      font-family: "Avenir LT Pro";
+      // font-family: 'Avenir LT Pro';
       @media (max-width: 1250px) {
         width: 100vw;
       }
-      h1 {
-        margin: 124px 0 0;
+      h2 {
+        // margin: 124px 0 0;
         font-size: 67px;
         height: 65px;
         color: #fff;
+        font-weight: 300;
       }
-      h2 {
+      h3 {
+        font-style: normal;
         font-size: 40px;
         height: 46px;
         margin-bottom: 4px;
         padding-right: 5px;
+        font-weight: 400;
       }
       p {
         font-size: 14px;
@@ -65,8 +77,8 @@ header {
       @media (max-width: 678px) {
         text-align: center;
         padding-left: 0;
-        h1,
-        h2 {
+        h2,
+        h3 {
           height: auto;
         }
         p {
@@ -74,7 +86,7 @@ header {
         }
       }
       @media (max-width: 478px) {
-        h1 {
+        h2 {
           font-size: 56px;
           margin-top: 70px;
         }
@@ -159,7 +171,7 @@ header {
     &-collapse {
       background-color: white;
       min-height: 114px;
-      margin-top: 32px;
+      // margin-top: 32px;
       justify-content: center !important;
     }
     &-brand {
@@ -183,15 +195,6 @@ header {
           font-size: 15px;
           margin-top: -5px;
           opacity: 0.7;
-        }
-      }
-      div {
-        a {
-          color: white !important;
-          color: transparent;
-          background-image: url(../img/logo.png);
-          background-size: contain;
-          background-repeat: no-repeat;
         }
       }
     }
