@@ -12966,6 +12966,9 @@ header .region-nav-additional .block-social-media-links {
 header .region-nav-additional .block-social-media-links a {
   color: #6e9bca;
 }
+header .region-header {
+  margin-bottom: -115px;
+}
 header .contextual-region .field--name-field-image img,
 header .block-block-content .field--name-field-image img {
   width: 100%;
@@ -13195,6 +13198,72 @@ header .form-item-search {
     width: max-content;
     margin: 0 auto;
   }
+}
+
+.block-views-blockmain-page-services-block-1 {
+  text-transform: uppercase;
+  margin-top: 92px;
+  font-family: "Spline Sans", sans-serif;
+}
+.block-views-blockmain-page-services-block-1 > h2, .block-views-blockmain-page-services-block-1 > .h2 {
+  text-align: center;
+  margin-bottom: 92px;
+  display: flex;
+  gap: 10px;
+}
+.block-views-blockmain-page-services-block-1 > h2::before, .block-views-blockmain-page-services-block-1 > .h2::before, .block-views-blockmain-page-services-block-1 > h2::after, .block-views-blockmain-page-services-block-1 > .h2::after {
+  content: " ";
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  width: 50%;
+  margin: auto 0;
+}
+.block-views-blockmain-page-services-block-1 .view-main-page-services .view-content {
+  display: flex;
+  text-align: center;
+}
+.block-views-blockmain-page-services-block-1 .view-main-page-services .view-content .views-row div:last-child .views-field.views-field-title {
+  margin-top: 29px;
+}
+@media (max-width: 950px) {
+  .block-views-blockmain-page-services-block-1 .view-main-page-services .view-content .views-col {
+    width: 48% !important;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 520px) {
+  .block-views-blockmain-page-services-block-1 .view-main-page-services .view-content .views-col {
+    width: 98% !important;
+  }
+}
+.block-views-blockmain-page-services-block-1 .view-main-page-services .view-content .views-field.views-field-title {
+  margin-top: 32px;
+}
+.block-views-blockmain-page-services-block-1 .view-main-page-services .view-content .views-field.views-field-title a {
+  font-size: 22px;
+  text-decoration: none;
+  color: #000;
+}
+.block-views-blockmain-page-services-block-1 .view-main-page-services .view-content .views-field-body {
+  font-size: 0.75rem;
+  padding: 8px 19px 0;
+  color: #cccccc;
+}
+.block-views-blockmain-page-services-block-1 .view-main-page-services .view-content .views-field-view-node {
+  margin-top: 21px;
+}
+.block-views-blockmain-page-services-block-1 .view-main-page-services .view-content .views-field-view-node span {
+  display: block;
+  background-color: #6e9bca;
+  width: 98px;
+  margin: 0 auto;
+  padding: 3px 0;
+  border-radius: 3px;
+}
+.block-views-blockmain-page-services-block-1 .view-main-page-services .view-content .views-field-view-node span a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
 }
 
 footer {
