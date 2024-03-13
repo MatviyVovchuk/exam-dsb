@@ -13265,6 +13265,166 @@ header .form-item-search {
   color: #fff;
 }
 
+.block-views-blockmain-page-projects-block-1 {
+  text-transform: uppercase;
+  margin-top: 106px;
+  font-family: "Avenir LT Pro";
+}
+.block-views-blockmain-page-projects-block-1 > h2, .block-views-blockmain-page-projects-block-1 > .h2 {
+  width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 1.75rem;
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 1250px) {
+  .block-views-blockmain-page-projects-block-1 > h2, .block-views-blockmain-page-projects-block-1 > .h2 {
+    width: 100vw;
+  }
+}
+.block-views-blockmain-page-projects-block-1 > h2::before, .block-views-blockmain-page-projects-block-1 > .h2::before, .block-views-blockmain-page-projects-block-1 > h2::after, .block-views-blockmain-page-projects-block-1 > .h2::after {
+  content: " ";
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  width: 50%;
+  margin: auto 0;
+}
+.block-views-blockmain-page-projects-block-1 > div:last-child {
+  margin-top: 18px;
+  padding-top: 69px;
+  background: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.1), #fff 3px, #fff 10px, #fff 0px);
+}
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects {
+  width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1250px) {
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects {
+    width: 100vw;
+  }
+}
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects a {
+  text-decoration: none;
+}
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content {
+  text-align: center;
+}
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-col {
+  border-bottom: 1px solid #373645;
+  padding-bottom: 12px;
+  background-color: #fff;
+  width: 23.3% !important;
+  margin-left: 20px;
+}
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-col .views-field-field-projects-image img {
+  height: 290px;
+  width: 290px;
+}
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .col-4 {
+  margin-right: 0;
+}
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-field.views-field-title {
+  margin: 32px 0 3px;
+}
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-field.views-field-title a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+}
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-field-view-node span {
+  display: inline-block;
+  margin-top: 17px;
+  background-color: #373645;
+  padding: 3px 0;
+  border-radius: 3px;
+}
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-field-view-node span a {
+  color: #fff;
+  padding: 6px 10px;
+}
+@media (max-width: 1260px) {
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-col {
+    width: 22% !important;
+  }
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-col .views-field.views-field-title a {
+    font-size: 1.3rem;
+  }
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-col .views-field-field-projects-image {
+    height: auto;
+  }
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-col .views-field-field-projects-image img {
+    height: 22vw;
+  }
+}
+@media (max-width: 950px) {
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-col {
+    display: block;
+    width: 46% !important;
+    margin-bottom: 20px;
+    border-bottom: none;
+    background-color: transparent;
+  }
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-col .views-field-field-projects-image img {
+    height: 35vw;
+  }
+}
+@media (max-width: 520px) {
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-col {
+    width: 98% !important;
+    margin-left: 0;
+  }
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-col .views-field-field-projects-image img {
+    height: 55vw;
+  }
+}
+@media (max-width: 460px) {
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-field-field-projects-image img {
+    height: 70vw;
+  }
+}
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination {
+  gap: 10px;
+  margin-top: 40px;
+}
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination li a {
+  border-radius: 20px;
+  color: #646464;
+}
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination li a:hover {
+  color: #fff;
+}
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination .page-item.active .page-link, .block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination .media-library-view--widget .view-header a.page-item.is-active .page-link, .media-library-view--widget .view-header .block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination a.page-item.is-active .page-link {
+  background-color: #646464;
+  border-color: transparent;
+  color: #fff;
+}
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination .page-item .page-link:hover {
+  background-color: #646464;
+}
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination .page-link {
+  background-color: transparent;
+  border: none;
+}
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination li.disabled {
+  display: none;
+}
+
+.views-field-field-projects-term a[href*="/taxonomy/term/8"] {
+  color: #1bbc9b;
+}
+.views-field-field-projects-term a[href*="/taxonomy/term/7"] {
+  color: #9b58b5;
+}
+.views-field-field-projects-term a[href*="/taxonomy/term/5"] {
+  color: #e84c3d;
+}
+.views-field-field-projects-term a[href*="/taxonomy/term/6"] {
+  color: #32ade1;
+}
+
 footer {
   padding: 0;
   background-color: #373645;
