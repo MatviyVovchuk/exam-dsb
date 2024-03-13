@@ -12944,12 +12944,7 @@ code {
 }
 
 header {
-  min-height: 700px;
   width: 100%;
-  background-position: center;
-  background-position-y: top;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
 header .container.d-flex {
   max-width: 1275px;
@@ -12977,6 +12972,9 @@ header .block-block-content .field--name-field-image img {
 }
 header .contextual-region > .text-formatted,
 header .block-block-content > .text-formatted {
+  position: absolute;
+  top: 40%;
+  left: 10%;
   margin: 0 auto;
   width: 1250px;
   text-transform: uppercase;
@@ -13048,6 +13046,9 @@ header .block-block-content > .text-formatted p {
   }
 }
 header .navbar {
+  position: relative;
+  top: 0;
+  top: -75%;
   justify-content: center;
   text-transform: uppercase;
 }
@@ -13117,28 +13118,6 @@ header .navbar-collapse {
   min-height: 114px;
   justify-content: center !important;
 }
-header .navbar-brand {
-  margin-top: 18px;
-  text-align: center;
-}
-header .navbar-brand .site-title {
-  font-family: "Noto Serif", serif;
-  font-weight: 600;
-  margin-left: 40px;
-  font-size: 28px;
-  text-transform: capitalize;
-  color: transparent;
-}
-header .navbar-brand .site-title:hover {
-  color: transparent;
-}
-header .navbar-brand .site-slogan {
-  color: white;
-  margin-left: 30px;
-  font-size: 15px;
-  margin-top: -5px;
-  opacity: 0.7;
-}
 header label {
   position: absolute;
   margin-left: 173px;
@@ -13155,6 +13134,67 @@ header .form-item-search {
   margin-right: -14px;
   width: 173px;
   margin-top: 2em;
+}
+
+.block-views-blockmain-page-about-block-1 .view-main-page-about .views-row {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-family: "Avenir LT Pro";
+  border-top: 5px solid #000;
+  border-bottom: 5px solid #6e9bca;
+}
+.block-views-blockmain-page-about-block-1 .view-main-page-about .views-row span a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+}
+.block-views-blockmain-page-about-block-1 .view-main-page-about .views-row .views-field-body p {
+  margin: 10px 0 0 0;
+  color: #cccccc;
+}
+.block-views-blockmain-page-about-block-1 .view-main-page-about .views-row .views-field.views-field-view-node {
+  margin-top: 7px;
+  background-color: #6e9bca;
+  margin-left: 33px;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-right: 6px;
+  border-radius: 3px;
+}
+.block-views-blockmain-page-about-block-1 .view-main-page-about .views-row .views-field.views-field-view-node span {
+  margin-top: 0;
+}
+.block-views-blockmain-page-about-block-1 .view-main-page-about .views-row .views-field.views-field-view-node span a {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 4px 0 5px 9px;
+  margin: 0px;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 1240px) {
+  .block-views-blockmain-page-about-block-1 .view-main-page-about .view-content {
+    padding: 0 10px;
+  }
+  .block-views-blockmain-page-about-block-1 .view-main-page-about .view-content .views-field.views-field-view-node {
+    margin-left: 0;
+  }
+}
+@media (max-width: 720px) {
+  .block-views-blockmain-page-about-block-1 .view-main-page-about .view-content .views-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+  }
+  .block-views-blockmain-page-about-block-1 .view-main-page-about .view-content .views-row .views-field.views-field-view-node {
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0 auto;
+  }
 }
 
 footer {
