@@ -1,10 +1,15 @@
+@import "../variables/variables_drupal";
+@import "../variables/variables_bootstrap";
+@import "../variables/variables";
+@import "../variables/mixins";
+
 .block-views-blockmain-page-services-block-1 {
   text-transform: uppercase;
-  margin-top: 92px;
+  margin-top: 50px;
   font-family: "Spline Sans", sans-serif;
   & > h2 {
     text-align: center;
-    margin-bottom: 92px;
+    margin-bottom: 50px;
     display: flex;
     gap: 10px;
     &::before,

@@ -13142,6 +13142,7 @@ header .form-item-search {
 .block-views-blockmain-page-about-block-1 .view-main-page-about .views-row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-transform: uppercase;
   font-family: "Avenir LT Pro";
   border-top: 5px solid #000;
@@ -13154,13 +13155,11 @@ header .form-item-search {
   font-weight: 700;
 }
 .block-views-blockmain-page-about-block-1 .view-main-page-about .views-row .views-field-body p {
-  margin: 10px 0 0 0;
+  margin: 0;
   color: #cccccc;
 }
 .block-views-blockmain-page-about-block-1 .view-main-page-about .views-row .views-field.views-field-view-node {
-  margin-top: 7px;
   background-color: #6e9bca;
-  margin-left: 33px;
   height: -moz-fit-content;
   height: fit-content;
   padding-right: 6px;
@@ -13202,12 +13201,12 @@ header .form-item-search {
 
 .block-views-blockmain-page-services-block-1 {
   text-transform: uppercase;
-  margin-top: 92px;
+  margin-top: 50px;
   font-family: "Spline Sans", sans-serif;
 }
 .block-views-blockmain-page-services-block-1 > h2, .block-views-blockmain-page-services-block-1 > .h2 {
   text-align: center;
-  margin-bottom: 92px;
+  margin-bottom: 50px;
   display: flex;
   gap: 10px;
 }

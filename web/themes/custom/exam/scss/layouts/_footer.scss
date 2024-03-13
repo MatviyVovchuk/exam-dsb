@@ -1,3 +1,8 @@
+@import "../variables/variables_drupal";
+@import "../variables/variables_bootstrap";
+@import "../variables/variables";
+@import "../variables/mixins";
+
 footer {
   padding: 0;
   background-color: #373645;

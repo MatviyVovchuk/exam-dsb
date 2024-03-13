@@ -1,9 +1,15 @@
+@import "../variables/variables_drupal";
+@import "../variables/variables_bootstrap";
+@import "../variables/variables";
+@import "../variables/mixins";
+
 .block-views-blockmain-page-about-block-1 {
   .view-main-page-about {
     // margin-top: 103px;
     .views-row {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       // gap: 22px;
       // padding: 8px 0 1px;
       text-transform: uppercase;
@@ -18,14 +24,14 @@
       }
       .views-field-body {
         p {
-          margin: 10px 0 0 0;
+          margin: 0;
           color: #cccccc;
         }
       }
       .views-field.views-field-view-node {
-        margin-top: 7px;
+        // margin-top: 7px;
         background-color: #6e9bca;
-        margin-left: 33px;
+        // margin-left: 33px;
         height: fit-content;
         padding-right: 6px;
         border-radius: 3px;
