@@ -7,6 +7,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap");
 @import url("https://fonts.cdnfonts.com/css/avenir-lt-pro");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/nexa-slab-free");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #003CC5;
@@ -12982,6 +12984,7 @@ header .block-block-content > .text-formatted {
   width: 1250px;
   text-transform: uppercase;
   padding-left: 119px;
+  font-family: "Inter", sans-serif;
 }
 @media (max-width: 1250px) {
   header .contextual-region > .text-formatted,
@@ -13144,7 +13147,7 @@ header .form-item-search {
   justify-content: space-between;
   align-items: center;
   text-transform: uppercase;
-  font-family: "Avenir LT Pro";
+  font-family: "Inter", sans-serif;
   border-top: 5px solid #000;
   border-bottom: 5px solid #6e9bca;
 }
@@ -13202,9 +13205,10 @@ header .form-item-search {
 .block-views-blockmain-page-services-block-1 {
   text-transform: uppercase;
   margin-top: 50px;
-  font-family: "Spline Sans", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .block-views-blockmain-page-services-block-1 > h2, .block-views-blockmain-page-services-block-1 > .h2 {
+  font-weight: 700;
   text-align: center;
   margin-bottom: 50px;
   display: flex;
@@ -13267,22 +13271,15 @@ header .form-item-search {
 
 .block-views-blockmain-page-projects-block-1 {
   text-transform: uppercase;
-  margin-top: 106px;
-  font-family: "Avenir LT Pro";
+  margin-top: 50px;
+  font-family: "Inter", sans-serif;
 }
 .block-views-blockmain-page-projects-block-1 > h2, .block-views-blockmain-page-projects-block-1 > .h2 {
-  width: 1250px;
-  margin-left: auto;
-  margin-right: auto;
+  font-weight: 300;
   text-align: center;
-  font-size: 1.75rem;
+  margin-bottom: 50px;
   display: flex;
   gap: 10px;
-}
-@media (max-width: 1250px) {
-  .block-views-blockmain-page-projects-block-1 > h2, .block-views-blockmain-page-projects-block-1 > .h2 {
-    width: 100vw;
-  }
 }
 .block-views-blockmain-page-projects-block-1 > h2::before, .block-views-blockmain-page-projects-block-1 > .h2::before, .block-views-blockmain-page-projects-block-1 > h2::after, .block-views-blockmain-page-projects-block-1 > .h2::after {
   content: " ";
@@ -13296,31 +13293,21 @@ header .form-item-search {
   padding-top: 69px;
   background: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.1), #fff 3px, #fff 10px, #fff 0px);
 }
-.block-views-blockmain-page-projects-block-1 .view-main-page-projects {
-  width: 1250px;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media (max-width: 1250px) {
-  .block-views-blockmain-page-projects-block-1 .view-main-page-projects {
-    width: 100vw;
-  }
-}
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects a {
   text-decoration: none;
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content {
   text-align: center;
+  display: flex;
+  justify-content: space-evenly;
 }
-.block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-col {
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row {
   border-bottom: 1px solid #373645;
   padding-bottom: 12px;
   background-color: #fff;
   width: 23.3% !important;
-  margin-left: 20px;
 }
-.block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-col .views-field-field-projects-image img {
-  height: 290px;
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row .views-field-field-image img {
   width: 290px;
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .col-4 {
@@ -13412,17 +13399,122 @@ header .form-item-search {
   display: none;
 }
 
-.views-field-field-projects-term a[href*="/taxonomy/term/8"] {
+.views-field-field-service a[href*="/taxonomy/term/8"] {
   color: #1bbc9b;
 }
-.views-field-field-projects-term a[href*="/taxonomy/term/7"] {
+.views-field-field-service a[href*="/taxonomy/term/7"] {
   color: #9b58b5;
 }
-.views-field-field-projects-term a[href*="/taxonomy/term/5"] {
+.views-field-field-service a[href*="/taxonomy/term/5"] {
   color: #e84c3d;
 }
-.views-field-field-projects-term a[href*="/taxonomy/term/6"] {
+.views-field-field-service a[href*="/taxonomy/term/6"] {
   color: #32ade1;
+}
+
+.block-views-blockmain-page-people-block-1 {
+  text-transform: uppercase;
+  margin: 50px 0 50px 0;
+  font-family: "Inter", sans-serif;
+}
+.block-views-blockmain-page-people-block-1 > h2, .block-views-blockmain-page-people-block-1 > .h2 {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  display: flex;
+  gap: 10px;
+}
+.block-views-blockmain-page-people-block-1 > h2::before, .block-views-blockmain-page-people-block-1 > .h2::before, .block-views-blockmain-page-people-block-1 > h2::after, .block-views-blockmain-page-people-block-1 > .h2::after {
+  content: " ";
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  width: 50%;
+  margin: auto 0;
+}
+.block-views-blockmain-page-people-block-1 .view-main-page-people {
+  width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1250px) {
+  .block-views-blockmain-page-people-block-1 .view-main-page-people {
+    width: 100vw;
+  }
+}
+.block-views-blockmain-page-people-block-1 .view-main-page-people a {
+  text-decoration: none;
+}
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-field-field-image a img {
+  width: 290px;
+}
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-field.views-field-title {
+  margin-top: 32px;
+}
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-field.views-field-title a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #000;
+}
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-field.views-field-field-position {
+  font-size: 0.75rem;
+}
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-field.views-field-field-position a {
+  color: #cccccc;
+}
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-field-view-node {
+  margin-top: 9px;
+}
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-field-view-node span {
+  display: inline-block;
+  background-color: #373645;
+  padding: 3px 0;
+  border-radius: 3px;
+}
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-field-view-node span a {
+  color: #fff;
+  padding: 0 8px;
+  font-size: 14px;
+}
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-field-field-social-links {
+  display: block;
+  text-align: left;
+  float: left;
+  padding-left: 30px;
+  padding-top: 19px;
+}
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-field-field-social-links .field-content a {
+  color: #6e9bca;
+}
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-field-link-flag .flag.flag-like {
+  padding-top: 24px;
+}
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-field-link-flag .flag.flag-like a {
+  color: #e84c3d;
+}
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-field-link-flag .js-flag-message {
+  display: none;
+}
+@media (max-width: 1098px) {
+  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-col {
+    width: 48% !important;
+    margin-bottom: 20px;
+  }
+  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-field-addtoany-share {
+    padding-left: 115px;
+  }
+  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-field-link-flag .flag.flag-like a {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 520px) {
+  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-col {
+    width: 98% !important;
+  }
 }
 
 footer {

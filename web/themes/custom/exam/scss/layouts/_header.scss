@@ -55,7 +55,7 @@ header {
       width: 1250px;
       text-transform: uppercase;
       padding-left: 119px;
-      // font-family: 'Avenir LT Pro';
+      font-family: "Inter", sans-serif;
       @media (max-width: 1250px) {
         width: 100vw;
       }
@@ -135,6 +135,7 @@ header {
     }
     .region-nav-main {
       display: contents;
+      // font-family: "Inter", sans-serif;
       ul {
         margin-top: 41px;
         li {

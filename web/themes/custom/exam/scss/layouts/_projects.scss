@@ -5,12 +5,12 @@
 
 .block-views-blockmain-page-projects-block-1 {
   text-transform: uppercase;
-  margin-top: 106px;
-  font-family: "Avenir LT Pro";
+  margin-top: 50px;
+  font-family: "Inter", sans-serif;
   & > h2 {
-    @include alingnment;
+    font-weight: 300;
     text-align: center;
-    font-size: 1.75rem;
+    margin-bottom: 50px;
     display: flex;
     gap: 10px;
     &::before,
@@ -30,21 +30,23 @@
     );
   }
   .view-main-page-projects {
-    @include alingnment;
+    // @include alingnment;
     a {
       text-decoration: none;
     }
     .view-content {
       text-align: center;
-      .views-col {
+      display: flex;
+      justify-content: space-evenly;
+      .views-row {
         border-bottom: 1px solid #373645;
         padding-bottom: 12px;
         background-color: #fff;
         width: 23.3% !important;
-        margin-left: 20px;
-        .views-field-field-projects-image {
+        // margin-left: 20px;
+        .views-field-field-image {
           img {
-            height: 290px;
+            // height: 290px;
             width: 290px;
           }
         }
@@ -159,7 +161,7 @@
   }
 }
 
-.views-field-field-projects-term {
+.views-field-field-service {
   a[href*="/taxonomy/term/8"] {
     color: #1bbc9b;
   }
