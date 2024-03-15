@@ -3,6 +3,24 @@
 @import "../variables/variables";
 @import "../variables/mixins";
 
+body.path-frontpage {
+  header {
+    .navbar {
+      position: relative;
+      top: -75%;
+    }
+  }
+}
+
+body.path-node {
+  header {
+    .navbar {
+      position: relative;
+      top: 0;
+    }
+  }
+}
+
 header {
   // background-image: url("../img/header.png");
   // min-height: 700px;
@@ -106,20 +124,6 @@ header {
   }
 
   .navbar {
-    position: relative;
-    top: 0;
-
-    // @if parent('#block-banner-2') {
-    //   // position: relative;
-    //   top: -75%;
-    // }
-    @if (selector-exists('#block-banner-2')) {
-      top: -75%;
-    }
-    @else {
-      position: initial; // Set position back to initial if #block-banner-2 does not exist
-      top: 0; // Reset top position
-    }
 
     justify-content: center;
     text-transform: uppercase;

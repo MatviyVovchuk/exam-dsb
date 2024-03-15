@@ -24,7 +24,7 @@
     background: repeating-linear-gradient(
       135deg,
       rgba(0, 0, 0, 0.1),
-      #fff 3px,
+      #fff 2px,
       #fff 10px,
       #fff 0px
     );
@@ -66,7 +66,7 @@
         span {
           display: inline-block;
           margin-top: 17px;
-          background-color: #373645;
+          background-color: rgb(55, 54, 69);
           //width: 98px;
           //margin: 0 auto;
           padding: 3px 0;
@@ -134,15 +134,15 @@
         margin-top: 40px;
         li a {
           border-radius: 20px;
-          color: #646464;
+          color: rgba(100, 100, 100);
           &:hover {
             color: #fff;
           }
         }
         .page-item.active .page-link {
-          background-color: #646464;
+          background-color: #dddcdd;
           border-color: transparent;
-          color: #fff;
+          color: #000;
         }
         .page-item .page-link {
           &:hover {
