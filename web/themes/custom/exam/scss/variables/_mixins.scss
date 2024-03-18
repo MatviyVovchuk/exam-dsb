@@ -61,18 +61,18 @@
 }
 @mixin flag {
     text-align: end;
-    margin-top: 20px;
-    margin-right: 65px;
+    // margin-top: 20px;
+    margin-right: 40px;
 }
 @mixin flag-a {
-    color: transparent;
-    background-image: url(../img/heart.png);
-    font-size: 12px;
-    @include background;
+    // background-image: url("../img/heart.png");
+    font-size: 18px;
+    // color: transparent !important;
+    // @include background;
 }
 @mixin edit-submit {
     position: absolute;
-    background-image: url(../img/symbol.png);
+    background-image: url("../img/search.png");
     background-color: transparent;
     border-color: black;
     font-size: 15px;

@@ -39,6 +39,7 @@
         "drupal/exclude_node_title": "^1.4",
         "drupal/field_group": "^3.4",
         "drupal/flag": "^4.0@beta",
+        "drupal/fontawesome": "^2.26",
         "drupal/geolocation": "^3.12",
         "drupal/likeit": "^3.1",
         "drupal/paragraphs": "^1.17",
