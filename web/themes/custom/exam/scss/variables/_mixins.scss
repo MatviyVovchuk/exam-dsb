@@ -1,5 +1,11 @@
 @import "variables";
 
+
+@mixin own-container {
+  max-width: 1200px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
 @mixin social-link {
     color: white;
     background-color: $blue;

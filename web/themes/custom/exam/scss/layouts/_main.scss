@@ -18,6 +18,13 @@
 //   }
 // }
 
-// .region-content {
-//   padding: 0;
-// }
+body.path-frontpage {
+  main {
+    .container,
+    .region-content {
+      max-width: none;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

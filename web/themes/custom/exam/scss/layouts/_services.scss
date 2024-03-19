@@ -4,6 +4,7 @@
 @import "../variables/mixins";
 
 .block-views-blockmain-page-services-block-1 {
+  @include own-container;
   text-transform: uppercase;
   margin-top: 50px;
   font-family: "Inter", sans-serif;

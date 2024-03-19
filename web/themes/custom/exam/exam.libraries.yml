@@ -6,4 +6,5 @@ global:
     # js:
     #   /libraries/font-awesome/js/all.min.js: { }
     # dependencies:
-    #   - core/jquery
+      # - core/jquery
+      # - bootstrap/bootstrap

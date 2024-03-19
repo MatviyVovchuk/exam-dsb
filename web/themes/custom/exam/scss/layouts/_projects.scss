@@ -8,6 +8,7 @@
   margin-top: 50px;
   font-family: "Inter", sans-serif;
   & > h2 {
+    @include own-container;
     font-weight: 300;
     text-align: center;
     margin-bottom: 50px;
@@ -30,6 +31,7 @@
     );
   }
   .view-main-page-projects {
+    @include own-container;
     // @include alingnment;
     a {
       text-decoration: none;
@@ -37,7 +39,7 @@
     .view-content {
       text-align: center;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       .views-row {
         border-bottom: 1px solid #373645;
         padding-bottom: 12px;
@@ -50,33 +52,31 @@
             width: 290px;
           }
         }
-      }
-      .col-4 {
-        margin-right: 0;
-      }
-      .views-field.views-field-title {
-        margin: 32px 0 3px;
-        a {
-          font-size: 1.5rem;
-          text-decoration: none;
-          color: #000;
-        }
-      }
-      .views-field-view-node {
-        span {
-          display: inline-block;
-          margin-top: 17px;
-          background-color: rgb(55, 54, 69);
-          //width: 98px;
-          //margin: 0 auto;
-          padding: 3px 0;
-          border-radius: 3px;
+        .views-field.views-field-title {
+          margin: 32px 0 3px;
           a {
-            color: #fff;
-            padding: 6px 10px;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: #000;
+          }
+        }
+        .views-field-view-node {
+          span {
+            display: inline-block;
+            margin-top: 17px;
+            background-color: rgb(55, 54, 69);
+            //width: 98px;
+            //margin: 0 auto;
+            padding: 3px 0;
+            border-radius: 3px;
+            a {
+              color: #fff;
+              padding: 6px 10px;
+            }
           }
         }
       }
+
       @media (max-width: 1260px) {
         .views-col {
           width: 22% !important;

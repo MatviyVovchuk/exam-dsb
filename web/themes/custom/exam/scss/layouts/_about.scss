@@ -4,6 +4,7 @@
 @import "../variables/mixins";
 
 .block-views-blockmain-page-about-block-1 {
+  @include own-container;
   .view-main-page-about {
     // margin-top: 103px;
     .views-row {

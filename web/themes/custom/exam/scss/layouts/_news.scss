@@ -7,6 +7,7 @@
   text-transform: uppercase;
   font-family: "Inter", sans-serif;
   & > h2 {
+    @include own-container;
     font-weight: 700;
     text-align: center;
     margin-bottom: 50px;
@@ -29,6 +30,7 @@
     );
   }
   .view-main-page-articles {
+    @include own-container;
     @include alingnment;
     a {
       text-decoration: none;
@@ -66,15 +68,22 @@
     }
     .view-content {
       display: flex;
+      & > .views-row:first-child {
+        margin-left: 0;
+      }
+
+      & > .views-row:last-child {
+        margin-right: 0;
+      }
       .views-row {
         display: flex;
         background-color: #fff;
         flex-wrap: nowrap;
         flex-direction: row;
         // justify-content: space-between;
-        gap: 30px;
-        padding: 15px;
-        margin: 10px;
+        gap: 10px;
+        padding: 20px;
+        margin: 5px;
 
         .fieldsets-authored-on {
           .news-created-month {
@@ -100,42 +109,59 @@
             font-size: 15px;
           }
         }
-
-        // .fieldset-news-author-date {
-        //   display: flex;
-        //   .fieldset-news-author {
-        //     display: flex;
-        //   }
-        // }
-
         div.fieldset-news-author-date {
           display: flex;
-          gap: 10px;
+          // gap: 10px;
           font-size: 0.75em;
-          padding-left: 19px;
+          padding-left: 15px;
           border-left: 1px solid #ccc;
           .fieldset-news-author {
             display: flex;
+            .views-field-field-image {
+              width: 80px;
+              height: auto;
+            }
+            .views-field-title-2,
+            .views-field-field-position {
+              flex: 1;
+            }
+
             .views-field-title-2 {
+              margin-left: 5px;
               display: flex;
-              gap: 5px;
-              &::before {
-                content: "WRITER ";
-                color: #ccc;
-              }
-              &::after {
-                content: "/ ";
+              .field-content {
+                width: max-content;
+                a {
+                  color: black;
+                }
+                &::before {
+                  content: "WRITER ";
+                  color: #ccc;
+                }
+                &::after {
+                  // margin-left: 5px;
+                  content: " /";
+                }
               }
             }
             .views-field-field-position {
-              // margin-left: -5px;
+              margin-left: 5px;
+              .field-content {
+                width: max-content;
+                a {
+                  color: #6e9bca;
+                }
+              }
+            }
+            .views-field-created-1 {
+              text-align: right;
+              // margin-left: 20px;
+              // margin-right: 15px;
+              color: #ccc;
+              width: 80px;
             }
           }
-          .views-field-created-1 {
-            margin-left: auto;
-            // margin-right: 15px;
-            color: #ccc;
-          }
+
           @media (max-width: 867px) {
             display: block;
             .field--name-field-news-worker-name {
@@ -145,39 +171,37 @@
           }
         }
 
-        .fieldset-news-node {
+        div.fieldset-news-node {
+          padding-left: 15px;
+          border-left: 1px solid #ccc;
           .views-field-title-1 {
             font-size: 1.625em;
             margin: 10px 0 0;
-            border-left: 1px solid #ccc;
-            padding-left: 19px;
           }
           .views-field-body {
             font-size: 0.75em;
             line-height: 14px;
             .field-content {
-              padding: 10px 25px 0 19px;
+              padding: 10px 25px 0 0;
               margin-bottom: 0;
-              border-left: 1px solid #ccc;
-              padding-left: 19px;
+              text-align: justify;
               @media (max-width: 998px) {
                 border-left: none;
               }
             }
           }
-        }
-
-        .views-field-view-node {
-          text-align: right;
-          font-size: 0.9375em;
-          padding-right: 34px;
-          margin: 17px 0;
-          .field-content {
-            padding: 7px 0.5em;
-            background-color: #373645;
-            border-radius: 3px;
-            a {
-              color: #fff;
+          .views-field-view-node {
+            text-align: right;
+            font-size: 0.9375em;
+            padding-right: 34px;
+            margin: 17px 0;
+            .field-content {
+              padding: 7px 0.5em;
+              background-color: #373645;
+              border-radius: 3px;
+              a {
+                color: #fff;
+              }
             }
           }
         }
