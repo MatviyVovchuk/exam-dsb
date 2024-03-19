@@ -8,6 +8,15 @@ body.path-frontpage {
     .navbar {
       position: relative;
       top: -75%;
+      @media (max-width: 1350px) {
+        top: -70%;
+      }
+      @media (max-width: 1200px) {
+        top: -60%;
+      }
+      @media (max-width: 1150px) {
+        top: -50%;
+      }
     }
   }
 }
@@ -22,11 +31,6 @@ body.path-node {
 }
 
 header {
-  // background-image: url("../img/header.png");
-  // min-height: 700px;
-  // background-position: center;
-  // background-position-y: top;
-  // @include background;
   width: 100%;
   .container.d-flex {
     max-width: 1275px;
@@ -57,20 +61,22 @@ header {
 
   .contextual-region,
   .block-block-content {
-    // height: 100%;
+    position: relative;
+
     .field--name-field-image {
       img {
         width: 100%;
       }
     }
-
     & > .text-formatted {
       position: absolute;
       top: 40%;
       left: 10%;
-
       margin: 0 auto;
       width: 1250px;
+      max-width: 1200px;
+      left: calc(50% - 600px);
+      right: calc(50% - 600px);
       text-transform: uppercase;
       padding-left: 119px;
       font-family: "Inter", sans-serif;
@@ -144,7 +150,7 @@ header {
         margin-top: 41px;
         li {
           a.nav-link {
-            padding-right: 0.6rem;
+            padding-right: 0.75rem;
             padding-left: 0.75rem;
             font-size: 14px;
             color: #373645;
@@ -160,7 +166,7 @@ header {
             background-image: url("../img/Homepage-menu.png");
             background-repeat: no-repeat;
             padding: 0 10px 0 0;
-            margin: 0 10px 0 -5px;
+            margin: 0 10px 0 10px;
             a.nav-link {
               font-size: 0;
               padding-left: 16px;
