@@ -74,6 +74,83 @@ header {
     }
   }
 }
+
+@media (max-width: 1024px) {
+  header {
+    .contextual-region,
+    .block-block-content {
+      & > .text-formatted {
+        h2 {
+          font-size: 50px;
+          height: auto;
+          font-weight: 300;
+          margin-bottom: 0;
+        }
+        h3 {
+          font-size: 30px;
+          height: auto;
+          font-weight: 400;
+          margin-bottom: 0;
+        }
+        p {
+          font-size: 14px;
+          line-height: 16px;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  header {
+    .contextual-region,
+    .block-block-content {
+      & > .text-formatted {
+        h2 {
+          font-size: 40px;
+          height: auto;
+          font-weight: 600;
+          margin-bottom: 0;
+        }
+        h3 {
+          font-size: 20px;
+          height: auto;
+          font-weight: 500;
+          margin-bottom: 0;
+        }
+        p {
+          width: 250px;
+          font-size: 12px;
+          line-height: 16px;
+          padding-right: 5px;
+          font-weight: 500;
+        }
+      }
+      .field--name-field-image {
+        img {
+          width: 100%; /* Make the image fill the container width */
+          min-height: 350px;
+          object-fit: cover; /* Crop and scale the image to cover the container */
+          object-position: 60%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  header {
+    .contextual-region,
+    .block-block-content {
+      & > .text-formatted {
+        background-color: rgba($color: #000000, $alpha: 0.1);
+        h2 {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
 // .region-breadcrumb {
 //     margin-top: -410px;
 //     margin-left: 140px;

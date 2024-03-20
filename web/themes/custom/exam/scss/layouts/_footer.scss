@@ -6,7 +6,9 @@
 footer {
   padding: 0;
   background-color: #373645;
-  padding: 20px 0;
+  padding: 40px 0;
+
+
 
   .region-footer {
     flex-direction: row;
@@ -16,19 +18,48 @@ footer {
       padding: 0;
       margin-right: 0;
       margin-top: 0;
-      img {
-        height: 115px;
-        width: 240px;
-        // margin: 0 0 0 -52px;
+      justify-content: center;
+      text-align: center;
+      .site-title {
+        text-transform: initial;
+        font-family: "Nexa Slab Regular FREE", sans-serif;
+        color: #6f9ccb;
+        font-size: 1.5em;
       }
+      .site-slogan {
+        text-transform: initial;
+        font-family: "Nexa", sans-serif;
+        color: white;
+        font-size: 0.9em;
+      }
+      // img {
+      //   height: 115px;
+      //   width: 240px;
+      //   // margin: 0 0 0 -52px;
+      // }
     }
     .block-social-media-links {
       display: flex;
       align-items: center;
       justify-content: center;
+      ul {
+        margin: 0;
+        a {
+          color: #6e9bca;
+        }
+      }
+    }
+  }
+}
 
-      a {
-        color: #6e9bca;
+
+@media (max-width: 990px) {
+  footer {
+    .region-footer {
+      .navbar-brand {
+        .site-slogan {
+          display: block;
+        }
       }
     }
   }
