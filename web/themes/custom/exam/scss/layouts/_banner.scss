@@ -1,0 +1,98 @@
+@import "../variables/variables_drupal";
+@import "../variables/variables_bootstrap";
+@import "../variables/variables";
+@import "../variables/mixins";
+
+header {
+  .contextual-region,
+  .block-block-content {
+    position: relative;
+
+    .field--name-field-image {
+      img {
+        width: 100%;
+      }
+    }
+    & > .text-formatted {
+      position: absolute;
+      top: 40%;
+      left: 10%;
+      margin: 0 auto;
+      width: 1250px;
+      max-width: 1200px;
+      left: calc(50% - 600px);
+      right: calc(50% - 600px);
+      text-transform: uppercase;
+      padding-left: 119px;
+      font-family: "Inter", sans-serif;
+      @media (max-width: 1250px) {
+        width: 100vw;
+      }
+      h2 {
+        // margin: 124px 0 0;
+        font-size: 67px;
+        height: 65px;
+        color: #fff;
+        font-weight: 300;
+      }
+      h3 {
+        font-style: normal;
+        font-size: 40px;
+        height: 46px;
+        margin-bottom: 4px;
+        padding-right: 5px;
+        font-weight: 400;
+      }
+      p {
+        font-size: 14px;
+        color: #6f9ccb;
+        width: 360px;
+        line-height: 16px;
+        padding-right: 5px;
+      }
+      @media (max-width: 678px) {
+        text-align: center;
+        padding-left: 0;
+        h2,
+        h3 {
+          height: auto;
+        }
+        p {
+          margin: 0 auto;
+        }
+      }
+      @media (max-width: 478px) {
+        h2 {
+          font-size: 56px;
+          margin-top: 70px;
+        }
+        p {
+          margin: 0 auto;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+// .region-breadcrumb {
+//     margin-top: -410px;
+//     margin-left: 140px;
+//     margin-bottom: 395px;
+//     line-height: $line-height-second;
+//     position: absolute;
+// }
+// .creativity {
+//     &__title {
+//         font-size: 4em;
+//         color: white;
+//     }
+//     &__slogan {
+//         font-size: 2.5em;
+//     }
+//     &__text {
+//         font-size: 0.875em;
+//         margin-top: 8px;
+//         margin-left: 4px;
+//         color: $blue;
+//     }
+// }

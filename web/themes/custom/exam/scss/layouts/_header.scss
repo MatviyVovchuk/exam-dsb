@@ -59,90 +59,40 @@ header {
     margin-bottom: -115px;
   }
 
-  .contextual-region,
-  .block-block-content {
-    position: relative;
-
-    .field--name-field-image {
-      img {
-        width: 100%;
-      }
-    }
-    & > .text-formatted {
-      position: absolute;
-      top: 40%;
-      left: 10%;
-      margin: 0 auto;
-      width: 1250px;
-      max-width: 1200px;
-      left: calc(50% - 600px);
-      right: calc(50% - 600px);
-      text-transform: uppercase;
-      padding-left: 119px;
-      font-family: "Inter", sans-serif;
-      @media (max-width: 1250px) {
-        width: 100vw;
-      }
-      h2 {
-        // margin: 124px 0 0;
-        font-size: 67px;
-        height: 65px;
-        color: #fff;
-        font-weight: 300;
-      }
-      h3 {
-        font-style: normal;
-        font-size: 40px;
-        height: 46px;
-        margin-bottom: 4px;
-        padding-right: 5px;
-        font-weight: 400;
-      }
-      p {
-        font-size: 14px;
-        color: #6f9ccb;
-        width: 360px;
-        line-height: 16px;
-        padding-right: 5px;
-      }
-      @media (max-width: 678px) {
-        text-align: center;
-        padding-left: 0;
-        h2,
-        h3 {
-          height: auto;
-        }
-        p {
-          margin: 0 auto;
-        }
-      }
-      @media (max-width: 478px) {
-        h2 {
-          font-size: 56px;
-          margin-top: 70px;
-        }
-        p {
-          margin: 0 auto;
-          width: auto;
-        }
-      }
-    }
-  }
-
   .navbar {
-
     justify-content: center;
     text-transform: uppercase;
-    .navbar-brand {
-      padding: 0;
-      margin-right: 0;
-      margin-top: 0;
-      img {
-        height: 115px;
-        width: 240px;
-        // margin: 0 0 0 -52px;
+
+    .region-nav-branding {
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      .navbar-brand {
+        padding: 0;
+        margin-right: 0;
+        margin-top: 0;
+        justify-content: center;
+        text-align: center;
+        .site-title {
+          text-transform: initial;
+          font-family: "Nexa Slab Regular FREE", sans-serif;
+          color: #6f9ccb;
+          font-size: 1.5em;
+        }
+        .site-slogan {
+          text-transform: initial;
+          font-family: 'Nexa', sans-serif;
+          color: white;
+          font-size: .9em;
+        }
+        // img {
+        //   height: 115px;
+        //   width: 240px;
+        //   // margin: 0 0 0 -52px;
+        // }
       }
     }
+
     .region-nav-main {
       display: contents;
       // font-family: "Inter", sans-serif;
@@ -154,6 +104,7 @@ header {
             padding-left: 0.75rem;
             font-size: 14px;
             color: #373645;
+            font-family: "Inter", sans-serif;
             transition: all 0.3s ease;
             border-bottom: 7px solid transparent;
             padding-bottom: 38px;
@@ -226,25 +177,3 @@ header {
     margin-top: 2em;
   }
 }
-// .region-breadcrumb {
-//     margin-top: -410px;
-//     margin-left: 140px;
-//     margin-bottom: 395px;
-//     line-height: $line-height-second;
-//     position: absolute;
-// }
-// .creativity {
-//     &__title {
-//         font-size: 4em;
-//         color: white;
-//     }
-//     &__slogan {
-//         font-size: 2.5em;
-//     }
-//     &__text {
-//         font-size: 0.875em;
-//         margin-top: 8px;
-//         margin-left: 4px;
-//         color: $blue;
-//     }
-// }

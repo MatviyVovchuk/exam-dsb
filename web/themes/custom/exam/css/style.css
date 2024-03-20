@@ -9,6 +9,7 @@
 @import url("https://fonts.cdnfonts.com/css/avenir-lt-pro");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/nexa-slab-free");
+@import url("https://fonts.cdnfonts.com/css/nexa-bold");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #003CC5;
@@ -13087,14 +13088,29 @@ header .navbar {
   justify-content: center;
   text-transform: uppercase;
 }
-header .navbar .navbar-brand {
+header .navbar .region-nav-branding {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+header .navbar .region-nav-branding .navbar-brand {
   padding: 0;
   margin-right: 0;
   margin-top: 0;
+  justify-content: center;
+  text-align: center;
 }
-header .navbar .navbar-brand img {
-  height: 115px;
-  width: 240px;
+header .navbar .region-nav-branding .navbar-brand .site-title {
+  text-transform: initial;
+  font-family: "Nexa Slab Regular FREE", sans-serif;
+  color: #6f9ccb;
+  font-size: 1.5em;
+}
+header .navbar .region-nav-branding .navbar-brand .site-slogan {
+  text-transform: initial;
+  font-family: "Nexa", sans-serif;
+  color: white;
+  font-size: 0.9em;
 }
 header .navbar .region-nav-main {
   display: contents;
@@ -13107,6 +13123,7 @@ header .navbar .region-nav-main ul li a.nav-link, header .navbar .region-nav-mai
   padding-left: 0.75rem;
   font-size: 14px;
   color: #373645;
+  font-family: "Inter", sans-serif;
   transition: all 0.3s ease;
   border-bottom: 7px solid transparent;
   padding-bottom: 38px;
