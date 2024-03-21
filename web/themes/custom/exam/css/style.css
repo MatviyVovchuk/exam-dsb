@@ -12975,21 +12975,6 @@ body.path-frontpage header .navbar {
     top: -260px;
   }
 }
-@media (max-width: 1030px) {
-  body.path-frontpage header .navbar {
-    top: -250px;
-  }
-}
-@media (max-width: 990px) {
-  body.path-frontpage header .navbar {
-    top: -270px;
-  }
-}
-@media (max-width: 940px) {
-  body.path-frontpage header .navbar {
-    top: -250px;
-  }
-}
 
 body.path-node header .navbar {
   position: relative;
@@ -13208,6 +13193,21 @@ header .form-item-search {
   }
 }
 @media (max-width: 990px) {
+  header .navbar {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100%;
+    background-color: rgb(60, 60, 69);
+    z-index: 1000;
+    transition: top 0.3s ease-in-out;
+  }
+  header .navbar .navbar-toggler {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: white;
+  }
+  header .navbar .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
   header .navbar .region-nav-branding {
     min-height: auto;
     padding: 10px;
@@ -13218,6 +13218,9 @@ header .form-item-search {
   }
   header .region-header {
     margin-bottom: -70px;
+  }
+  main {
+    padding-top: 100px;
   }
 }
 header .contextual-region,
@@ -13387,6 +13390,7 @@ header .block-block-content > .text-formatted p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 22px;
   text-transform: uppercase;
   font-family: "Inter", sans-serif;
   border-top: 5px solid #000;
@@ -13426,7 +13430,28 @@ header .block-block-content > .text-formatted p {
     padding: 0 10px;
   }
   .block-views-blockmain-page-about-block-1 .view-main-page-about .view-content .views-field.views-field-view-node {
-    margin-left: 0;
+    width: 150px;
+  }
+}
+@media (max-width: 1020px) {
+  .block-views-blockmain-page-about-block-1 .view-main-page-about .view-content .views-field.views-field-title a {
+    font-size: 24px;
+  }
+  .block-views-blockmain-page-about-block-1 .view-main-page-about .view-content .views-field.views-field-body {
+    font-size: 14px;
+  }
+  .block-views-blockmain-page-about-block-1 .view-main-page-about .view-content .views-field.views-field-view-node {
+    width: 200px;
+  }
+}
+@media (max-width: 860px) {
+  .block-views-blockmain-page-about-block-1 .view-main-page-about .view-content .views-field.views-field-view-node {
+    width: 250px;
+  }
+}
+@media (max-width: 750px) {
+  .block-views-blockmain-page-about-block-1 .view-main-page-about .view-content .views-field.views-field-view-node {
+    width: 250px;
   }
 }
 @media (max-width: 720px) {
@@ -13436,10 +13461,14 @@ header .block-block-content > .text-formatted p {
     gap: 0;
     text-align: center;
   }
+  .block-views-blockmain-page-about-block-1 .view-main-page-about .view-content .views-row .views-field.views-field-title {
+    margin-top: 5px;
+  }
   .block-views-blockmain-page-about-block-1 .view-main-page-about .view-content .views-row .views-field.views-field-view-node {
     width: -moz-max-content;
     width: max-content;
     margin: 0 auto;
+    margin-bottom: 5px;
   }
 }
 

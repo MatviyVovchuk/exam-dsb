@@ -9,9 +9,9 @@ $mediaQueries: (
   1200px: -300px,
   1150px: -280px,
   1080px: -260px,
-  1030px: -250px,
-  990px: -270px,
-  940px: -250px,
+  // 1030px: -250px,
+  // 990px: -270px,
+  // 940px: -250px,
   // 960px: -200px,
   // 870px: -180px,
   // 800px: -160px,
@@ -25,7 +25,7 @@ $mediaQueries: (
   // 410px: -30px,
   // 390px: -20px,
   // 350px: -10px,
-  // 340px: 0px,
+  // 340px: 0px,,,
 );
 
 body.path-frontpage {
@@ -325,6 +325,19 @@ header {
 @media (max-width: 990px) {
   header {
     .navbar {
+      position: fixed !important;
+      top: 0 !important;
+      width: 100%;
+      background-color: $grey;
+      z-index: 1000;
+      transition: top 0.3s ease-in-out;
+      .navbar-toggler {
+        color: rgb(255, 255, 255, .5);
+        border-color: white;
+        .navbar-toggler-icon {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+      }
       .region-nav-branding {
         min-height: auto;
         padding: 10px;
@@ -338,4 +351,12 @@ header {
       margin-bottom: -70px;
     }
   }
+  main {
+    padding-top: 100px;
+  }
 }
+
+// position: absolute;
+// top: 80px;
+// width: 97.5%;
+// transition: all 0.5s ease 0s;
