@@ -13543,6 +13543,10 @@ header .block-block-content > .text-formatted p {
 }
 
 @media (max-width: 1024px) {
+  .block-views-blockmain-page-services-block-1 .view-main-page-services .view-content {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
   .block-views-blockmain-page-services-block-1 .view-main-page-services .view-content .views-row {
     width: 400px;
   }
@@ -13609,12 +13613,16 @@ header .block-block-content > .text-formatted p {
   text-align: center;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row {
   border-bottom: 1px solid #373645;
   padding-bottom: 12px;
   background-color: #fff;
-  width: 23.3% !important;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row .views-field-field-image img {
   width: 290px;
@@ -13718,6 +13726,57 @@ header .block-block-content > .text-formatted p {
   color: #32ade1;
 }
 
+@media (max-width: 1024px) {
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row {
+    margin: 0 90px;
+  }
+}
+@media (max-width: 970px) {
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row {
+    margin: 0 50px;
+  }
+}
+@media (max-width: 810px) {
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row {
+    margin: 0 20px;
+  }
+}
+@media (max-width: 690px) {
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row {
+    margin: 0;
+  }
+}
+@media (max-width: 610px) {
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row {
+    width: 190px;
+  }
+}
+@media (max-width: 500px) {
+  .block-views-blockmain-page-projects-block-1 h2, .block-views-blockmain-page-projects-block-1 .h2 {
+    padding: 0 20px;
+  }
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row {
+    width: 280px;
+  }
+}
+@media (max-width: 424px) {
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects nav.pager ul {
+    gap: 5px;
+  }
+}
+@media (max-width: 390px) {
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects nav.pager ul {
+    gap: 0;
+  }
+}
 .block-views-blockmain-page-people-block-1 {
   max-width: 1200px;
   padding: 0 50px;
@@ -14205,6 +14264,69 @@ body.path-frontpage main .region-content {
     max-width: -moz-min-content;
     max-width: min-content;
   }
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  color: grey;
+  text-decoration: none;
+  border: none;
+  border-radius: 100px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-link {
+    transition: none;
+  }
+}
+.page-link:hover {
+  z-index: 2;
+  color: grey;
+  border-color: #dee2e6;
+  border-radius: 60px;
+}
+
+.page-link:focus {
+  z-index: 3;
+  color: grey;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(0, 60, 197, 0.25);
+  border-radius: 60px;
+}
+
+.page-item:not(:first-child) .page-link {
+  margin-left: -1px;
+}
+
+.page-item.active .page-link, .media-library-view--widget .view-header a.page-item.is-active .page-link {
+  z-index: 3;
+  color: grey;
+  background-color: rgba(175, 174, 180, 0.4941176471);
+  border-color: transparent;
+  border-radius: 60px;
+  opacity: 0.8;
+}
+
+.page-item.disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+  border-color: #dee2e6;
+  border-radius: 60px;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.page-link {
+  padding: 0.375rem 0.75rem;
+  border-radius: 50px;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.pagination {
+  margin-top: 29px;
 }
 
 footer {

@@ -40,11 +40,19 @@
       text-align: center;
       display: flex;
       justify-content: space-between;
+      gap: 10px;
       .views-row {
         border-bottom: 1px solid #373645;
+        // padding: 10px;
         padding-bottom: 12px;
         background-color: #fff;
-        width: 23.3% !important;
+        // width: 23.3% !important;
+
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
         // margin-left: 20px;
         .views-field-field-image {
           img {
@@ -173,5 +181,113 @@
   }
   a[href*="/taxonomy/term/6"] {
     color: #32ade1;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .block-views-blockmain-page-projects-block-1  {
+    .view-main-page-projects {
+      .view-content {
+        justify-content: center;
+        flex-wrap: wrap;
+        .views-row {
+          // width: 400px;
+          margin: 0 90px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 970px) {
+  .block-views-blockmain-page-projects-block-1  {
+    .view-main-page-projects {
+      .view-content {
+        justify-content: center;
+        flex-wrap: wrap;
+        .views-row {
+          // width: 400px;
+          margin: 0 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 810px) {
+  .block-views-blockmain-page-projects-block-1  {
+    .view-main-page-projects {
+      .view-content {
+        .views-row {
+          // width: 300px;
+          margin: 0 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 690px) {
+  .block-views-blockmain-page-projects-block-1  {
+    .view-main-page-projects {
+      .view-content {
+        .views-row {
+          // width: 250px;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  .block-views-blockmain-page-projects-block-1  {
+    .view-main-page-projects {
+      .view-content {
+        .views-row {
+          width: 190px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .block-views-blockmain-page-projects-block-1  {
+    h2 {
+      padding: 0 20px;
+    }
+    .view-main-page-projects {
+      .view-content {
+        .views-row {
+          width: 280px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 424px) {
+  .block-views-blockmain-page-projects-block-1  {
+    .view-main-page-projects {
+      nav.pager {
+        ul {
+          gap: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .block-views-blockmain-page-projects-block-1  {
+    .view-main-page-projects {
+      nav.pager {
+        ul {
+          gap: 0;
+        }
+      }
+    }
   }
 }
