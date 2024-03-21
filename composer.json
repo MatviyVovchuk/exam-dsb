@@ -36,6 +36,7 @@
         "drupal/core-project-message": "^9",
         "drupal/core-recommended": "^9",
         "drupal/devel": "^5.0",
+        "drupal/draggableviews": "^2.1",
         "drupal/exclude_node_title": "^1.4",
         "drupal/field_group": "^3.4",
         "drupal/flag": "^4.0@beta",

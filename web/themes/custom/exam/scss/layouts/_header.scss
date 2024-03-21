@@ -165,6 +165,11 @@ header {
         border-radius: 0 3px 3px 0;
         padding-right: 25px;
         background-color: transparent;
+        transition: all .5s;
+      }
+      input.btn-primary:hover {
+        border-color: black;
+
       }
       input.form-search {
         border-bottom-right-radius: 0;
