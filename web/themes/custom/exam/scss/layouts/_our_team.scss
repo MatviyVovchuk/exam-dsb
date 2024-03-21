@@ -49,7 +49,20 @@
       display: flex;
       justify-content: space-between;
       .views-row {
-        width: 23.3% !important;
+        // width: 23.3% !important;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px;
+
+        .social-likes {
+          .views-field-view-node-1 {
+            display: none;
+          }
+        }
+
+
         .views-field-field-image {
           a img {
             width: 290px;
@@ -118,6 +131,7 @@
           }
         }
       }
+
       @media (max-width: 1098px) {
         .views-col {
           width: 48% !important;
@@ -143,15 +157,79 @@
   }
 }
 
-.action-flag {
+.action-flag,
+.action-unflag {
   @include flag;
   a {
     font-size: 18px;
   }
 }
-.action-unflag {
-  @include flag;
-  a {
-    font-size: 18px;
+// .action-unflag {
+//   @include flag;
+//   a {
+//     font-size: 18px;
+//   }
+// }
+
+@media (max-width: 1024px) {
+  .block-views-blockmain-page-people-block-1 {
+    .view-main-page-people {
+      .view-content {
+        justify-content: center;
+        flex-wrap: wrap;
+        .views-row {
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .block-views-blockmain-page-people-block-1 {
+    .view-main-page-people {
+      .view-content {
+        .views-row {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .block-views-blockmain-page-people-block-1 {
+    .view-main-page-people {
+      .view-content {
+        .views-row {
+          width: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .block-views-blockmain-page-people-block-1 {
+    .view-main-page-people {
+      .view-content {
+        .views-row {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .block-views-blockmain-page-people-block-1 {
+    padding: 0 20px;
+    .view-main-page-people {
+      .view-content {
+        .views-row {
+          width: 280px;
+        }
+      }
+    }
   }
 }

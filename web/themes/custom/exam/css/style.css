@@ -13763,6 +13763,9 @@ header .block-block-content > .text-formatted p {
   .block-views-blockmain-page-projects-block-1 h2, .block-views-blockmain-page-projects-block-1 .h2 {
     padding: 0 20px;
   }
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects {
+    padding: 0 20px;
+  }
   .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row {
     width: 280px;
   }
@@ -13811,7 +13814,14 @@ header .block-block-content > .text-formatted p {
   justify-content: space-between;
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row {
-  width: 23.3% !important;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-view-node-1 {
+  display: none;
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field-field-image a img {
   width: 290px;
@@ -13881,22 +13891,48 @@ header .block-block-content > .text-formatted p {
   }
 }
 
-.action-flag {
-  text-align: end;
-  margin-right: 40px;
-}
-.action-flag a {
-  font-size: 18px;
-}
-
+.action-flag,
 .action-unflag {
   text-align: end;
   margin-right: 40px;
 }
+.action-flag a,
 .action-unflag a {
   font-size: 18px;
 }
 
+@media (max-width: 1024px) {
+  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row {
+    width: 400px;
+  }
+}
+@media (max-width: 900px) {
+  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row {
+    width: 300px;
+  }
+}
+@media (max-width: 700px) {
+  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row {
+    width: 250px;
+  }
+}
+@media (max-width: 600px) {
+  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row {
+    width: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .block-views-blockmain-page-people-block-1 {
+    padding: 0 20px;
+  }
+  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row {
+    width: 280px;
+  }
+}
 .block-views-blockmain-page-clients-block-1 {
   max-width: 1200px;
   padding: 0 50px;
