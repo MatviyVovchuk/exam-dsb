@@ -14481,8 +14481,21 @@ footer .region-footer .block-social-media-links ul a {
   color: #6e9bca;
 }
 
+@media (max-width: 1100px) {
+  footer .region-footer .navbar-brand .site-title {
+    font-size: 20px;
+  }
+  footer .region-footer .navbar-brand .site-slogan {
+    font-size: 12px;
+  }
+}
 @media (max-width: 990px) {
   footer .region-footer .navbar-brand .site-slogan {
     display: block;
+  }
+}
+@media (max-width: 400px) {
+  footer .region-footer .block-social-media-links ul {
+    font-size: 12px;
   }
 }
