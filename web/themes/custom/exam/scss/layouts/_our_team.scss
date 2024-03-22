@@ -62,7 +62,6 @@
           }
         }
 
-
         .views-field-field-image {
           a img {
             width: 290px;
@@ -171,6 +170,51 @@
 //   }
 // }
 
+@media (max-width: 1200px) {
+  .block-views-blockmain-page-people-block-1 {
+    .view-main-page-people {
+      .view-content {
+        .views-row {
+          .views-field.views-field-fieldset {
+            .social-likes {
+              display: flex;
+              flex-direction: row;
+              .views-field-field-social-links {
+                // padding-left: 20px;
+                ul {
+                  font-size: 12px;
+                }
+              }
+              .views-field.views-field-link-flag {
+                flex: 1;
+                // margin-right: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .block-views-blockmain-page-people-block-1 {
+    .view-main-page-people {
+      .view-content {
+        .views-row {
+          .views-field.views-field-fieldset {
+            .social-likes {
+              .views-field-field-social-links {
+                padding-left: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .block-views-blockmain-page-people-block-1 {
     .view-main-page-people {
@@ -179,6 +223,20 @@
         flex-wrap: wrap;
         .views-row {
           width: 400px;
+          .views-field.views-field-fieldset {
+            .social-likes {
+              justify-content: space-around;
+              .views-field-field-social-links {
+                padding-left: 40px;
+                ul {
+                  font-size: 15px;
+                }
+              }
+              .views-field.views-field-link-flag {
+                flex: auto;
+              }
+            }
+          }
         }
       }
     }
@@ -203,6 +261,16 @@
       .view-content {
         .views-row {
           width: 250px;
+          .views-field.views-field-fieldset {
+            .social-likes {
+              .views-field-field-social-links {
+                padding-left: 30px;
+                ul {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -215,6 +283,21 @@
       .view-content {
         .views-row {
           width: 200px;
+          .views-field.views-field-fieldset {
+            .social-likes {
+              .views-field-field-social-links {
+                padding-left: 10px;
+                ul {
+                  font-size: 12px;
+                }
+              }
+              .views-field.views-field-link-flag {
+                .flag-like {
+                  margin-right: 10px;
+                }
+              }
+            }
+          }
         }
       }
     }

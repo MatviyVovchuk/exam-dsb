@@ -34,11 +34,14 @@
   .slick-track {
     display: flex;
     align-items: center;
-  }
-  .views-field-field-image {
-    img {
-      display: block;
-      margin: 0 auto;
+    .slick-slide {
+      padding: 0 10px;
+    }
+    .views-field-field-image {
+      img {
+        display: block;
+        margin: 0 auto;
+      }
     }
   }
 }
