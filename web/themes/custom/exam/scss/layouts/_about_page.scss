@@ -3,19 +3,17 @@
 @import "../variables/variables";
 @import "../variables/mixins";
 
-//about page style
+// ABOUT PAGE STYLE
 
 .block-system-main-block {
   article[data-history-node-id="6"] {
-    // max-width: $desktop;
-    // margin: 0 auto;
+
     .node__content {
       .layout-- {
         &onecol {
           .block-field-block {
-            // style title
+            // STYLE FOR TITLE TEXT
             &nodepagetitle {
-              // block-field-blocknodepagetitle
               span {
                 text-transform: uppercase;
                 font-size: calc(1rem + 1vw);
@@ -30,7 +28,7 @@
                 }
               }
             }
-            //style body text
+            // STYLE FOR BODY TEXT
             &nodepagebody {
               text-transform: uppercase;
             }

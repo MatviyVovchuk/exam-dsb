@@ -3,7 +3,9 @@
 @import "../variables/variables";
 @import "../variables/mixins";
 
-.block-views-blockmain-page-services-block-1 {
+
+.block-views-blockmain-page-services-block-1,
+.block-views-blockall-services-block-1 {
   @include own-container;
   text-transform: uppercase;
   margin-top: 50px;
@@ -70,7 +72,8 @@
 }
 
 @media (max-width: 1024px) {
-  .block-views-blockmain-page-services-block-1 {
+  .block-views-blockmain-page-services-block-1,
+  .block-views-blockall-services-block-1 {
     .view-main-page-services {
       .view-content {
         justify-content: center;
@@ -84,7 +87,8 @@
 }
 
 @media (max-width: 900px) {
-  .block-views-blockmain-page-services-block-1 {
+  .block-views-blockmain-page-services-block-1,
+  .block-views-blockall-services-block-1 {
     .view-main-page-services {
       .view-content {
         .views-row {
@@ -96,7 +100,8 @@
 }
 
 @media (max-width: 700px) {
-  .block-views-blockmain-page-services-block-1 {
+  .block-views-blockmain-page-services-block-1,
+  .block-views-blockall-services-block-1 {
     .view-main-page-services {
       .view-content {
         .views-row {
@@ -108,7 +113,8 @@
 }
 
 @media (max-width: 600px) {
-  .block-views-blockmain-page-services-block-1 {
+  .block-views-blockmain-page-services-block-1,
+  .block-views-blockall-services-block-1 {
     .view-main-page-services {
       .view-content {
         .views-row {
@@ -120,7 +126,8 @@
 }
 
 @media (max-width: 500px) {
-  .block-views-blockmain-page-services-block-1 {
+  .block-views-blockmain-page-services-block-1,
+  .block-views-blockall-services-block-1 {
     padding: 0 20px;
     .view-main-page-services {
       .view-content {
