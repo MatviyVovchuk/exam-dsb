@@ -1,0 +1,42 @@
+@import "../variables/variables_drupal";
+@import "../variables/variables_bootstrap";
+@import "../variables/variables";
+@import "../variables/mixins";
+
+//about page style
+
+.block-system-main-block {
+  article[data-history-node-id="6"] {
+    // max-width: $desktop;
+    // margin: 0 auto;
+    .node__content {
+      .layout-- {
+        &onecol {
+          .block-field-block {
+            // style title
+            &nodepagetitle {
+              // block-field-blocknodepagetitle
+              span {
+                text-transform: uppercase;
+                font-size: calc(1rem + 1vw);
+                font-weight: 700;
+                text-align: center;
+                margin-bottom:  10px;
+                display: flex;
+                gap: 10px;
+                &::before,
+                &::after {
+                  @include line-title;
+                }
+              }
+            }
+            //style body text
+            &nodepagebody {
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+  }
+}
