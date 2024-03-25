@@ -3,7 +3,39 @@
 @import "../variables/variables";
 @import "../variables/mixins";
 
-.block-views-blockmain-page-projects-block-1 {
+
+.block-views-blockall-projects-block-1 {
+  margin: auto !important;
+  margin-top: 20px !important;
+  max-width: 1250px !important;
+  padding: 0 !important;
+  h2 {
+    max-width: 1250px !important;
+    padding: 0 !important;
+    font-weight: 700 !important;
+  }
+  & > div:last-child {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    background: none !important;
+  }
+  .view-all-projects {
+    max-width: 1250px !important;
+    padding: 0 !important;
+    .view-content {
+      flex-wrap: wrap;
+      gap: 0 !important;
+      .views-row {
+        width: 300px !important;
+        padding: 10px;
+        border-bottom: none !important;
+      }
+    }
+  }
+}
+
+.block-views-blockmain-page-projects-block-1,
+.block-views-blockall-projects-block-1 {
   text-transform: uppercase;
   margin-top: 50px;
   font-family: "Inter", sans-serif;
@@ -30,7 +62,9 @@
       #fff 0px
     );
   }
-  .view-main-page-projects {
+
+  .view-main-page-projects,
+  .view-all-projects {
     @include own-container;
     // @include alingnment;
     a {
@@ -184,10 +218,20 @@
   }
 }
 
-
 @media (max-width: 1024px) {
-  .block-views-blockmain-page-projects-block-1  {
-    .view-main-page-projects {
+  .block-views-blockall-projects-block-1 {
+    .view-all-projects {
+      .view-content {
+        .views-row {
+          margin: 0 !important;
+        }
+      }
+    }
+  }
+  .block-views-blockmain-page-projects-block-1,
+  .block-views-blockall-projects-block-1 {
+    .view-main-page-projects,
+    .view-all-projects {
       .view-content {
         justify-content: center;
         flex-wrap: wrap;
@@ -201,8 +245,10 @@
 }
 
 @media (max-width: 970px) {
-  .block-views-blockmain-page-projects-block-1  {
-    .view-main-page-projects {
+  .block-views-blockmain-page-projects-block-1,
+  .block-views-blockall-projects-block-1 {
+    .view-main-page-projects,
+    .view-all-projects {
       .view-content {
         justify-content: center;
         flex-wrap: wrap;
@@ -216,8 +262,10 @@
 }
 
 @media (max-width: 810px) {
-  .block-views-blockmain-page-projects-block-1  {
-    .view-main-page-projects {
+  .block-views-blockmain-page-projects-block-1,
+  .block-views-blockall-projects-block-1 {
+    .view-main-page-projects,
+    .view-all-projects {
       .view-content {
         .views-row {
           // width: 300px;
@@ -229,8 +277,10 @@
 }
 
 @media (max-width: 690px) {
-  .block-views-blockmain-page-projects-block-1  {
-    .view-main-page-projects {
+  .block-views-blockmain-page-projects-block-1,
+  .block-views-blockall-projects-block-1 {
+    .view-main-page-projects,
+    .view-all-projects {
       .view-content {
         .views-row {
           // width: 250px;
@@ -242,8 +292,10 @@
 }
 
 @media (max-width: 610px) {
-  .block-views-blockmain-page-projects-block-1  {
-    .view-main-page-projects {
+  .block-views-blockmain-page-projects-block-1,
+  .block-views-blockall-projects-block-1 {
+    .view-main-page-projects,
+    .view-all-projects {
       .view-content {
         .views-row {
           width: 190px;
@@ -254,11 +306,13 @@
 }
 
 @media (max-width: 500px) {
-  .block-views-blockmain-page-projects-block-1  {
+  .block-views-blockmain-page-projects-block-1,
+  .block-views-blockall-projects-block-1 {
     h2 {
       padding: 0 20px;
     }
-    .view-main-page-projects {
+    .view-main-page-projects,
+    .view-all-projects {
       padding: 0 20px;
       .view-content {
         .views-row {
@@ -270,8 +324,10 @@
 }
 
 @media (max-width: 424px) {
-  .block-views-blockmain-page-projects-block-1  {
-    .view-main-page-projects {
+  .block-views-blockmain-page-projects-block-1,
+  .block-views-blockall-projects-block-1 {
+    .view-main-page-projects,
+    .view-all-projects {
       nav.pager {
         ul {
           gap: 5px;
@@ -282,8 +338,10 @@
 }
 
 @media (max-width: 390px) {
-  .block-views-blockmain-page-projects-block-1  {
-    .view-main-page-projects {
+  .block-views-blockmain-page-projects-block-1,
+  .block-views-blockall-projects-block-1 {
+    .view-main-page-projects,
+    .view-all-projects {
       nav.pager {
         ul {
           gap: 0;

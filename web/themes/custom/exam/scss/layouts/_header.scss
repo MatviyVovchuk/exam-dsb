@@ -133,6 +133,10 @@ header {
               border-bottom: 7px solid #6f9ccb;
             }
           }
+          a.active,
+          a.is-active {
+            border-bottom: 7px solid #6f9ccb;
+          }
           &:first-child {
             font-size: 0;
             background-image: url("../img/Homepage-menu.png");

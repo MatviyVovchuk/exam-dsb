@@ -28,6 +28,38 @@ body.path-frontpage {
     }
   }
 }
-.block.block-core.block-page-title-block {
-  display: none;
+
+// .block.block-core.block-page-title-block {
+//   display: none;
+// }
+
+.block-system-main-block {
+  article {
+    .node__content {
+      .layout-- {
+        &onecol {
+          .block-field-block {
+            // STYLE FOR TITLE TEXT
+            &nodepagetitle {
+              span {
+                white-space: nowrap;
+                text-transform: uppercase;
+                font-size: calc(1rem + 1vw);
+                font-weight: 700;
+                text-align: center;
+                margin-bottom:  10px;
+                display: flex;
+                gap: 10px;
+                &::before,
+                &::after {
+                  @include line-title;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
+

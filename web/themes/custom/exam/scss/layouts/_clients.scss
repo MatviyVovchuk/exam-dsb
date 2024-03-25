@@ -3,7 +3,32 @@
 @import "../variables/variables";
 @import "../variables/mixins";
 
-.block-views-blockmain-page-clients-block-1 {
+
+.block-views-blockall-clients-block-1 {
+  margin: auto !important;
+  margin-top: 20px !important;
+  max-width: 1250px !important;
+  padding: 0 !important;
+  .view-all-clients {
+    max-width: 1250px !important;
+    padding: 0 !important;
+    .view-content {
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      .views-row {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.block-views-blockmain-page-clients-block-1,
+.block-views-blockall-clients-block-1 {
   @include own-container;
   text-transform: uppercase;
   margin-top: 25px;
@@ -47,7 +72,26 @@
 }
 
 @media (max-width: 500px) {
-  .block-views-blockmain-page-clients-block-1 {
+  .block-views-blockmain-page-clients-block-1,
+  .block-views-blockall-clients-block-1 {
     padding: 0 20px;
+  }
+  .block-views-blockall-clients-block-1 {
+    margin-top: 50px;
+    margin-bottom: 0;
+    .view-all-clients {
+      .view-content {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        .views-row {
+          text-align: center;
+          display: flex;
+          align-items: center;
+          margin: 0 auto;
+        }
+      }
+    }
   }
 }
