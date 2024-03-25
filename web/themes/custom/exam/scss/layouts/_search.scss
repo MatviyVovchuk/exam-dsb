@@ -1,0 +1,133 @@
+@import "../variables/variables_drupal";
+@import "../variables/variables_bootstrap";
+@import "../variables/variables";
+@import "../variables/mixins";
+
+// SEARCH PAGE
+
+.path-search {
+  .block-system-main-block {
+    margin-top: 20px;
+    // SEARCH FORM
+    form {
+      .search-help-link {
+        display: none;
+      }
+      .form-wrapper {
+        .form-type-search {
+          label {
+            font-size: 18px;
+            text-transform: uppercase;
+          }
+        }
+        // SEARCH BTN
+        .form-submit {
+          color: white;
+          width: 100px;
+          background-color: #6e9bca;
+          border-radius: 5px;
+          border: none;
+
+          &:hover {
+            background-color: #373645;
+          }
+        }
+      }
+
+      a {
+        font-size: 16px;
+        font-weight: 400;
+        color: black;
+      }
+    }
+
+    h2 {
+      margin-top: 20px;
+      font-family: "Inter", sans-serif;
+      text-transform: uppercase;
+      position: relative;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 20px;
+      display: flex;
+      white-space: nowrap;
+      gap: 10px;
+      &::before,
+      &::after {
+        @include line-title;
+      }
+    }
+
+    .item-list {
+      h3 {
+        font-family: "Inter", sans-serif;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+    // SEARCH RESULT
+    .item-list {
+      .node_search-results {
+        padding: 0;
+
+        li {
+          border-top: 1px solid $grey;
+          padding: 10px;
+          margin: 5px 10px;
+          transition: all 0.5s;
+
+          &:hover {
+            color: white;
+            strong {
+              color: white;
+            }
+            a {
+              color: white;
+            }
+            background-color: $grey;
+          }
+
+          h3 {
+            a {
+              font-size: 24px;
+              font-family: 600;
+              color: #373645;
+            }
+
+            text-align: left;
+            white-space: normal;
+
+            &:before,
+            &:after {
+              content: "";
+              margin: 0;
+              width: 0;
+            }
+          }
+
+          p {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 524px) {
+  .path-search {
+    .block-system-main-block {
+      margin-top: 20px;
+      // SEARCH FORM
+      form {
+        .form-wrapper {
+          // SEARCH BTN
+          .form-submit {
+            margin: 10px 0 0 0;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
