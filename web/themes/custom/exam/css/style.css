@@ -15178,9 +15178,13 @@ body.path-frontpage main .region-content {
   height: 60px;
   background-color: #e33012;
   color: white;
-  border: 0 solid black;
   border-radius: 3px;
   font-weight: 600;
+  border: 1px solid #e33012;
+}
+.block-system-main-block article[data-history-node-id="8"] .node__content .layout--twocol-section--50-50 .layout__region--first .block-webform-block form > div .form-submit:hover {
+  background-color: white;
+  color: #e33012;
 }
 .block-system-main-block article[data-history-node-id="8"] .node__content .layout--twocol-section--50-50 .layout__region--second {
   font-size: 14px;

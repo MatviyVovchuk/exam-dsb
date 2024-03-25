@@ -77,9 +77,13 @@
                       height: 60px;
                       background-color: #e33012;
                       color: white;
-                      border: 0 solid black;
                       border-radius: 3px;
                       font-weight: 600;
+                      border: 1px solid #e33012;
+                    }
+                    .form-submit:hover {
+                      background-color: white;
+                      color: #e33012;
                     }
 
                     max-width: max-content;
