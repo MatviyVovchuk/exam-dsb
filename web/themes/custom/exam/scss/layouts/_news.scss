@@ -122,6 +122,13 @@
         }
       }
     }
+
+    .view-empty {
+      background-color: white;
+      padding: 20px;
+      font-weight: 600;
+    }
+
     .view-content {
       display: flex;
       & > .views-row:first-child {

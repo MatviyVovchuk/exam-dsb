@@ -1,0 +1,278 @@
+@import "../variables/variables_drupal";
+@import "../variables/variables_bootstrap";
+@import "../variables/variables";
+@import "../variables/mixins";
+
+// CONTACT PAGE
+
+.block-system-main-block {
+  article[data-history-node-id="8"] {
+    // max-width: $desktop;
+    margin: 0 auto;
+    .node__content {
+      margin-bottom: 75px;
+      .layout-- {
+        &onecol {
+          .block-field-block {
+            // STYLE FOR TITLE TEXT
+            &nodepagetitle {
+              span {
+                position: relative;
+                white-space: nowrap;
+                text-transform: uppercase;
+                font-size: calc(1rem + 1vw);
+                font-weight: 700;
+                text-align: center;
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: center;
+                &::after {
+                  content: " ";
+                  border: 2px solid $grey;
+                  box-sizing: border-box;
+                  width: 70px;
+                  margin: auto 0;
+                  position: absolute;
+                  bottom: 0;
+                }
+              }
+            }
+          }
+        }
+
+        &twocol-section--50-50 {
+          flex-wrap: nowrap;
+          width: max-content;
+          margin: 0 auto;
+
+          .layout__region- {
+            // CONTACT FORM STYLE
+            &-first {
+              margin-right: 20px;
+
+              .block-webform-block {
+                width: max-content;
+
+                form {
+                  max-width: max-content;
+
+                  & > div {
+                    // INPUT STYLE
+                    input {
+                      padding: 10px;
+                      width: 462px;
+                      height: 53px;
+                      margin-bottom: 15px;
+                    }
+
+                    textarea {
+                      padding: 10px;
+                      width: 462px;
+                      margin-bottom: 15px;
+                    }
+                    // SUBMIT BUTTON
+                    .form-submit {
+                      text-transform: uppercase;
+                      max-width: 190px;
+                      height: 60px;
+                      background-color: #e33012;
+                      color: white;
+                      border: 0 solid black;
+                      border-radius: 3px;
+                      font-weight: 600;
+                    }
+
+                    max-width: max-content;
+                    margin: 0;
+                  }
+                }
+              }
+            }
+
+            // ADDRESS AND MAP STYLE
+            &-second {
+              font-size: 14px;
+              line-height: 24px;
+              font-family: "Inter", sans-serif;
+              // ADDRESS STYLE
+              .block-block-content {
+                h2 {
+                  text-transform: uppercase;
+                  font-size: 16px;
+                  font-weight: 600;
+                  color: black;
+                  margin: 0;
+                }
+
+                p {
+                  margin-bottom: 0;
+                }
+              }
+              .field--name-field-contact-info {
+                p:last-child {
+                  margin-bottom: 28px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // FORM CONFIRMATION STYLE
+  .webform-confirmation {
+    margin-top: 50px;
+    text-align: center;
+    & div:first-child {
+      font-size: 24px;
+      font-weight: 600;
+      color: #373645;
+    }
+    & div:last-child {
+      a {
+        background-color: #212529;
+        padding: 10px 15px;
+        color: white;
+        transition: all 0.5s;
+        text-decoration: none;
+        &:hover {
+          background-color: #e4e4e4;
+          color: #212529;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .block-system-main-block {
+    article[data-history-node-id="8"] {
+      .node__content {
+        .layout-- {
+          &twocol-section--50-50 {
+            flex-wrap: nowrap;
+            .layout__region- {
+              &first,
+              &second {
+                max-width: 100%;
+                margin: 0 auto;
+                width: auto;
+              }
+              // MAP STYLE
+              &-second {
+                .field--name-field-location {
+                  iframe {
+                    width: 400px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .block-system-main-block {
+    article[data-history-node-id="8"] {
+      .node__content {
+        .layout-- {
+          &twocol-section--50-50 {
+            flex-wrap: wrap;
+            width: 100%;
+            .layout__region- {
+              &-first {
+                margin: 0;
+                .block-webform-block {
+                  width: max-content;
+                  form {
+                    max-width: 100%;
+                    margin: 0;
+                    & > div {
+                      // INPUT STYLE
+                      max-width: 100% !important;
+                      width: 100%;
+                      input {
+                        width: 100%;
+                      }
+                      textarea {
+                        width: 100%;
+                      }
+                    }
+                  }
+                }
+              }
+              // MAP STYLE
+              &-second {
+                .field--name-field-location {
+                  iframe {
+                    width: 700px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .block-system-main-block {
+    article[data-history-node-id="8"] {
+      .node__content {
+        .layout-- {
+          &twocol-section--50-50 {
+            flex-wrap: wrap;
+            width: 100%;
+            .layout__region- {
+              &-first {
+                flex: 1;
+                .block-webform-block {
+                  width: 100%;
+                  max-width: 100%;
+                }
+              }
+              // MAP STYLE
+              &-second {
+                .field--name-field-location {
+                  iframe {
+                    width: 500px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .block-system-main-block {
+    article[data-history-node-id="8"] {
+      .node__content {
+        .layout-- {
+          &twocol-section--50-50 {
+            flex-wrap: wrap;
+            width: 100%;
+            .layout__region- {
+              // MAP STYLE
+              &-second {
+                .field--name-field-location {
+                  iframe {
+                    width: 100% !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
