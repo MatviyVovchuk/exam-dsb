@@ -13957,16 +13957,20 @@ header .block-block-content > .text-formatted p {
   display: none;
 }
 
-.views-field-field-service a[href*="/taxonomy/term/8"] {
+.views-field-field-service a[href*="/taxonomy/term/8"],
+.field--name-field-service a[href*="/taxonomy/term/8"] {
   color: #1bbc9b;
 }
-.views-field-field-service a[href*="/taxonomy/term/7"] {
+.views-field-field-service a[href*="/taxonomy/term/7"],
+.field--name-field-service a[href*="/taxonomy/term/7"] {
   color: #9b58b5;
 }
-.views-field-field-service a[href*="/taxonomy/term/5"] {
+.views-field-field-service a[href*="/taxonomy/term/5"],
+.field--name-field-service a[href*="/taxonomy/term/5"] {
   color: #e84c3d;
 }
-.views-field-field-service a[href*="/taxonomy/term/6"] {
+.views-field-field-service a[href*="/taxonomy/term/6"],
+.field--name-field-service a[href*="/taxonomy/term/6"] {
   color: #32ade1;
 }
 
@@ -15444,6 +15448,408 @@ footer .region-footer .block-social-media-links ul a {
 @media (max-width: 400px) {
   footer .region-footer .block-social-media-links ul {
     font-size: 12px;
+  }
+}
+.block-system-main-block .node--type-service.node--view-mode-full,
+.block-system-main-block .node--type-project.node--view-mode-full,
+.block-system-main-block .node--type-people.node--view-mode-full,
+.block-system-main-block .node--type-client.node--view-mode-full {
+  margin-top: 50px;
+}
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content {
+  padding: 0 20px;
+}
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-image,
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image,
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-image,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-image,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-image,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-image,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-image,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-image,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-image {
+  float: right;
+}
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-image img,
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image img,
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-image img,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-image img,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image img,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-image img,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-image img,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image img,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-image img,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-image img,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image img,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-image img {
+  margin: 30px;
+  margin-top: 0;
+  width: 300px;
+  height: auto;
+}
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicetitle,
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojecttitle,
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclienttitle,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicetitle,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojecttitle,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclienttitle,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicetitle,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojecttitle,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclienttitle,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicetitle,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojecttitle,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclienttitle {
+  font-size: 32px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 70px;
+  font-family: "Inter", sans-serif;
+}
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicebody, .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservice-nodefield-contents,
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectbody,
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeproject-nodefield-contents,
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientbody,
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclient-nodefield-contents,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicebody,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservice-nodefield-contents,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectbody,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeproject-nodefield-contents,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientbody,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclient-nodefield-contents,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicebody,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservice-nodefield-contents,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectbody,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeproject-nodefield-contents,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientbody,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclient-nodefield-contents,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicebody,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservice-nodefield-contents,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectbody,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeproject-nodefield-contents,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientbody,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclient-nodefield-contents {
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+}
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-service,
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-service,
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-service,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-service,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-service,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-service,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-service,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-service,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-service,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-service,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-service,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-service {
+  font-size: 26px;
+}
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-image,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-image,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-image,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-image {
+  width: -moz-max-content;
+  width: max-content;
+}
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-image img,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-image img,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-image img,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-image img {
+  padding: 0 30px 30px 0;
+  margin: 0 20px 20px 0;
+  width: 300px;
+  height: auto;
+}
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeopletitle,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeopletitle,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeopletitle,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeopletitle {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position {
+  height: 50px;
+  font-size: 24px;
+  float: right;
+  font-family: "Inter", sans-serif;
+}
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position a,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position a,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position a,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position a {
+  text-decoration: none;
+  color: #6e9bca;
+}
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links {
+  width: -moz-max-content;
+  width: max-content;
+}
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplebody,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplebody,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplebody,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplebody {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+}
+.block-system-main-block .node--type-article.node--view-mode-full {
+  max-width: 1250px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.block-system-main-block .node--type-article.node--view-mode-full .layout--twocol-section--25-75 .layout__region--first {
+  flex: 0 1 22%;
+  margin-right: 30px;
+  border-right: 1px solid rgb(60, 60, 69);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.block-system-main-block .node--type-article.node--view-mode-full .layout--twocol-section--25-75 .layout__region--first .block-field-blocknodearticlecreated {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  color: black;
+  font-family: "Inter", sans-serif;
+}
+.block-system-main-block .node--type-article.node--view-mode-full .layout--twocol-section--25-75 .layout__region--first .block-field-blocknodearticlefield-people h2, .block-system-main-block .node--type-article.node--view-mode-full .layout--twocol-section--25-75 .layout__region--first .block-field-blocknodearticlefield-people .h2 {
+  display: none;
+}
+.block-system-main-block .node--type-article.node--view-mode-full .layout--twocol-section--25-75 .layout__region--first .block-field-blocknodearticlefield-people .layout__region--content .block-field-blocknodepeoplefield-image {
+  width: 100%;
+  text-align: center;
+}
+.block-system-main-block .node--type-article.node--view-mode-full .layout--twocol-section--25-75 .layout__region--first .block-field-blocknodearticlefield-people .layout__region--content .block-field-blocknodepeopletitle,
+.block-system-main-block .node--type-article.node--view-mode-full .layout--twocol-section--25-75 .layout__region--first .block-field-blocknodearticlefield-people .layout__region--content .block-field-blocknodepeoplefield-position {
+  text-align: center;
+}
+.block-system-main-block .node--type-article.node--view-mode-full .layout--twocol-section--25-75 .layout__region--first .block-field-blocknodearticlefield-people .layout__region--content .block-field-blocknodepeopletitle a,
+.block-system-main-block .node--type-article.node--view-mode-full .layout--twocol-section--25-75 .layout__region--first .block-field-blocknodearticlefield-people .layout__region--content .block-field-blocknodepeoplefield-position a {
+  text-decoration: none;
+  color: black;
+  font-family: "Inter", sans-serif;
+}
+.block-system-main-block .node--type-article.node--view-mode-full .layout--twocol-section--25-75 .layout__region--second {
+  flex: 1;
+}
+.block-system-main-block .node--type-article.node--view-mode-full .layout--twocol-section--25-75 .layout__region--second .block-field-blocknodearticletitle {
+  font-size: 32px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 20px;
+  font-family: "Inter", sans-serif;
+}
+.block-system-main-block .node--type-article.node--view-mode-full .layout--twocol-section--25-75 .layout__region--second .block-field-blocknodearticlebody p, .block-system-main-block .node--type-article.node--view-mode-full .layout--twocol-section--25-75 .layout__region--second .block-field-blocknodearticlefield-contents p {
+  color: black;
+  font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 1000px) {
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-image img,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image img,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-image img,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-image img,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image img,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-image img,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-image img,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image img,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-image img,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-image img,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image img,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-image img {
+    width: 200px;
+  }
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicebody, .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservice-nodefield-contents,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectbody,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeproject-nodefield-contents,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientbody,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclient-nodefield-contents,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicebody,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservice-nodefield-contents,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectbody,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeproject-nodefield-contents,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientbody,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclient-nodefield-contents,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicebody,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservice-nodefield-contents,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectbody,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeproject-nodefield-contents,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientbody,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclient-nodefield-contents,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicebody,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservice-nodefield-contents,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectbody,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeproject-nodefield-contents,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientbody,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclient-nodefield-contents {
+    font-size: 24px;
+  }
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-service,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-service,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-service,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-service,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-service,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-service,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-service,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-service,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-service,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-service,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-service,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-service {
+    font-size: 24px;
+  }
+}
+@media (max-width: 700px) {
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-image img,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image img,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-image img,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-image img,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image img,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-image img,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-image img,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image img,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-image img,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-image img,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image img,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-image img {
+    width: 100px;
+  }
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicetitle,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojecttitle,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclienttitle,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicetitle,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojecttitle,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclienttitle,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicetitle,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojecttitle,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclienttitle,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicetitle,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojecttitle,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclienttitle {
+    text-align: center;
+  }
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicebody, .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservice-nodefield-contents,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectbody,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeproject-nodefield-contents,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientbody,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclient-nodefield-contents,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicebody,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservice-nodefield-contents,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectbody,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeproject-nodefield-contents,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientbody,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclient-nodefield-contents,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicebody,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservice-nodefield-contents,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectbody,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeproject-nodefield-contents,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientbody,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclient-nodefield-contents,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicebody,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservice-nodefield-contents,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectbody,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeproject-nodefield-contents,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientbody,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclient-nodefield-contents {
+    font-size: 18px;
+  }
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-service,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-service,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-service,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-service,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-service,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-service,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-service,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-service,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-service,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-service,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-service,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-service {
+    font-size: 18px;
+  }
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image img,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image img,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image img,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image img {
+    width: 200px;
+  }
+}
+@media (max-width: 400px) {
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-image,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-image,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-image,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-image,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-image,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-image,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicefield-image,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-image,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-image {
+    float: none;
+    text-align: center;
+  }
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicetitle,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojecttitle,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclienttitle,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicetitle,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojecttitle,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclienttitle,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicetitle,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojecttitle,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclienttitle,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeservicetitle,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojecttitle,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclienttitle {
+    font-size: 24px;
+  }
+}
+@media (max-width: 400px) {
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeopletitle {
+    font-size: 24px;
+  }
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position {
+    float: none;
+  }
+}
+@media (max-width: 770px) {
+  .block-system-main-block .node--type-article.node--view-mode-full .layout--twocol-section--25-75 .layout__region--first {
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+  .block-system-main-block .node--type-article.node--view-mode-full .layout--twocol-section--25-75 .layout__region--first .block-field-blocknodearticlecreated {
+    font-size: 24px;
+  }
+  .block-system-main-block .node--type-article.node--view-mode-full .layout--twocol-section--25-75 .layout__region--second {
+    flex: 1;
+  }
+  .block-system-main-block .node--type-article.node--view-mode-full .layout--twocol-section--25-75 .layout__region--second .block-field-blocknodearticletitle {
+    font-size: 24px;
+  }
+}
+@media (max-width: 400px) {
+  .block-system-main-block .node--type-article.node--view-mode-full .layout--twocol-section--25-75 .layout__region--first .block-field-blocknodearticlefield-people .layout__region--content .block-field-blocknodepeoplefield-image {
+    width: 70px;
   }
 }
 .block-system-main-block article[data-history-node-id="6"] .node__content .layout--onecol .block-field-blocknodepagetitle span {

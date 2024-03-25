@@ -1,0 +1,347 @@
+@import "../variables/variables_drupal";
+@import "../variables/variables_bootstrap";
+@import "../variables/variables";
+@import "../variables/mixins";
+
+// NODE STYLE FOR services, projects, clients
+.block-system-main-block {
+  .node--type-service.node--view-mode-full,
+  .node--type-project.node--view-mode-full,
+  .node--type-people.node--view-mode-full,
+  .node--type-client.node--view-mode-full {
+    margin-top: 50px;
+
+    .node__content {
+      .layout__region--content {
+        padding: 0 20px;
+        .block-field-blocknodeservice,
+        .block-field-blocknodeproject,
+        .block-field-blocknodeclient {
+          // IMG STYLE
+          &field-image {
+            float: right;
+            img {
+              margin: 30px;
+              margin-top: 0;
+              width: 300px;
+              height: auto;
+            }
+          }
+          // TITLE BLOCK STYLE
+          &title {
+            font-size: 32px;
+            font-weight: 600;
+            color: black;
+            margin-bottom: 70px;
+            font-family: "Inter", sans-serif;
+          }
+          // CONTENT STYLE
+          &body,
+          &-nodefield-contents {
+            font-size: 32px;
+            font-family: "Inter", sans-serif;
+          }
+
+          &field-service {
+            font-size: 26px;
+          }
+        }
+        // TEAM FIELD
+        .block-field-blocknodepeople {
+          // IMAGE STYLE
+          &field-image {
+            width: max-content;
+
+            img {
+              padding: 0 30px 30px 0;
+              margin: 0 20px 20px 0;
+              width: 300px;
+              height: auto;
+            }
+          }
+          // TEAM NAME
+          &title {
+            display: flex;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: 600;
+            font-family: "Inter", sans-serif;
+          }
+          // POSITION
+          &field-position {
+            height: 50px;
+            font-size: 24px;
+            float: right;
+            font-family: "Inter", sans-serif;
+
+            a {
+              text-decoration: none;
+              color: #6e9bca;
+            }
+          }
+          // SOCIAL LINKS
+          &field-social-links {
+            width: max-content;
+          }
+          &body {
+            font-size: 24px;
+            font-family: "Inter", sans-serif;
+          }
+        }
+      }
+    }
+  }
+  // NEWS NODE
+  .node--type-article.node--view-mode-full {
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    .layout--twocol-section--25-75 {
+      .layout__region {
+        &--first {
+          flex: 0 1 22%;
+          margin-right: 30px;
+          border-right: 1px solid $grey;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+
+          .block-field-blocknodearticle {
+            // date style
+            &created {
+              width: 100%;
+              height: max-content;
+              text-align: center;
+              text-transform: uppercase;
+              font-size: 32px;
+              font-weight: 600;
+              color: black;
+              font-family: "Inter", sans-serif;
+            }
+          }
+          .block-field-blocknodearticlefield-people {
+            h2 {
+              display: none;
+            }
+            .layout__region--content {
+              .block-field-blocknodepeoplefield-image {
+                width: 100%;
+                text-align: center;
+              }
+              .block-field-blocknodepeopletitle,
+              .block-field-blocknodepeoplefield-position {
+                text-align: center;
+                a {
+                  text-decoration: none;
+                  color: black;
+                  font-family: "Inter", sans-serif;
+                }
+              }
+            }
+          }
+        }
+
+        &--second {
+          flex: 1;
+
+          .block-field-blocknodearticle {
+            // title news style
+            &title {
+              font-size: 32px;
+              font-weight: 600;
+              color: black;
+              margin-bottom: 20px;
+              font-family: "Inter", sans-serif;
+            }
+            //content style
+            &body,
+            &field-contents {
+              p {
+                color: black;
+                font-family: "Inter", sans-serif;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .block-system-main-block {
+    .node--type-service.node--view-mode-full,
+    .node--type-project.node--view-mode-full,
+    .node--type-people.node--view-mode-full,
+    .node--type-client.node--view-mode-full {
+      .node__content {
+        .layout__region--content {
+          .block-field-blocknodeservice,
+          .block-field-blocknodeproject,
+          .block-field-blocknodeclient {
+            // IMG STYLE
+            &field-image {
+              img {
+                width: 200px;
+              }
+            }
+            // CONTENT STYLE
+            &body,
+            &-nodefield-contents {
+              font-size: 24px;
+            }
+
+            &field-service {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .block-system-main-block {
+    .node--type-service.node--view-mode-full,
+    .node--type-project.node--view-mode-full,
+    .node--type-people.node--view-mode-full,
+    .node--type-client.node--view-mode-full {
+      .node__content {
+        .layout__region--content {
+          .block-field-blocknodeservice,
+          .block-field-blocknodeproject,
+          .block-field-blocknodeclient {
+            // IMG STYLE
+            &field-image {
+              img {
+                width: 100px;
+              }
+            }
+            // TITLE STYLE
+            &title {
+              text-align: center;
+            }
+            // CONTENT STYLE
+            &body,
+            &-nodefield-contents {
+              font-size: 18px;
+            }
+
+            &field-service {
+              font-size: 18px;
+            }
+          }
+          .block-field-blocknodeproject {
+            &field-image {
+              img {
+                width: 200px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .block-system-main-block {
+    .node--type-service.node--view-mode-full,
+    .node--type-project.node--view-mode-full,
+    .node--type-people.node--view-mode-full,
+    .node--type-client.node--view-mode-full {
+      .node__content {
+        .layout__region--content {
+          .block-field-blocknodeservice,
+          .block-field-blocknodeproject,
+          .block-field-blocknodeclient {
+            // IMG STYLE
+            &field-image {
+              float: none;
+              text-align: center;
+            }
+            // TITLE BLOCK STYLE
+            &title {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .block-system-main-block {
+    .node--type-people.node--view-mode-full {
+      .node__content {
+        .layout__region--content {
+          // TEAM FIELD
+          .block-field-blocknodepeople {
+            // TEAM NAME
+            &title {
+              font-size: 24px;
+            }
+            // POSITION
+            &field-position {
+              float: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .block-system-main-block {
+    .node--type-article.node--view-mode-full {
+      .layout--twocol-section--25-75 {
+        .layout__region {
+          &--first {
+            margin-right: 10px;
+            padding-right: 10px;
+            .block-field-blocknodearticle {
+              // date style
+              &created {
+                font-size: 24px;
+              }
+            }
+          }
+          &--second {
+            flex: 1;
+            .block-field-blocknodearticle {
+              // title news style
+              &title {
+                font-size: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .block-system-main-block {
+    .node--type-article.node--view-mode-full {
+      .layout--twocol-section--25-75 {
+        .layout__region {
+          &--first {
+            .block-field-blocknodearticlefield-people {
+              .layout__region--content {
+                .block-field-blocknodepeoplefield-image {
+                  width: 70px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
