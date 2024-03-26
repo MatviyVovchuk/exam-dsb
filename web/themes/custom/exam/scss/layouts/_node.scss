@@ -50,11 +50,11 @@
         .block-field-blocknodepeople {
           // IMAGE STYLE
           &field-image {
-            width: max-content;
+            display: flex;
+            justify-content: center;
+            width: 100%;
 
             img {
-              padding: 0 30px 30px 0;
-              margin: 0 20px 20px 0;
               width: 300px;
               height: auto;
             }
@@ -69,9 +69,9 @@
           }
           // POSITION
           &field-position {
-            height: 50px;
+            // height: 50px;
             font-size: 24px;
-            float: right;
+            // float: right;
             font-family: "Inter", sans-serif;
 
             a {
@@ -82,10 +82,37 @@
           // SOCIAL LINKS
           &field-social-links {
             width: max-content;
+            ul {
+              li {
+                a {
+                  color: #6e9bca;
+                }
+              }
+            }
           }
           &body {
             font-size: 24px;
             font-family: "Inter", sans-serif;
+          }
+        }
+        .block-extra-field-blocknodepeopleflag-like {
+          width: min-content;
+          .flag-like {
+            margin: 0;
+            a {
+              color: #e84c3d;
+              font-size: 18px;
+            }
+          }
+        }
+        .block-field-blocknodepeoplefield-position,
+        .block-field-blocknodepeoplefield-social-links,
+        .block-extra-field-blocknodepeopleflag-like {
+          display: inline-block;
+          width: 33%;
+          text-align: center;
+          .flag-like {
+            text-align: center;
           }
         }
       }
@@ -108,7 +135,7 @@
           flex-wrap: wrap;
 
           .block-field-blocknodearticle {
-            // date style
+            // DATE STYLE
             &created {
               width: 100%;
               height: max-content;
@@ -146,7 +173,7 @@
           flex: 1;
 
           .block-field-blocknodearticle {
-            // title news style
+            // NEWS TITLE
             &title {
               font-size: 32px;
               font-weight: 600;
@@ -154,7 +181,7 @@
               margin-bottom: 20px;
               font-family: "Inter", sans-serif;
             }
-            //content style
+            // CONTENT
             &body,
             &field-contents {
               p {
@@ -195,6 +222,45 @@
             &field-service {
               font-size: 24px;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .block-system-main-block {
+    .node--type-service.node--view-mode-full,
+    .node--type-project.node--view-mode-full,
+    .node--type-people.node--view-mode-full,
+    .node--type-client.node--view-mode-full {
+      .node__content {
+        .layout__region--content {
+          .block-field-blocknodepeoplefield-position,
+          .block-field-blocknodepeoplefield-social-links,
+          .block-extra-field-blocknodepeopleflag-like {
+            width: 32.5%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .block-system-main-block {
+    .node--type-service.node--view-mode-full,
+    .node--type-project.node--view-mode-full,
+    .node--type-people.node--view-mode-full,
+    .node--type-client.node--view-mode-full {
+      .node__content {
+        .layout__region--content {
+          .block-field-blocknodepeoplefield-position,
+          .block-field-blocknodepeoplefield-social-links,
+          .block-extra-field-blocknodepeopleflag-like {
+            display: block;
+            width: auto;
           }
         }
       }
@@ -304,7 +370,7 @@
             margin-right: 10px;
             padding-right: 10px;
             .block-field-blocknodearticle {
-              // date style
+              // NEWS DATE
               &created {
                 font-size: 24px;
               }
@@ -313,7 +379,7 @@
           &--second {
             flex: 1;
             .block-field-blocknodearticle {
-              // title news style
+              // NEWS TITLE
               &title {
                 font-size: 24px;
               }
@@ -344,4 +410,3 @@
     }
   }
 }
-

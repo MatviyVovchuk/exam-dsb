@@ -4,7 +4,8 @@
 @import "../variables/mixins";
 
 
-.block-views-blockall-projects-block-1 {
+.block-views-blockall-projects-block-1,
+.block-views-blockservice-project-term-block-1 {
   margin: auto !important;
   margin-top: 20px !important;
   max-width: 1250px !important;
@@ -19,7 +20,8 @@
     padding-top: 0px !important;
     background: none !important;
   }
-  .view-all-projects {
+  .view-all-projects,
+  .view-service-project-term {
     max-width: 1250px !important;
     padding: 0 !important;
     .view-content {
@@ -35,7 +37,8 @@
 }
 
 .block-views-blockmain-page-projects-block-1,
-.block-views-blockall-projects-block-1 {
+.block-views-blockall-projects-block-1,
+.block-views-blockservice-project-term-block-1 {
   text-transform: uppercase;
   margin-top: 50px;
   font-family: "Inter", sans-serif;
@@ -64,7 +67,8 @@
   }
 
   .view-main-page-projects,
-  .view-all-projects {
+  .view-all-projects,
+  .view-service-project-term {
     @include own-container;
     // @include alingnment;
     a {
@@ -111,9 +115,16 @@
             //margin: 0 auto;
             padding: 3px 0;
             border-radius: 3px;
+            transition: all 0.3s;
             a {
               color: #fff;
               padding: 6px 10px;
+            }
+          }
+          span:hover {
+            background-color: #6e9bca;
+            a {
+              color: #fff;
             }
           }
         }
@@ -220,8 +231,10 @@
 }
 
 @media (max-width: 1024px) {
-  .block-views-blockall-projects-block-1 {
-    .view-all-projects {
+  .block-views-blockall-projects-block-1,
+  .block-views-blockservice-project-term-block-1 {
+    .view-all-projects,
+    .view-service-project-term {
       .view-content {
         .views-row {
           margin: 0 !important;
@@ -230,9 +243,11 @@
     }
   }
   .block-views-blockmain-page-projects-block-1,
-  .block-views-blockall-projects-block-1 {
+  .block-views-blockall-projects-block-1,
+  .block-views-blockservice-project-term-block-1 {
     .view-main-page-projects,
-    .view-all-projects {
+    .view-all-projects,
+    .view-service-project-term {
       .view-content {
         justify-content: center;
         flex-wrap: wrap;
@@ -247,9 +262,11 @@
 
 @media (max-width: 970px) {
   .block-views-blockmain-page-projects-block-1,
-  .block-views-blockall-projects-block-1 {
+  .block-views-blockall-projects-block-1,
+  .block-views-blockservice-project-term-block-1 {
     .view-main-page-projects,
-    .view-all-projects {
+    .view-all-projects,
+    .view-service-project-term {
       .view-content {
         justify-content: center;
         flex-wrap: wrap;
@@ -264,9 +281,11 @@
 
 @media (max-width: 810px) {
   .block-views-blockmain-page-projects-block-1,
-  .block-views-blockall-projects-block-1 {
+  .block-views-blockall-projects-block-1,
+  .block-views-blockservice-project-term-block-1 {
     .view-main-page-projects,
-    .view-all-projects {
+    .view-all-projects,
+    .view-service-project-term {
       .view-content {
         .views-row {
           // width: 300px;
@@ -279,9 +298,11 @@
 
 @media (max-width: 690px) {
   .block-views-blockmain-page-projects-block-1,
-  .block-views-blockall-projects-block-1 {
+  .block-views-blockall-projects-block-1,
+  .block-views-blockservice-project-term-block-1 {
     .view-main-page-projects,
-    .view-all-projects {
+    .view-all-projects,
+    .view-service-project-term {
       .view-content {
         .views-row {
           // width: 250px;
@@ -294,9 +315,11 @@
 
 @media (max-width: 610px) {
   .block-views-blockmain-page-projects-block-1,
-  .block-views-blockall-projects-block-1 {
+  .block-views-blockall-projects-block-1,
+  .block-views-blockservice-project-term-block-1 {
     .view-main-page-projects,
-    .view-all-projects {
+    .view-all-projects,
+    .view-service-project-term {
       .view-content {
         .views-row {
           width: 190px;
@@ -308,12 +331,14 @@
 
 @media (max-width: 500px) {
   .block-views-blockmain-page-projects-block-1,
-  .block-views-blockall-projects-block-1 {
+  .block-views-blockall-projects-block-1,
+  .block-views-blockservice-project-term-block-1 {
     h2 {
       padding: 0 20px;
     }
     .view-main-page-projects,
-    .view-all-projects {
+    .view-all-projects,
+    .view-service-project-term {
       padding: 0 20px;
       .view-content {
         .views-row {
@@ -326,9 +351,11 @@
 
 @media (max-width: 424px) {
   .block-views-blockmain-page-projects-block-1,
-  .block-views-blockall-projects-block-1 {
+  .block-views-blockall-projects-block-1,
+  .block-views-blockservice-project-term-block-1 {
     .view-main-page-projects,
-    .view-all-projects {
+    .view-all-projects,
+    .view-service-project-term {
       nav.pager {
         ul {
           gap: 5px;
@@ -340,9 +367,11 @@
 
 @media (max-width: 390px) {
   .block-views-blockmain-page-projects-block-1,
-  .block-views-blockall-projects-block-1 {
+  .block-views-blockall-projects-block-1,
+  .block-views-blockservice-project-term-block-1 {
     .view-main-page-projects,
-    .view-all-projects {
+    .view-all-projects,
+    .view-service-project-term {
       nav.pager {
         ul {
           gap: 0;

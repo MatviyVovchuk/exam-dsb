@@ -270,10 +270,18 @@
               padding: 7px 0.5em;
               background-color: #373645;
               border-radius: 3px;
+              transition: all .3s;
               a {
                 color: #fff;
               }
             }
+            .field-content:hover {
+              background-color: #6e9bca;
+              a {
+                color: #fff;
+              }
+            }
+
           }
         }
 

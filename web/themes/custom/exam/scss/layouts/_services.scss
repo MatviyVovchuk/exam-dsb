@@ -74,9 +74,16 @@
           margin: 0 auto;
           padding: 3px 0;
           border-radius: 3px;
+          transition: all 0.3s;
           a {
             font-size: 14px;
             text-decoration: none;
+            color: #fff;
+          }
+        }
+        span:hover {
+          background-color: rgb(55, 54, 69);
+          a {
             color: #fff;
           }
         }

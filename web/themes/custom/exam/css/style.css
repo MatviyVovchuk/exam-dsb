@@ -13638,6 +13638,7 @@ header .block-block-content > .text-formatted p {
   margin: 0 auto;
   padding: 3px 0;
   border-radius: 3px;
+  transition: all 0.3s;
 }
 .block-views-blockmain-page-services-block-1 .view-main-page-services .view-content .views-field-view-node span a,
 .block-views-blockmain-page-services-block-1 .view-all-services .view-content .views-field-view-node span a,
@@ -13645,6 +13646,18 @@ header .block-block-content > .text-formatted p {
 .block-views-blockall-services-block-1 .view-all-services .view-content .views-field-view-node span a {
   font-size: 14px;
   text-decoration: none;
+  color: #fff;
+}
+.block-views-blockmain-page-services-block-1 .view-main-page-services .view-content .views-field-view-node span:hover,
+.block-views-blockmain-page-services-block-1 .view-all-services .view-content .views-field-view-node span:hover,
+.block-views-blockall-services-block-1 .view-main-page-services .view-content .views-field-view-node span:hover,
+.block-views-blockall-services-block-1 .view-all-services .view-content .views-field-view-node span:hover {
+  background-color: rgb(55, 54, 69);
+}
+.block-views-blockmain-page-services-block-1 .view-main-page-services .view-content .views-field-view-node span:hover a,
+.block-views-blockmain-page-services-block-1 .view-all-services .view-content .views-field-view-node span:hover a,
+.block-views-blockall-services-block-1 .view-main-page-services .view-content .views-field-view-node span:hover a,
+.block-views-blockall-services-block-1 .view-all-services .view-content .views-field-view-node span:hover a {
   color: #fff;
 }
 
@@ -13699,45 +13712,61 @@ header .block-block-content > .text-formatted p {
     width: 280px;
   }
 }
-.block-views-blockall-projects-block-1 {
+.block-views-blockall-projects-block-1,
+.block-views-blockservice-project-term-block-1 {
   margin: auto !important;
   margin-top: 20px !important;
   max-width: 1250px !important;
   padding: 0 !important;
 }
-.block-views-blockall-projects-block-1 h2, .block-views-blockall-projects-block-1 .h2 {
+.block-views-blockall-projects-block-1 h2, .block-views-blockall-projects-block-1 .h2,
+.block-views-blockservice-project-term-block-1 h2,
+.block-views-blockservice-project-term-block-1 .h2 {
   max-width: 1250px !important;
   padding: 0 !important;
   font-weight: 700 !important;
 }
-.block-views-blockall-projects-block-1 > div:last-child {
+.block-views-blockall-projects-block-1 > div:last-child,
+.block-views-blockservice-project-term-block-1 > div:last-child {
   margin-top: 0px !important;
   padding-top: 0px !important;
   background: none !important;
 }
-.block-views-blockall-projects-block-1 .view-all-projects {
+.block-views-blockall-projects-block-1 .view-all-projects,
+.block-views-blockall-projects-block-1 .view-service-project-term,
+.block-views-blockservice-project-term-block-1 .view-all-projects,
+.block-views-blockservice-project-term-block-1 .view-service-project-term {
   max-width: 1250px !important;
   padding: 0 !important;
 }
-.block-views-blockall-projects-block-1 .view-all-projects .view-content {
+.block-views-blockall-projects-block-1 .view-all-projects .view-content,
+.block-views-blockall-projects-block-1 .view-service-project-term .view-content,
+.block-views-blockservice-project-term-block-1 .view-all-projects .view-content,
+.block-views-blockservice-project-term-block-1 .view-service-project-term .view-content {
   flex-wrap: wrap;
   gap: 0 !important;
 }
-.block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row {
+.block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row,
+.block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-row,
+.block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-row,
+.block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-row {
   width: 300px !important;
   padding: 10px;
   border-bottom: none !important;
 }
 
 .block-views-blockmain-page-projects-block-1,
-.block-views-blockall-projects-block-1 {
+.block-views-blockall-projects-block-1,
+.block-views-blockservice-project-term-block-1 {
   text-transform: uppercase;
   margin-top: 50px;
   font-family: "Inter", sans-serif;
 }
 .block-views-blockmain-page-projects-block-1 > h2, .block-views-blockmain-page-projects-block-1 > .h2,
 .block-views-blockall-projects-block-1 > h2,
-.block-views-blockall-projects-block-1 > .h2 {
+.block-views-blockall-projects-block-1 > .h2,
+.block-views-blockservice-project-term-block-1 > h2,
+.block-views-blockservice-project-term-block-1 > .h2 {
   max-width: 1200px;
   padding: 0 50px;
   margin: 0 auto;
@@ -13751,7 +13780,11 @@ header .block-block-content > .text-formatted p {
 .block-views-blockall-projects-block-1 > h2::before,
 .block-views-blockall-projects-block-1 > .h2::before,
 .block-views-blockall-projects-block-1 > h2::after,
-.block-views-blockall-projects-block-1 > .h2::after {
+.block-views-blockall-projects-block-1 > .h2::after,
+.block-views-blockservice-project-term-block-1 > h2::before,
+.block-views-blockservice-project-term-block-1 > .h2::before,
+.block-views-blockservice-project-term-block-1 > h2::after,
+.block-views-blockservice-project-term-block-1 > .h2::after {
   content: " ";
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -13759,29 +13792,45 @@ header .block-block-content > .text-formatted p {
   margin: auto 0;
 }
 .block-views-blockmain-page-projects-block-1 > div:last-child,
-.block-views-blockall-projects-block-1 > div:last-child {
+.block-views-blockall-projects-block-1 > div:last-child,
+.block-views-blockservice-project-term-block-1 > div:last-child {
   margin-top: 18px;
   padding-top: 69px;
   background: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.1), #fff 2px, #fff 10px, #fff 0px);
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects,
 .block-views-blockmain-page-projects-block-1 .view-all-projects,
+.block-views-blockmain-page-projects-block-1 .view-service-project-term,
 .block-views-blockall-projects-block-1 .view-main-page-projects,
-.block-views-blockall-projects-block-1 .view-all-projects {
+.block-views-blockall-projects-block-1 .view-all-projects,
+.block-views-blockall-projects-block-1 .view-service-project-term,
+.block-views-blockservice-project-term-block-1 .view-main-page-projects,
+.block-views-blockservice-project-term-block-1 .view-all-projects,
+.block-views-blockservice-project-term-block-1 .view-service-project-term {
   max-width: 1200px;
   padding: 0 50px;
   margin: 0 auto;
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects a,
 .block-views-blockmain-page-projects-block-1 .view-all-projects a,
+.block-views-blockmain-page-projects-block-1 .view-service-project-term a,
 .block-views-blockall-projects-block-1 .view-main-page-projects a,
-.block-views-blockall-projects-block-1 .view-all-projects a {
+.block-views-blockall-projects-block-1 .view-all-projects a,
+.block-views-blockall-projects-block-1 .view-service-project-term a,
+.block-views-blockservice-project-term-block-1 .view-main-page-projects a,
+.block-views-blockservice-project-term-block-1 .view-all-projects a,
+.block-views-blockservice-project-term-block-1 .view-service-project-term a {
   text-decoration: none;
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content,
 .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content,
+.block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content,
 .block-views-blockall-projects-block-1 .view-main-page-projects .view-content,
-.block-views-blockall-projects-block-1 .view-all-projects .view-content {
+.block-views-blockall-projects-block-1 .view-all-projects .view-content,
+.block-views-blockall-projects-block-1 .view-service-project-term .view-content,
+.block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content,
+.block-views-blockservice-project-term-block-1 .view-all-projects .view-content,
+.block-views-blockservice-project-term-block-1 .view-service-project-term .view-content {
   text-align: center;
   display: flex;
   justify-content: space-between;
@@ -13789,8 +13838,13 @@ header .block-block-content > .text-formatted p {
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row,
 .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-row,
+.block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-row,
 .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-row,
-.block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row {
+.block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row,
+.block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-row,
+.block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-row,
+.block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-row,
+.block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-row {
   border-bottom: 1px solid #373645;
   padding-bottom: 12px;
   background-color: #fff;
@@ -13801,72 +13855,145 @@ header .block-block-content > .text-formatted p {
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row .views-field-field-image img,
 .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-row .views-field-field-image img,
+.block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-row .views-field-field-image img,
 .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-row .views-field-field-image img,
-.block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row .views-field-field-image img {
+.block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row .views-field-field-image img,
+.block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-row .views-field-field-image img,
+.block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-row .views-field-field-image img,
+.block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-row .views-field-field-image img,
+.block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-row .views-field-field-image img {
   width: 290px;
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row .views-field.views-field-title,
 .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-row .views-field.views-field-title,
+.block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-row .views-field.views-field-title,
 .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-row .views-field.views-field-title,
-.block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row .views-field.views-field-title {
+.block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row .views-field.views-field-title,
+.block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-row .views-field.views-field-title,
+.block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-row .views-field.views-field-title,
+.block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-row .views-field.views-field-title,
+.block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-row .views-field.views-field-title {
   margin: 32px 0 3px;
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row .views-field.views-field-title a,
 .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-row .views-field.views-field-title a,
+.block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-row .views-field.views-field-title a,
 .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-row .views-field.views-field-title a,
-.block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row .views-field.views-field-title a {
+.block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row .views-field.views-field-title a,
+.block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-row .views-field.views-field-title a,
+.block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-row .views-field.views-field-title a,
+.block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-row .views-field.views-field-title a,
+.block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-row .views-field.views-field-title a {
   font-size: 1.5rem;
   text-decoration: none;
   color: #000;
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row .views-field-view-node span,
 .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-row .views-field-view-node span,
+.block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-row .views-field-view-node span,
 .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-row .views-field-view-node span,
-.block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row .views-field-view-node span {
+.block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row .views-field-view-node span,
+.block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-row .views-field-view-node span,
+.block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-row .views-field-view-node span,
+.block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-row .views-field-view-node span,
+.block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-row .views-field-view-node span {
   display: inline-block;
   margin-top: 17px;
   background-color: rgb(55, 54, 69);
   padding: 3px 0;
   border-radius: 3px;
+  transition: all 0.3s;
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row .views-field-view-node span a,
 .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-row .views-field-view-node span a,
+.block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-row .views-field-view-node span a,
 .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-row .views-field-view-node span a,
-.block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row .views-field-view-node span a {
+.block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row .views-field-view-node span a,
+.block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-row .views-field-view-node span a,
+.block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-row .views-field-view-node span a,
+.block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-row .views-field-view-node span a,
+.block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-row .views-field-view-node span a {
   color: #fff;
   padding: 6px 10px;
+}
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row .views-field-view-node span:hover,
+.block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-row .views-field-view-node span:hover,
+.block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-row .views-field-view-node span:hover,
+.block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-row .views-field-view-node span:hover,
+.block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row .views-field-view-node span:hover,
+.block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-row .views-field-view-node span:hover,
+.block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-row .views-field-view-node span:hover,
+.block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-row .views-field-view-node span:hover,
+.block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-row .views-field-view-node span:hover {
+  background-color: #6e9bca;
+}
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row .views-field-view-node span:hover a,
+.block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-row .views-field-view-node span:hover a,
+.block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-row .views-field-view-node span:hover a,
+.block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-row .views-field-view-node span:hover a,
+.block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row .views-field-view-node span:hover a,
+.block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-row .views-field-view-node span:hover a,
+.block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-row .views-field-view-node span:hover a,
+.block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-row .views-field-view-node span:hover a,
+.block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-row .views-field-view-node span:hover a {
+  color: #fff;
 }
 @media (max-width: 1260px) {
   .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-col,
   .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-col,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-col,
   .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-col,
-  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-col {
+  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-col,
+  .block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-col,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-col,
+  .block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-col,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-col {
     width: 22% !important;
   }
   .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-col .views-field.views-field-title a,
   .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-col .views-field.views-field-title a,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-col .views-field.views-field-title a,
   .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-col .views-field.views-field-title a,
-  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-col .views-field.views-field-title a {
+  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-col .views-field.views-field-title a,
+  .block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-col .views-field.views-field-title a,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-col .views-field.views-field-title a,
+  .block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-col .views-field.views-field-title a,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-col .views-field.views-field-title a {
     font-size: 1.3rem;
   }
   .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-col .views-field-field-projects-image,
   .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-col .views-field-field-projects-image,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-col .views-field-field-projects-image,
   .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-col .views-field-field-projects-image,
-  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-col .views-field-field-projects-image {
+  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-col .views-field-field-projects-image,
+  .block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-col .views-field-field-projects-image,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-col .views-field-field-projects-image,
+  .block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-col .views-field-field-projects-image,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-col .views-field-field-projects-image {
     height: auto;
   }
   .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-col .views-field-field-projects-image img,
   .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-col .views-field-field-projects-image img,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-col .views-field-field-projects-image img,
   .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-col .views-field-field-projects-image img,
-  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-col .views-field-field-projects-image img {
+  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-col .views-field-field-projects-image img,
+  .block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-col .views-field-field-projects-image img,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-col .views-field-field-projects-image img,
+  .block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-col .views-field-field-projects-image img,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-col .views-field-field-projects-image img {
     height: 22vw;
   }
 }
 @media (max-width: 950px) {
   .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-col,
   .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-col,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-col,
   .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-col,
-  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-col {
+  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-col,
+  .block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-col,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-col,
+  .block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-col,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-col {
     display: block;
     width: 46% !important;
     margin-bottom: 20px;
@@ -13875,85 +14002,150 @@ header .block-block-content > .text-formatted p {
   }
   .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-col .views-field-field-projects-image img,
   .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-col .views-field-field-projects-image img,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-col .views-field-field-projects-image img,
   .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-col .views-field-field-projects-image img,
-  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-col .views-field-field-projects-image img {
+  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-col .views-field-field-projects-image img,
+  .block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-col .views-field-field-projects-image img,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-col .views-field-field-projects-image img,
+  .block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-col .views-field-field-projects-image img,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-col .views-field-field-projects-image img {
     height: 35vw;
   }
 }
 @media (max-width: 520px) {
   .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-col,
   .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-col,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-col,
   .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-col,
-  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-col {
+  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-col,
+  .block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-col,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-col,
+  .block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-col,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-col {
     width: 98% !important;
     margin-left: 0;
   }
   .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-col .views-field-field-projects-image img,
   .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-col .views-field-field-projects-image img,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-col .views-field-field-projects-image img,
   .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-col .views-field-field-projects-image img,
-  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-col .views-field-field-projects-image img {
+  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-col .views-field-field-projects-image img,
+  .block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-col .views-field-field-projects-image img,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-col .views-field-field-projects-image img,
+  .block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-col .views-field-field-projects-image img,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-col .views-field-field-projects-image img {
     height: 55vw;
   }
 }
 @media (max-width: 460px) {
   .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-field-field-projects-image img,
   .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-field-field-projects-image img,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-field-field-projects-image img,
   .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-field-field-projects-image img,
-  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-field-field-projects-image img {
+  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-field-field-projects-image img,
+  .block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-field-field-projects-image img,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-field-field-projects-image img,
+  .block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-field-field-projects-image img,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-field-field-projects-image img {
     height: 70vw;
   }
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination,
 .block-views-blockmain-page-projects-block-1 .view-all-projects nav ul.pagination,
+.block-views-blockmain-page-projects-block-1 .view-service-project-term nav ul.pagination,
 .block-views-blockall-projects-block-1 .view-main-page-projects nav ul.pagination,
-.block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination {
+.block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination,
+.block-views-blockall-projects-block-1 .view-service-project-term nav ul.pagination,
+.block-views-blockservice-project-term-block-1 .view-main-page-projects nav ul.pagination,
+.block-views-blockservice-project-term-block-1 .view-all-projects nav ul.pagination,
+.block-views-blockservice-project-term-block-1 .view-service-project-term nav ul.pagination {
   gap: 10px;
   margin-top: 40px;
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination li a,
 .block-views-blockmain-page-projects-block-1 .view-all-projects nav ul.pagination li a,
+.block-views-blockmain-page-projects-block-1 .view-service-project-term nav ul.pagination li a,
 .block-views-blockall-projects-block-1 .view-main-page-projects nav ul.pagination li a,
-.block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination li a {
+.block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination li a,
+.block-views-blockall-projects-block-1 .view-service-project-term nav ul.pagination li a,
+.block-views-blockservice-project-term-block-1 .view-main-page-projects nav ul.pagination li a,
+.block-views-blockservice-project-term-block-1 .view-all-projects nav ul.pagination li a,
+.block-views-blockservice-project-term-block-1 .view-service-project-term nav ul.pagination li a {
   border-radius: 20px;
   color: rgb(100, 100, 100);
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination li a:hover,
 .block-views-blockmain-page-projects-block-1 .view-all-projects nav ul.pagination li a:hover,
+.block-views-blockmain-page-projects-block-1 .view-service-project-term nav ul.pagination li a:hover,
 .block-views-blockall-projects-block-1 .view-main-page-projects nav ul.pagination li a:hover,
-.block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination li a:hover {
+.block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination li a:hover,
+.block-views-blockall-projects-block-1 .view-service-project-term nav ul.pagination li a:hover,
+.block-views-blockservice-project-term-block-1 .view-main-page-projects nav ul.pagination li a:hover,
+.block-views-blockservice-project-term-block-1 .view-all-projects nav ul.pagination li a:hover,
+.block-views-blockservice-project-term-block-1 .view-service-project-term nav ul.pagination li a:hover {
   color: #fff;
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination .page-item.active .page-link, .block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination .media-library-view--widget .view-header a.page-item.is-active .page-link, .media-library-view--widget .view-header .block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination a.page-item.is-active .page-link,
 .block-views-blockmain-page-projects-block-1 .view-all-projects nav ul.pagination .page-item.active .page-link,
 .block-views-blockmain-page-projects-block-1 .view-all-projects nav ul.pagination .media-library-view--widget .view-header a.page-item.is-active .page-link,
 .media-library-view--widget .view-header .block-views-blockmain-page-projects-block-1 .view-all-projects nav ul.pagination a.page-item.is-active .page-link,
+.block-views-blockmain-page-projects-block-1 .view-service-project-term nav ul.pagination .page-item.active .page-link,
+.block-views-blockmain-page-projects-block-1 .view-service-project-term nav ul.pagination .media-library-view--widget .view-header a.page-item.is-active .page-link,
+.media-library-view--widget .view-header .block-views-blockmain-page-projects-block-1 .view-service-project-term nav ul.pagination a.page-item.is-active .page-link,
 .block-views-blockall-projects-block-1 .view-main-page-projects nav ul.pagination .page-item.active .page-link,
 .block-views-blockall-projects-block-1 .view-main-page-projects nav ul.pagination .media-library-view--widget .view-header a.page-item.is-active .page-link,
 .media-library-view--widget .view-header .block-views-blockall-projects-block-1 .view-main-page-projects nav ul.pagination a.page-item.is-active .page-link,
 .block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination .page-item.active .page-link,
 .block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination .media-library-view--widget .view-header a.page-item.is-active .page-link,
-.media-library-view--widget .view-header .block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination a.page-item.is-active .page-link {
+.media-library-view--widget .view-header .block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination a.page-item.is-active .page-link,
+.block-views-blockall-projects-block-1 .view-service-project-term nav ul.pagination .page-item.active .page-link,
+.block-views-blockall-projects-block-1 .view-service-project-term nav ul.pagination .media-library-view--widget .view-header a.page-item.is-active .page-link,
+.media-library-view--widget .view-header .block-views-blockall-projects-block-1 .view-service-project-term nav ul.pagination a.page-item.is-active .page-link,
+.block-views-blockservice-project-term-block-1 .view-main-page-projects nav ul.pagination .page-item.active .page-link,
+.block-views-blockservice-project-term-block-1 .view-main-page-projects nav ul.pagination .media-library-view--widget .view-header a.page-item.is-active .page-link,
+.media-library-view--widget .view-header .block-views-blockservice-project-term-block-1 .view-main-page-projects nav ul.pagination a.page-item.is-active .page-link,
+.block-views-blockservice-project-term-block-1 .view-all-projects nav ul.pagination .page-item.active .page-link,
+.block-views-blockservice-project-term-block-1 .view-all-projects nav ul.pagination .media-library-view--widget .view-header a.page-item.is-active .page-link,
+.media-library-view--widget .view-header .block-views-blockservice-project-term-block-1 .view-all-projects nav ul.pagination a.page-item.is-active .page-link,
+.block-views-blockservice-project-term-block-1 .view-service-project-term nav ul.pagination .page-item.active .page-link,
+.block-views-blockservice-project-term-block-1 .view-service-project-term nav ul.pagination .media-library-view--widget .view-header a.page-item.is-active .page-link,
+.media-library-view--widget .view-header .block-views-blockservice-project-term-block-1 .view-service-project-term nav ul.pagination a.page-item.is-active .page-link {
   background-color: #dddcdd;
   border-color: transparent;
   color: #000;
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination .page-item .page-link:hover,
 .block-views-blockmain-page-projects-block-1 .view-all-projects nav ul.pagination .page-item .page-link:hover,
+.block-views-blockmain-page-projects-block-1 .view-service-project-term nav ul.pagination .page-item .page-link:hover,
 .block-views-blockall-projects-block-1 .view-main-page-projects nav ul.pagination .page-item .page-link:hover,
-.block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination .page-item .page-link:hover {
+.block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination .page-item .page-link:hover,
+.block-views-blockall-projects-block-1 .view-service-project-term nav ul.pagination .page-item .page-link:hover,
+.block-views-blockservice-project-term-block-1 .view-main-page-projects nav ul.pagination .page-item .page-link:hover,
+.block-views-blockservice-project-term-block-1 .view-all-projects nav ul.pagination .page-item .page-link:hover,
+.block-views-blockservice-project-term-block-1 .view-service-project-term nav ul.pagination .page-item .page-link:hover {
   background-color: #646464;
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination .page-link,
 .block-views-blockmain-page-projects-block-1 .view-all-projects nav ul.pagination .page-link,
+.block-views-blockmain-page-projects-block-1 .view-service-project-term nav ul.pagination .page-link,
 .block-views-blockall-projects-block-1 .view-main-page-projects nav ul.pagination .page-link,
-.block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination .page-link {
+.block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination .page-link,
+.block-views-blockall-projects-block-1 .view-service-project-term nav ul.pagination .page-link,
+.block-views-blockservice-project-term-block-1 .view-main-page-projects nav ul.pagination .page-link,
+.block-views-blockservice-project-term-block-1 .view-all-projects nav ul.pagination .page-link,
+.block-views-blockservice-project-term-block-1 .view-service-project-term nav ul.pagination .page-link {
   background-color: transparent;
   border: none;
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination li.disabled,
 .block-views-blockmain-page-projects-block-1 .view-all-projects nav ul.pagination li.disabled,
+.block-views-blockmain-page-projects-block-1 .view-service-project-term nav ul.pagination li.disabled,
 .block-views-blockall-projects-block-1 .view-main-page-projects nav ul.pagination li.disabled,
-.block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination li.disabled {
+.block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination li.disabled,
+.block-views-blockall-projects-block-1 .view-service-project-term nav ul.pagination li.disabled,
+.block-views-blockservice-project-term-block-1 .view-main-page-projects nav ul.pagination li.disabled,
+.block-views-blockservice-project-term-block-1 .view-all-projects nav ul.pagination li.disabled,
+.block-views-blockservice-project-term-block-1 .view-service-project-term nav ul.pagination li.disabled {
   display: none;
 }
 
@@ -13975,98 +14167,159 @@ header .block-block-content > .text-formatted p {
 }
 
 @media (max-width: 1024px) {
-  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row {
+  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row,
+  .block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-row,
+  .block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-row,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-row {
     margin: 0 !important;
   }
   .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content,
   .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content,
   .block-views-blockall-projects-block-1 .view-main-page-projects .view-content,
-  .block-views-blockall-projects-block-1 .view-all-projects .view-content {
+  .block-views-blockall-projects-block-1 .view-all-projects .view-content,
+  .block-views-blockall-projects-block-1 .view-service-project-term .view-content,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content,
+  .block-views-blockservice-project-term-block-1 .view-all-projects .view-content,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content {
     justify-content: center;
     flex-wrap: wrap;
   }
   .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row,
   .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-row,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-row,
   .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-row,
-  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row {
+  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row,
+  .block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-row,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-row,
+  .block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-row,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-row {
     margin: 0 90px;
   }
 }
 @media (max-width: 970px) {
   .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content,
   .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content,
   .block-views-blockall-projects-block-1 .view-main-page-projects .view-content,
-  .block-views-blockall-projects-block-1 .view-all-projects .view-content {
+  .block-views-blockall-projects-block-1 .view-all-projects .view-content,
+  .block-views-blockall-projects-block-1 .view-service-project-term .view-content,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content,
+  .block-views-blockservice-project-term-block-1 .view-all-projects .view-content,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content {
     justify-content: center;
     flex-wrap: wrap;
   }
   .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row,
   .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-row,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-row,
   .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-row,
-  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row {
+  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row,
+  .block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-row,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-row,
+  .block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-row,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-row {
     margin: 0 50px;
   }
 }
 @media (max-width: 810px) {
   .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row,
   .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-row,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-row,
   .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-row,
-  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row {
+  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row,
+  .block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-row,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-row,
+  .block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-row,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-row {
     margin: 0 20px;
   }
 }
 @media (max-width: 690px) {
   .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row,
   .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-row,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-row,
   .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-row,
-  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row {
+  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row,
+  .block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-row,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-row,
+  .block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-row,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-row {
     margin: 0;
   }
 }
 @media (max-width: 610px) {
   .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row,
   .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-row,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-row,
   .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-row,
-  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row {
+  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row,
+  .block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-row,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-row,
+  .block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-row,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-row {
     width: 190px;
   }
 }
 @media (max-width: 500px) {
   .block-views-blockmain-page-projects-block-1 h2, .block-views-blockmain-page-projects-block-1 .h2,
   .block-views-blockall-projects-block-1 h2,
-  .block-views-blockall-projects-block-1 .h2 {
+  .block-views-blockall-projects-block-1 .h2,
+  .block-views-blockservice-project-term-block-1 h2,
+  .block-views-blockservice-project-term-block-1 .h2 {
     padding: 0 20px;
   }
   .block-views-blockmain-page-projects-block-1 .view-main-page-projects,
   .block-views-blockmain-page-projects-block-1 .view-all-projects,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term,
   .block-views-blockall-projects-block-1 .view-main-page-projects,
-  .block-views-blockall-projects-block-1 .view-all-projects {
+  .block-views-blockall-projects-block-1 .view-all-projects,
+  .block-views-blockall-projects-block-1 .view-service-project-term,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects,
+  .block-views-blockservice-project-term-block-1 .view-all-projects,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term {
     padding: 0 20px;
   }
   .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row,
   .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-row,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-row,
   .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-row,
-  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row {
+  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row,
+  .block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-row,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-row,
+  .block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-row,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-row {
     width: 280px;
   }
 }
 @media (max-width: 424px) {
   .block-views-blockmain-page-projects-block-1 .view-main-page-projects nav.pager ul,
   .block-views-blockmain-page-projects-block-1 .view-all-projects nav.pager ul,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term nav.pager ul,
   .block-views-blockall-projects-block-1 .view-main-page-projects nav.pager ul,
-  .block-views-blockall-projects-block-1 .view-all-projects nav.pager ul {
+  .block-views-blockall-projects-block-1 .view-all-projects nav.pager ul,
+  .block-views-blockall-projects-block-1 .view-service-project-term nav.pager ul,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects nav.pager ul,
+  .block-views-blockservice-project-term-block-1 .view-all-projects nav.pager ul,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term nav.pager ul {
     gap: 5px;
   }
 }
 @media (max-width: 390px) {
   .block-views-blockmain-page-projects-block-1 .view-main-page-projects nav.pager ul,
   .block-views-blockmain-page-projects-block-1 .view-all-projects nav.pager ul,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term nav.pager ul,
   .block-views-blockall-projects-block-1 .view-main-page-projects nav.pager ul,
-  .block-views-blockall-projects-block-1 .view-all-projects nav.pager ul {
+  .block-views-blockall-projects-block-1 .view-all-projects nav.pager ul,
+  .block-views-blockall-projects-block-1 .view-service-project-term nav.pager ul,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects nav.pager ul,
+  .block-views-blockservice-project-term-block-1 .view-all-projects nav.pager ul,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term nav.pager ul {
     gap: 0;
   }
 }
-.block-views-blockall-people-block-1 {
+.block-views-blockall-people-block-1,
+.block-views-blockposition-people-term-block-1 {
   margin: auto !important;
   margin-top: 20px !important;
   max-width: 1250px !important;
@@ -14074,7 +14327,8 @@ header .block-block-content > .text-formatted p {
 }
 
 .block-views-blockmain-page-people-block-1,
-.block-views-blockall-people-block-1 {
+.block-views-blockall-people-block-1,
+.block-views-blockposition-people-term-block-1 {
   max-width: 1200px;
   padding: 0 50px;
   margin: 0 auto;
@@ -14085,7 +14339,9 @@ header .block-block-content > .text-formatted p {
 }
 .block-views-blockmain-page-people-block-1 > h2, .block-views-blockmain-page-people-block-1 > .h2,
 .block-views-blockall-people-block-1 > h2,
-.block-views-blockall-people-block-1 > .h2 {
+.block-views-blockall-people-block-1 > .h2,
+.block-views-blockposition-people-term-block-1 > h2,
+.block-views-blockposition-people-term-block-1 > .h2 {
   position: relative;
   font-weight: 700;
   text-align: center;
@@ -14098,7 +14354,11 @@ header .block-block-content > .text-formatted p {
 .block-views-blockall-people-block-1 > h2::before,
 .block-views-blockall-people-block-1 > .h2::before,
 .block-views-blockall-people-block-1 > h2::after,
-.block-views-blockall-people-block-1 > .h2::after {
+.block-views-blockall-people-block-1 > .h2::after,
+.block-views-blockposition-people-term-block-1 > h2::before,
+.block-views-blockposition-people-term-block-1 > .h2::before,
+.block-views-blockposition-people-term-block-1 > h2::after,
+.block-views-blockposition-people-term-block-1 > .h2::after {
   content: " ";
   border: 1px solid #ccc;
   box-sizing: border-box;
@@ -14106,31 +14366,55 @@ header .block-block-content > .text-formatted p {
   margin: auto 0;
 }
 .block-views-blockmain-page-people-block-1 .view-all-people .view-content,
-.block-views-blockall-people-block-1 .view-all-people .view-content {
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content,
+.block-views-blockall-people-block-1 .view-all-people .view-content,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content {
   flex-wrap: wrap;
+  justify-content: space-evenly !important;
 }
 .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row,
-.block-views-blockall-people-block-1 .view-all-people .view-content .views-row {
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row,
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row {
   width: 300px !important;
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people a,
 .block-views-blockmain-page-people-block-1 .view-all-people a,
+.block-views-blockmain-page-people-block-1 .view-position-people-term a,
 .block-views-blockall-people-block-1 .view-main-page-people a,
-.block-views-blockall-people-block-1 .view-all-people a {
+.block-views-blockall-people-block-1 .view-all-people a,
+.block-views-blockall-people-block-1 .view-position-people-term a,
+.block-views-blockposition-people-term-block-1 .view-main-page-people a,
+.block-views-blockposition-people-term-block-1 .view-all-people a,
+.block-views-blockposition-people-term-block-1 .view-position-people-term a {
   text-decoration: none;
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content,
 .block-views-blockmain-page-people-block-1 .view-all-people .view-content,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content,
 .block-views-blockall-people-block-1 .view-main-page-people .view-content,
-.block-views-blockall-people-block-1 .view-all-people .view-content {
+.block-views-blockall-people-block-1 .view-all-people .view-content,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content {
   text-align: center;
   display: flex;
   justify-content: space-between;
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row,
 .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row,
 .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row,
-.block-views-blockall-people-block-1 .view-all-people .view-content .views-row {
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row {
   width: 250px;
   display: flex;
   flex-direction: column;
@@ -14139,69 +14423,142 @@ header .block-block-content > .text-formatted p {
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-view-node-1,
 .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .social-likes .views-field-view-node-1,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .social-likes .views-field-view-node-1,
 .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-view-node-1,
-.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .social-likes .views-field-view-node-1 {
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .social-likes .views-field-view-node-1,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .social-likes .views-field-view-node-1,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-view-node-1,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .social-likes .views-field-view-node-1,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .social-likes .views-field-view-node-1 {
   display: none;
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field-field-image a img,
 .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field-field-image a img,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field-field-image a img,
 .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field-field-image a img,
-.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-field-image a img {
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-field-image a img,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field-field-image a img,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field-field-image a img,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field-field-image a img,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field-field-image a img {
   width: 290px;
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-title,
 .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-title,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-title,
 .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-title,
-.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-title {
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-title,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-title,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-title,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-title,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-title {
   margin-top: 32px;
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-title a,
 .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-title a,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-title a,
 .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-title a,
-.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-title a {
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-title a,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-title a,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-title a,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-title a,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-title a {
   font-size: 25px;
   text-decoration: none;
   color: #000;
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-field-position,
 .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-field-position,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-field-position,
 .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-field-position,
-.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-field-position {
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-field-position,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-field-position,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-field-position,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-field-position,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-field-position {
   font-size: 0.75rem;
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-field-position a,
 .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-field-position a,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-field-position a,
 .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-field-position a,
-.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-field-position a {
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-field-position a,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-field-position a,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-field-position a,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-field-position a,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-field-position a {
   color: #cccccc;
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field-view-node,
 .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field-view-node,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field-view-node,
 .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field-view-node,
-.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-view-node {
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-view-node,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field-view-node,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field-view-node,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field-view-node,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field-view-node {
   margin-top: 9px;
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field-view-node span,
 .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field-view-node span,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field-view-node span,
 .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field-view-node span,
-.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-view-node span {
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-view-node span,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field-view-node span,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field-view-node span,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field-view-node span,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field-view-node span {
   display: inline-block;
   background-color: #373645;
   padding: 3px 0;
   border-radius: 3px;
+  transition: all 0.3s;
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field-view-node span a,
 .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field-view-node span a,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field-view-node span a,
 .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field-view-node span a,
-.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-view-node span a {
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-view-node span a,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field-view-node span a,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field-view-node span a,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field-view-node span a,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field-view-node span a {
   color: #fff;
   padding: 0 8px;
   font-size: 14px;
 }
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field-view-node span:hover,
+.block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field-view-node span:hover,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field-view-node span:hover,
+.block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field-view-node span:hover,
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-view-node span:hover,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field-view-node span:hover,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field-view-node span:hover,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field-view-node span:hover,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field-view-node span:hover {
+  background-color: #6e9bca;
+}
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field-view-node span:hover a,
+.block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field-view-node span:hover a,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field-view-node span:hover a,
+.block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field-view-node span:hover a,
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-view-node span:hover a,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field-view-node span:hover a,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field-view-node span:hover a,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field-view-node span:hover a,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field-view-node span:hover a {
+  color: #fff;
+}
 .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field-field-social-links,
 .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field-field-social-links,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field-field-social-links,
 .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field-field-social-links,
-.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-field-social-links {
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-field-social-links,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field-field-social-links,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field-field-social-links,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field-field-social-links,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field-field-social-links {
   display: block;
   text-align: left;
   float: left;
@@ -14210,54 +14567,94 @@ header .block-block-content > .text-formatted p {
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field-field-social-links .field-content a,
 .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field-field-social-links .field-content a,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field-field-social-links .field-content a,
 .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field-field-social-links .field-content a,
-.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-field-social-links .field-content a {
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-field-social-links .field-content a,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field-field-social-links .field-content a,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field-field-social-links .field-content a,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field-field-social-links .field-content a,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field-field-social-links .field-content a {
   color: #6e9bca;
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field-link-flag .flag.flag-like,
 .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field-link-flag .flag.flag-like,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field-link-flag .flag.flag-like,
 .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field-link-flag .flag.flag-like,
-.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-link-flag .flag.flag-like {
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-link-flag .flag.flag-like,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field-link-flag .flag.flag-like,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field-link-flag .flag.flag-like,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field-link-flag .flag.flag-like,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field-link-flag .flag.flag-like {
   padding-top: 24px;
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field-link-flag .flag.flag-like a,
 .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field-link-flag .flag.flag-like a,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field-link-flag .flag.flag-like a,
 .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field-link-flag .flag.flag-like a,
-.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-link-flag .flag.flag-like a {
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-link-flag .flag.flag-like a,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field-link-flag .flag.flag-like a,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field-link-flag .flag.flag-like a,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field-link-flag .flag.flag-like a,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field-link-flag .flag.flag-like a {
   color: #e84c3d;
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field-link-flag .js-flag-message,
 .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field-link-flag .js-flag-message,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field-link-flag .js-flag-message,
 .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field-link-flag .js-flag-message,
-.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-link-flag .js-flag-message {
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-link-flag .js-flag-message,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field-link-flag .js-flag-message,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field-link-flag .js-flag-message,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field-link-flag .js-flag-message,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field-link-flag .js-flag-message {
   display: none;
 }
 @media (max-width: 1098px) {
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-col,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-col,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-col,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-col,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-col {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-col,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-col,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-col,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-col,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-col {
     width: 48% !important;
     margin-bottom: 20px;
   }
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-field-addtoany-share,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-field-addtoany-share,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-field-addtoany-share,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-field-addtoany-share,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-field-addtoany-share {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-field-addtoany-share,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-field-addtoany-share,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-field-addtoany-share,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-field-addtoany-share,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-field-addtoany-share {
     padding-left: 115px;
   }
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-field-link-flag .flag.flag-like a,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-field-link-flag .flag.flag-like a,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-field-link-flag .flag.flag-like a,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-field-link-flag .flag.flag-like a,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-field-link-flag .flag.flag-like a {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-field-link-flag .flag.flag-like a,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-field-link-flag .flag.flag-like a,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-field-link-flag .flag.flag-like a,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-field-link-flag .flag.flag-like a,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-field-link-flag .flag.flag-like a {
     padding-left: 30px;
   }
 }
 @media (max-width: 520px) {
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-col,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-col,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-col,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-col,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-col {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-col,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-col,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-col,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-col,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-col {
     width: 98% !important;
   }
 }
@@ -14275,134 +14672,230 @@ header .block-block-content > .text-formatted p {
 @media (max-width: 1200px) {
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes {
     display: flex;
     flex-direction: row;
   }
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul {
     font-size: 12px;
   }
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag {
     flex: 1;
   }
 }
 @media (max-width: 1060px) {
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links {
     padding-left: 20px;
   }
 }
 @media (max-width: 1024px) {
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content,
-  .block-views-blockall-people-block-1 .view-all-people .view-content {
+  .block-views-blockall-people-block-1 .view-all-people .view-content,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content {
     justify-content: center;
     flex-wrap: wrap;
   }
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row {
     width: 400px;
   }
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes {
     justify-content: space-around;
   }
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links {
     padding-left: 40px;
   }
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul {
     font-size: 15px;
   }
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag {
     flex: auto;
   }
 }
 @media (max-width: 900px) {
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row {
     width: 300px;
   }
 }
 @media (max-width: 700px) {
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row {
     width: 250px;
   }
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links {
     padding-left: 30px;
   }
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul {
     font-size: 12px;
   }
 }
 @media (max-width: 600px) {
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row {
     width: 200px;
   }
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links {
     padding-left: 10px;
   }
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul {
     font-size: 12px;
   }
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag .flag-like,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag .flag-like,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag .flag-like,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag .flag-like,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag .flag-like {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag .flag-like,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag .flag-like,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag .flag-like,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag .flag-like,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag .flag-like {
     margin-right: 10px;
   }
 }
 @media (max-width: 500px) {
   .block-views-blockmain-page-people-block-1,
-  .block-views-blockall-people-block-1 {
+  .block-views-blockall-people-block-1,
+  .block-views-blockposition-people-term-block-1 {
     padding: 0 20px;
   }
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row,
   .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row {
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row {
     width: 280px;
   }
 }
@@ -14501,6 +14994,11 @@ body.path-frontpage main .region-content {
   max-width: none;
   padding-left: 0;
   padding-right: 0;
+}
+
+.social-media-links--platforms *:hover {
+  transition: all 0.5s ease;
+  color: rgba(0, 68, 255, 0.973);
 }
 
 .block-views-blockmain-page-articles-block-2 {
@@ -14792,9 +15290,18 @@ body.path-frontpage main .region-content {
   padding: 7px 0.5em;
   background-color: #373645;
   border-radius: 3px;
+  transition: all 0.3s;
 }
 .block-views-blockmain-page-articles-block-1 .view-main-page-articles .view-content .views-row div.fieldset-news-node .views-field-view-node .field-content a,
 .block-views-blockmain-page-articles-block-2 .view-main-page-articles .view-content .views-row div.fieldset-news-node .views-field-view-node .field-content a {
+  color: #fff;
+}
+.block-views-blockmain-page-articles-block-1 .view-main-page-articles .view-content .views-row div.fieldset-news-node .views-field-view-node .field-content:hover,
+.block-views-blockmain-page-articles-block-2 .view-main-page-articles .view-content .views-row div.fieldset-news-node .views-field-view-node .field-content:hover {
+  background-color: #6e9bca;
+}
+.block-views-blockmain-page-articles-block-1 .view-main-page-articles .view-content .views-row div.fieldset-news-node .views-field-view-node .field-content:hover a,
+.block-views-blockmain-page-articles-block-2 .view-main-page-articles .view-content .views-row div.fieldset-news-node .views-field-view-node .field-content:hover a {
   color: #fff;
 }
 .block-views-blockmain-page-articles-block-1 .view-main-page-articles .view-content .views-row .views-col article,
@@ -15555,15 +16062,14 @@ footer .region-footer .block-social-media-links ul a {
 .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-image,
 .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-image,
 .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-image {
-  width: -moz-max-content;
-  width: max-content;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-image img,
 .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-image img,
 .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-image img,
 .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-image img {
-  padding: 0 30px 30px 0;
-  margin: 0 20px 20px 0;
   width: 300px;
   height: auto;
 }
@@ -15581,9 +16087,7 @@ footer .region-footer .block-social-media-links ul a {
 .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position,
 .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position,
 .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position {
-  height: 50px;
   font-size: 24px;
-  float: right;
   font-family: "Inter", sans-serif;
 }
 .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position a,
@@ -15600,12 +16104,68 @@ footer .region-footer .block-social-media-links ul a {
   width: -moz-max-content;
   width: max-content;
 }
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links ul li a,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links ul li a,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links ul li a,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links ul li a {
+  color: #6e9bca;
+}
 .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplebody,
 .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplebody,
 .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplebody,
 .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplebody {
   font-size: 24px;
   font-family: "Inter", sans-serif;
+}
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like {
+  width: -moz-min-content;
+  width: min-content;
+}
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like .flag-like,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like .flag-like,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like .flag-like,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like .flag-like {
+  margin: 0;
+}
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like .flag-like a,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like .flag-like a,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like .flag-like a,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like .flag-like a {
+  color: #e84c3d;
+  font-size: 18px;
+}
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position,
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links,
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like {
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+}
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position .flag-like,
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links .flag-like,
+.block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like .flag-like,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position .flag-like,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links .flag-like,
+.block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like .flag-like,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position .flag-like,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links .flag-like,
+.block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like .flag-like,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position .flag-like,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links .flag-like,
+.block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like .flag-like {
+  text-align: center;
 }
 .block-system-main-block .node--type-article.node--view-mode-full {
   max-width: 1250px;
@@ -15716,6 +16276,39 @@ footer .region-footer .block-social-media-links ul a {
   .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeprojectfield-service,
   .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodeclientfield-service {
     font-size: 24px;
+  }
+}
+@media (max-width: 990px) {
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like {
+    width: 32.5%;
+  }
+}
+@media (max-width: 770px) {
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links,
+  .block-system-main-block .node--type-service.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links,
+  .block-system-main-block .node--type-project.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links,
+  .block-system-main-block .node--type-people.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-position,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-field-blocknodepeoplefield-social-links,
+  .block-system-main-block .node--type-client.node--view-mode-full .node__content .layout__region--content .block-extra-field-blocknodepeopleflag-like {
+    display: block;
+    width: auto;
   }
 }
 @media (max-width: 700px) {
