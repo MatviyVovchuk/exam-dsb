@@ -87,7 +87,6 @@
   }
   .view-main-page-articles {
     @include own-container;
-    // @include alingnment;
     a {
       text-decoration: none;
     }
@@ -143,7 +142,6 @@
         background-color: #fff;
         flex-wrap: nowrap;
         flex-direction: row !important;
-        // justify-content: space-between;
         gap: 10px;
         padding: 20px;
         margin: 5px;
@@ -166,19 +164,11 @@
           .news-created-year {
             display: flex;
             justify-content: center;
-            // margin-left: 8px;
             margin-top: -6px;
             opacity: $op-imp;
             font-size: 15px;
           }
         }
-        // div.fieldset-news-author-date {
-        //   display: flex;
-        //   width: max-content;
-        //   // gap: 10px;
-        //   font-size: 0.75em;
-        //   padding-left: 15px;
-        //   border-left: 1px solid #ccc;
         div.fieldset-news-author {
           display: flex;
           width: 100%;
@@ -189,10 +179,6 @@
             width: 80px;
             height: auto;
           }
-          // .views-field-title-2,
-          // .views-field-field-position {
-          //   flex: 1;
-          // }
           .views-field.views-field-fieldset-1 {
             flex: 1;
             div.name-position-time {
@@ -214,7 +200,6 @@
                       color: #ccc;
                     }
                     &::after {
-                      // margin-left: 5px;
                       content: " /";
                     }
                   }
@@ -233,8 +218,6 @@
               .views-field-created-1 {
                 text-align: right;
                 flex: 1;
-                // margin-left: 20px;
-                // margin-right: 15px;
                 color: #ccc;
                 width: 80px;
               }
@@ -264,7 +247,6 @@
           .views-field-view-node {
             text-align: right;
             font-size: 0.9375em;
-            // padding-right: 34px;
             margin: 17px 0;
             .field-content {
               padding: 7px 0.5em;
@@ -285,101 +267,6 @@
           }
         }
 
-        .views-col article {
-          background-color: #fff;
-          & > h2 {
-            display: none;
-          }
-          & > .node__content {
-            display: flex;
-            padding-top: 20px;
-            & > div:first-child {
-              .field--name-field-news-date-since-creation {
-                font-size: 20px;
-                text-align: center;
-                padding-left: 12px;
-                padding-top: 0px;
-                border-right: 1px solid #ccc;
-                padding-right: 12px;
-              }
-              @media (max-width: 568px) {
-                display: none;
-              }
-            }
-            & > div:nth-child(2) {
-              @media (max-width: 1150px) {
-                font-size: 0.8rem;
-              }
-              & > div:first-child {
-                display: flex;
-                gap: 10px;
-                font-size: 0.75em;
-                margin-left: 19px;
-                .field--name-field-news-writer {
-                  color: #ccc;
-                }
-                .field--name-field-news-worker-name {
-                  display: flex;
-                  gap: 5px;
-                  &::after {
-                    content: " /";
-                  }
-                }
-                .field--name-field-news-worker-position {
-                  margin-left: -5px;
-                }
-                .field--name-field-news-date-release {
-                  margin-left: auto;
-                  margin-right: 15px;
-                  color: #ccc;
-                }
-                @media (max-width: 867px) {
-                  display: block;
-                  .field--name-field-news-worker-name {
-                    float: left;
-                    max-width: fit-content;
-                  }
-                }
-              }
-              & > .field--name-field-news-title {
-                font-size: 1.625em;
-                margin: 10px 0 0;
-                border-left: 1px solid #ccc;
-                padding-left: 19px;
-                @media (max-width: 998px) {
-                  border-left: none;
-                }
-              }
-              & > .field--name-body.field--type-text-with-summary {
-                font-size: 0.75em;
-                line-height: 14px;
-                p {
-                  padding: 10px 25px 0 19px;
-                  margin-bottom: 0;
-                  border-left: 1px solid #ccc;
-                  padding-left: 19px;
-                  @media (max-width: 998px) {
-                    border-left: none;
-                  }
-                }
-              }
-              & > .node__links {
-                text-align: right;
-                font-size: 0.9375em;
-                padding-right: 34px;
-                margin: 17px 0;
-                li {
-                  padding: 7px 0.5em;
-                  background-color: #373645;
-                  border-radius: 3px;
-                  a {
-                    color: #fff;
-                  }
-                }
-              }
-            }
-          }
-        }
       }
     }
     @media (max-width: 1320px) {
@@ -388,9 +275,6 @@
       }
       .view-content .views-row {
         flex-direction: column;
-        .views-col {
-          margin: 0 25vw;
-        }
       }
     }
   }

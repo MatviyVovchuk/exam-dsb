@@ -132,9 +132,7 @@
           .flag.flag-like {
             padding-top: 24px;
             a {
-              // color: #B2B2B3;
               color: #e84c3d;
-              // padding-left: 100px;
             }
           }
           .js-flag-message {
@@ -175,12 +173,6 @@
     font-size: 18px;
   }
 }
-// .action-unflag {
-//   @include flag;
-//   a {
-//     font-size: 18px;
-//   }
-// }
 
 @media (max-width: 1200px) {
   .block-views-blockmain-page-people-block-1,

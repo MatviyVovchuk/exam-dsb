@@ -70,7 +70,6 @@
   .view-all-projects,
   .view-service-project-term {
     @include own-container;
-    // @include alingnment;
     a {
       text-decoration: none;
     }
@@ -81,20 +80,14 @@
       gap: 10px;
       .views-row {
         border-bottom: 1px solid #373645;
-        // padding: 10px;
         padding-bottom: 12px;
         background-color: #fff;
-        // width: 23.3% !important;
-
         width: 250px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
-        // margin-left: 20px;
         .views-field-field-image {
           img {
-            // height: 290px;
             width: 290px;
           }
         }
@@ -111,8 +104,6 @@
             display: inline-block;
             margin-top: 17px;
             background-color: rgb(55, 54, 69);
-            //width: 98px;
-            //margin: 0 auto;
             padding: 3px 0;
             border-radius: 3px;
             transition: all 0.3s;
@@ -130,56 +121,7 @@
         }
       }
 
-      @media (max-width: 1260px) {
-        .views-col {
-          width: 22% !important;
-          //border-bottom: none;
-          //background-color: transparent;
-          .views-field.views-field-title {
-            a {
-              font-size: 1.3rem;
-            }
-          }
-          .views-field-field-projects-image {
-            height: auto;
-            img {
-              height: 22vw;
-            }
-          }
-        }
-      }
-      @media (max-width: 950px) {
-        .views-col {
-          display: block;
-          width: 46% !important;
-          margin-bottom: 20px;
-          border-bottom: none;
-          background-color: transparent;
-          .views-field-field-projects-image {
-            img {
-              height: 35vw;
-            }
-          }
-        }
-      }
-      @media (max-width: 520px) {
-        .views-col {
-          width: 98% !important;
-          margin-left: 0;
-          .views-field-field-projects-image {
-            img {
-              height: 55vw;
-            }
-          }
-        }
-      }
-      @media (max-width: 460px) {
-        .views-field-field-projects-image {
-          img {
-            height: 70vw;
-          }
-        }
-      }
+
     }
     nav {
       ul.pagination {
@@ -252,7 +194,6 @@
         justify-content: center;
         flex-wrap: wrap;
         .views-row {
-          // width: 400px;
           margin: 0 90px;
         }
       }
@@ -271,7 +212,6 @@
         justify-content: center;
         flex-wrap: wrap;
         .views-row {
-          // width: 400px;
           margin: 0 50px;
         }
       }
@@ -288,7 +228,6 @@
     .view-service-project-term {
       .view-content {
         .views-row {
-          // width: 300px;
           margin: 0 20px;
         }
       }
@@ -305,7 +244,6 @@
     .view-service-project-term {
       .view-content {
         .views-row {
-          // width: 250px;
           margin: 0;
         }
       }

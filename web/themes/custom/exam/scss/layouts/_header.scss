@@ -9,23 +9,6 @@ $mediaQueries: (
   1200px: -300px,
   1150px: -280px,
   1080px: -260px,
-  // 1030px: -250px,
-  // 990px: -270px,
-  // 940px: -250px,
-  // 960px: -200px,
-  // 870px: -180px,
-  // 800px: -160px,
-  // 750px: -140px,
-  // 700px: -120px,
-  // 650px: -100px,
-  // 600px: -80px,
-  // 520px: -60px,
-  // 500px: -50px,
-  // 450px: -40px,
-  // 410px: -30px,
-  // 390px: -20px,
-  // 350px: -10px,
-  // 340px: 0px,,,,,,,,
 );
 
 body.path-frontpage {
@@ -55,7 +38,6 @@ header {
   .region-nav {
     &-branding {
       min-height: 114px;
-      // margin-top: 33px;
       width: 240px;
       background-color: $grey;
     }
@@ -106,17 +88,11 @@ header {
           color: white;
           font-size: 0.9em;
         }
-        // img {
-        //   height: 115px;
-        //   width: 240px;
-        //   // margin: 0 0 0 -52px;
-        // }
       }
     }
 
     .region-nav-main {
       display: contents;
-      // font-family: "Inter", sans-serif;
       ul {
         margin-top: 41px;
         li {
@@ -184,7 +160,6 @@ header {
     &-collapse {
       background-color: white;
       min-height: 114px;
-      // margin-top: 32px;
       justify-content: center !important;
     }
   }
@@ -359,8 +334,6 @@ header {
       .navbar-collapse {
         transition: all 0.5s;
         background-color: #373645;
-        // display: flex;
-        // flex-direction: column;
         .region-nav-additional {
           display: flex;
           flex-direction: row;
@@ -393,10 +366,6 @@ header {
 
       .region.region-nav-main {
         nav {
-          // display: flex;
-          /* flex-direction: column; */
-          // justify-content: center;
-          // align-items: center;
           text-align: center;
           ul.navbar-nav {
             li:first-child {
@@ -437,8 +406,3 @@ header {
     }
   }
 }
-
-// position: absolute;
-// top: 80px;
-// width: 97.5%;
-// transition: all 0.5s ease 0s;
