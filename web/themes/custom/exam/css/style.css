@@ -14442,6 +14442,21 @@ header .block-block-content > .text-formatted p {
 .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field-field-image a img,
 .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field-field-image a img {
   width: 290px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: 0.3s ease-in-out;
+}
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field-field-image a img:hover,
+.block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field-field-image a img:hover,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field-field-image a img:hover,
+.block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field-field-image a img:hover,
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-field-image a img:hover,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field-field-image a img:hover,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field-field-image a img:hover,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field-field-image a img:hover,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field-field-image a img:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-title,
 .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-title,
