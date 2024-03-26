@@ -3,7 +3,6 @@
 @import "../variables/variables";
 @import "../variables/mixins";
 
-
 .block-views-blockall-projects-block-1,
 .block-views-blockservice-project-term-block-1 {
   margin: auto !important;
@@ -36,6 +35,7 @@
   }
 }
 
+
 .block-views-blockmain-page-projects-block-1,
 .block-views-blockall-projects-block-1,
 .block-views-blockservice-project-term-block-1 {
@@ -44,6 +44,7 @@
   font-family: "Inter", sans-serif;
   & > h2 {
     @include own-container;
+    white-space: nowrap;
     font-weight: 300;
     text-align: center;
     margin-bottom: 50px;
@@ -64,6 +65,13 @@
       #fff 10px,
       #fff 0px
     );
+  }
+
+  .view-all-projects,
+  .view-service-project-term {
+    .view-content {
+      justify-content: space-evenly !important;
+    }
   }
 
   .view-main-page-projects,
@@ -119,8 +127,6 @@
           }
         }
       }
-
-
     }
     nav {
       ul.pagination {
@@ -153,20 +159,25 @@
       }
     }
   }
+  .view-main-page-projects {
+    nav {
+      padding-bottom: 100px;
+    }
+  }
 }
 
 .views-field-field-service,
 .field--name-field-service {
-  a[href*="/taxonomy/term/8"] {
+  a[href*="/service/term/web-development"] {
     color: #1bbc9b;
   }
-  a[href*="/taxonomy/term/7"] {
+  a[href*="/service/term/php-development"] {
     color: #9b58b5;
   }
-  a[href*="/taxonomy/term/5"] {
+  a[href*="/service/term/app-development"] {
     color: #e84c3d;
   }
-  a[href*="/taxonomy/term/6"] {
+  a[href*="/service/term/drupal-project"] {
     color: #32ade1;
   }
 }
@@ -260,6 +271,11 @@
       .view-content {
         .views-row {
           width: 190px;
+          .views-field.views-field-title {
+            a {
+              font-size: 1.2rem;
+            }
+          }
         }
       }
     }
@@ -280,6 +296,11 @@
       .view-content {
         .views-row {
           width: 280px;
+          .views-field.views-field-title {
+            a {
+              font-size: 1.5rem;
+            }
+          }
         }
       }
     }

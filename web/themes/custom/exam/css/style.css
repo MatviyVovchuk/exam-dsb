@@ -12952,27 +12952,32 @@ body.path-frontpage header .navbar {
 }
 @media (max-width: 1350px) {
   body.path-frontpage header .navbar {
-    top: -350px;
+    top: -400px;
   }
 }
 @media (max-width: 1250px) {
   body.path-frontpage header .navbar {
-    top: -320px;
+    top: -380px;
   }
 }
 @media (max-width: 1200px) {
   body.path-frontpage header .navbar {
-    top: -300px;
+    top: -370px;
   }
 }
 @media (max-width: 1150px) {
   body.path-frontpage header .navbar {
-    top: -280px;
+    top: -350px;
   }
 }
 @media (max-width: 1080px) {
   body.path-frontpage header .navbar {
-    top: -260px;
+    top: -330px;
+  }
+}
+@media (max-width: 1030px) {
+  body.path-frontpage header .navbar {
+    top: -310px;
   }
 }
 
@@ -13005,7 +13010,7 @@ header .region-nav-additional .block-social-media-links a {
   color: #6e9bca;
 }
 header .region-header {
-  margin-bottom: -100px;
+  margin-bottom: -50px;
 }
 header .navbar {
   justify-content: center;
@@ -13036,7 +13041,8 @@ header .navbar .region-nav-branding .navbar-brand .site-slogan {
   text-transform: initial;
   font-family: "Nexa", sans-serif;
   color: white;
-  font-size: 0.9em;
+  font-size: 0.8em;
+  margin-top: -10px;
 }
 header .navbar .region-nav-main {
   display: contents;
@@ -13045,14 +13051,17 @@ header .navbar .region-nav-main ul {
   margin-top: 41px;
 }
 header .navbar .region-nav-main ul li a.nav-link, header .navbar .region-nav-main ul li .media-library-view--widget .view-header a, .media-library-view--widget .view-header header .navbar .region-nav-main ul li a {
-  padding-right: 0.75rem;
-  padding-left: 0.75rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
   font-size: 14px;
   color: #373645;
   font-family: "Inter", sans-serif;
   transition: all 0.3s ease;
   border-bottom: 7px solid transparent;
   padding-bottom: 38px;
+  position: relative;
 }
 header .navbar .region-nav-main ul li a.nav-link:hover, header .navbar .region-nav-main ul li .media-library-view--widget .view-header a:hover, .media-library-view--widget .view-header header .navbar .region-nav-main ul li a:hover {
   border-bottom: 7px solid #6f9ccb;
@@ -13122,7 +13131,7 @@ header .form-item-search {
   margin-top: 2em;
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1270px) {
   header .navbar .region-nav-branding {
     width: 200px;
   }
@@ -13142,7 +13151,7 @@ header .form-item-search {
     font-size: 15px;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1165px) {
   header .navbar .region-nav-branding {
     width: 150px;
   }
@@ -13153,8 +13162,8 @@ header .form-item-search {
     font-size: 0.6em !important;
   }
   header .navbar .region-nav-main ul li a.nav-link, header .navbar .region-nav-main ul li .media-library-view--widget .view-header a, .media-library-view--widget .view-header header .navbar .region-nav-main ul li a {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
     font-size: 12px;
     padding-bottom: 41px;
   }
@@ -13168,14 +13177,14 @@ header .form-item-search {
     width: 50%;
   }
 }
-@media (max-width: 1010px) {
+@media (max-width: 1065px) {
   header .navbar .collapse {
     justify-content: start !important;
     width: 800px;
   }
   header .navbar .collapse .region-nav-main ul li a.nav-link, header .navbar .collapse .region-nav-main ul li .media-library-view--widget .view-header a, .media-library-view--widget .view-header header .navbar .collapse .region-nav-main ul li a {
-    padding-right: 0.4rem;
-    padding-left: 0.4rem;
+    padding-right: 0.3rem;
+    padding-left: 0.3rem;
     padding-bottom: 41px;
   }
   header .navbar .collapse .region-nav-main ul li:first-child {
@@ -13191,7 +13200,7 @@ header .form-item-search {
     width: 280px;
   }
   header .navbar .collapse .region-nav-additional .block-social-media-links a {
-    font-size: 15px;
+    font-size: 12px;
   }
   header .navbar .collapse .region-nav-additional .search-block-form {
     width: 50%;
@@ -13200,14 +13209,14 @@ header .form-item-search {
     width: 170px;
   }
 }
-@media (max-width: 990px) {
+@media (max-width: 991px) {
   header .navbar {
     position: fixed !important;
     top: 0 !important;
     width: 100%;
     background-color: rgb(60, 60, 69);
     z-index: 1000;
-    transition: top 0.3s ease-in-out;
+    transition: top 0.9s ease-in-out;
   }
   header .navbar .navbar-toggler {
     color: rgba(255, 255, 255, 0.5);
@@ -13219,16 +13228,25 @@ header .form-item-search {
   header .navbar .region-nav-branding {
     min-height: auto;
     padding: 10px;
+    width: 180px !important;
   }
   header .navbar .region-nav-branding .site-slogan {
     display: block;
-    font-size: 0.7em !important;
+    font-size: 0.6em !important;
   }
   header .navbar .navbar-collapse {
     transition: all 0.5s;
-    background-color: #373645;
+    background-color: rgb(60, 60, 69);
+  }
+  header .navbar .navbar-collapse .region-nav-main nav {
+    justify-content: center;
+    display: flex;
+  }
+  header .navbar .navbar-collapse .region-nav-main nav ul {
+    width: 70%;
   }
   header .navbar .navbar-collapse .region-nav-additional {
+    padding-top: 20px;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -13576,6 +13594,7 @@ header .block-block-content > .text-formatted p {
 }
 .block-views-blockmain-page-services-block-1 .view-all-services .view-content,
 .block-views-blockall-services-block-1 .view-all-services .view-content {
+  justify-content: space-evenly !important;
   flex-wrap: wrap;
 }
 .block-views-blockmain-page-services-block-1 .view-all-services .view-content .views-row,
@@ -13588,6 +13607,7 @@ header .block-block-content > .text-formatted p {
 .block-views-blockall-services-block-1 .view-all-services .view-content {
   display: flex;
   text-align: center;
+  justify-content: space-between;
 }
 .block-views-blockmain-page-services-block-1 .view-main-page-services .view-content .views-row,
 .block-views-blockmain-page-services-block-1 .view-all-services .view-content .views-row,
@@ -13774,6 +13794,7 @@ header .block-block-content > .text-formatted p {
   max-width: 1200px;
   padding: 0 50px;
   margin: 0 auto;
+  white-space: nowrap;
   font-weight: 300;
   text-align: center;
   margin-bottom: 50px;
@@ -13801,6 +13822,14 @@ header .block-block-content > .text-formatted p {
   margin-top: 18px;
   padding-top: 69px;
   background: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.1), #fff 2px, #fff 10px, #fff 0px);
+}
+.block-views-blockmain-page-projects-block-1 .view-all-projects .view-content,
+.block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content,
+.block-views-blockall-projects-block-1 .view-all-projects .view-content,
+.block-views-blockall-projects-block-1 .view-service-project-term .view-content,
+.block-views-blockservice-project-term-block-1 .view-all-projects .view-content,
+.block-views-blockservice-project-term-block-1 .view-service-project-term .view-content {
+  justify-content: space-evenly !important;
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects,
 .block-views-blockmain-page-projects-block-1 .view-all-projects,
@@ -14039,21 +14068,26 @@ header .block-block-content > .text-formatted p {
 .block-views-blockservice-project-term-block-1 .view-service-project-term nav ul.pagination li.disabled {
   display: none;
 }
+.block-views-blockmain-page-projects-block-1 .view-main-page-projects nav,
+.block-views-blockall-projects-block-1 .view-main-page-projects nav,
+.block-views-blockservice-project-term-block-1 .view-main-page-projects nav {
+  padding-bottom: 100px;
+}
 
-.views-field-field-service a[href*="/taxonomy/term/8"],
-.field--name-field-service a[href*="/taxonomy/term/8"] {
+.views-field-field-service a[href*="/service/term/web-development"],
+.field--name-field-service a[href*="/service/term/web-development"] {
   color: #1bbc9b;
 }
-.views-field-field-service a[href*="/taxonomy/term/7"],
-.field--name-field-service a[href*="/taxonomy/term/7"] {
+.views-field-field-service a[href*="/service/term/php-development"],
+.field--name-field-service a[href*="/service/term/php-development"] {
   color: #9b58b5;
 }
-.views-field-field-service a[href*="/taxonomy/term/5"],
-.field--name-field-service a[href*="/taxonomy/term/5"] {
+.views-field-field-service a[href*="/service/term/app-development"],
+.field--name-field-service a[href*="/service/term/app-development"] {
   color: #e84c3d;
 }
-.views-field-field-service a[href*="/taxonomy/term/6"],
-.field--name-field-service a[href*="/taxonomy/term/6"] {
+.views-field-field-service a[href*="/service/term/drupal-project"],
+.field--name-field-service a[href*="/service/term/drupal-project"] {
   color: #32ade1;
 }
 
@@ -14151,6 +14185,17 @@ header .block-block-content > .text-formatted p {
   .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-row {
     width: 190px;
   }
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row .views-field.views-field-title a,
+  .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-row .views-field.views-field-title a,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-row .views-field.views-field-title a,
+  .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-row .views-field.views-field-title a,
+  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row .views-field.views-field-title a,
+  .block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-row .views-field.views-field-title a,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-row .views-field.views-field-title a,
+  .block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-row .views-field.views-field-title a,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-row .views-field.views-field-title a {
+    font-size: 1.2rem;
+  }
 }
 @media (max-width: 500px) {
   .block-views-blockmain-page-projects-block-1 h2, .block-views-blockmain-page-projects-block-1 .h2,
@@ -14181,6 +14226,17 @@ header .block-block-content > .text-formatted p {
   .block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-row,
   .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-row {
     width: 280px;
+  }
+  .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row .views-field.views-field-title a,
+  .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content .views-row .views-field.views-field-title a,
+  .block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content .views-row .views-field.views-field-title a,
+  .block-views-blockall-projects-block-1 .view-main-page-projects .view-content .views-row .views-field.views-field-title a,
+  .block-views-blockall-projects-block-1 .view-all-projects .view-content .views-row .views-field.views-field-title a,
+  .block-views-blockall-projects-block-1 .view-service-project-term .view-content .views-row .views-field.views-field-title a,
+  .block-views-blockservice-project-term-block-1 .view-main-page-projects .view-content .views-row .views-field.views-field-title a,
+  .block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-row .views-field.views-field-title a,
+  .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-row .views-field.views-field-title a {
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 424px) {
@@ -14272,6 +14328,26 @@ header .block-block-content > .text-formatted p {
 .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row,
 .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row {
   width: 300px !important;
+}
+.block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field-field-image a img,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field-field-image a img,
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-field-image a img,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field-field-image a img,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field-field-image a img,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field-field-image a img {
+  width: 290px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: 0.3s ease-in-out;
+}
+.block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field-field-image a img:hover,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field-field-image a img:hover,
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-field-image a img:hover,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field-field-image a img:hover,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field-field-image a img:hover,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field-field-image a img:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people a,
 .block-views-blockmain-page-people-block-1 .view-all-people a,
@@ -14455,113 +14531,81 @@ header .block-block-content > .text-formatted p {
 .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field-view-node span:hover a {
   color: #fff;
 }
-.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field-field-social-links,
-.block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field-field-social-links,
-.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field-field-social-links,
-.block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field-field-social-links,
-.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-field-social-links,
-.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field-field-social-links,
-.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field-field-social-links,
-.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field-field-social-links,
-.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field-field-social-links {
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-field-social-links,
+.block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .social-likes .views-field-field-social-links,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .social-likes .views-field-field-social-links,
+.block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-field-social-links,
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .social-likes .views-field-field-social-links,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .social-likes .views-field-field-social-links,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-field-social-links,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .social-likes .views-field-field-social-links,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .social-likes .views-field-field-social-links {
   display: block;
   text-align: left;
   float: left;
-  padding-left: 30px;
-  padding-top: 19px;
+  padding-left: 25px;
+  padding-top: 20px;
 }
-.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field-field-social-links .field-content a,
-.block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field-field-social-links .field-content a,
-.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field-field-social-links .field-content a,
-.block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field-field-social-links .field-content a,
-.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-field-social-links .field-content a,
-.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field-field-social-links .field-content a,
-.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field-field-social-links .field-content a,
-.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field-field-social-links .field-content a,
-.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field-field-social-links .field-content a {
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-field-social-links .field-content ul li,
+.block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .social-likes .views-field-field-social-links .field-content ul li,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .social-likes .views-field-field-social-links .field-content ul li,
+.block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-field-social-links .field-content ul li,
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .social-likes .views-field-field-social-links .field-content ul li,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .social-likes .views-field-field-social-links .field-content ul li,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-field-social-links .field-content ul li,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .social-likes .views-field-field-social-links .field-content ul li,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .social-likes .views-field-field-social-links .field-content ul li {
+  padding: 0 3px;
+}
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-field-social-links .field-content ul li a,
+.block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .social-likes .views-field-field-social-links .field-content ul li a,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .social-likes .views-field-field-social-links .field-content ul li a,
+.block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-field-social-links .field-content ul li a,
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .social-likes .views-field-field-social-links .field-content ul li a,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .social-likes .views-field-field-social-links .field-content ul li a,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-field-social-links .field-content ul li a,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .social-likes .views-field-field-social-links .field-content ul li a,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .social-likes .views-field-field-social-links .field-content ul li a {
+  font-size: 12px;
   color: #6e9bca;
 }
-.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field-link-flag .flag.flag-like,
-.block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field-link-flag .flag.flag-like,
-.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field-link-flag .flag.flag-like,
-.block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field-link-flag .flag.flag-like,
-.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-link-flag .flag.flag-like,
-.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field-link-flag .flag.flag-like,
-.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field-link-flag .flag.flag-like,
-.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field-link-flag .flag.flag-like,
-.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field-link-flag .flag.flag-like {
-  padding-top: 24px;
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like,
+.block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like,
+.block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like,
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like {
+  padding-top: 18px;
+  margin-right: 20px;
 }
-.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field-link-flag .flag.flag-like a,
-.block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field-link-flag .flag.flag-like a,
-.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field-link-flag .flag.flag-like a,
-.block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field-link-flag .flag.flag-like a,
-.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-link-flag .flag.flag-like a,
-.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field-link-flag .flag.flag-like a,
-.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field-link-flag .flag.flag-like a,
-.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field-link-flag .flag.flag-like a,
-.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field-link-flag .flag.flag-like a {
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like a,
+.block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like a,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like a,
+.block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like a,
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like a,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like a,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like a,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like a,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like a {
   color: #e84c3d;
 }
-.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field-link-flag .js-flag-message,
-.block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field-link-flag .js-flag-message,
-.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field-link-flag .js-flag-message,
-.block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field-link-flag .js-flag-message,
-.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field-link-flag .js-flag-message,
-.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field-link-flag .js-flag-message,
-.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field-link-flag .js-flag-message,
-.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field-link-flag .js-flag-message,
-.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field-link-flag .js-flag-message {
+.block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like.action-flag a,
+.block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like.action-flag a,
+.block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like.action-flag a,
+.block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like.action-flag a,
+.block-views-blockall-people-block-1 .view-all-people .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like.action-flag a,
+.block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like.action-flag a,
+.block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like.action-flag a,
+.block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like.action-flag a,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .social-likes .views-field-link-flag .flag.flag-like.action-flag a {
+  color: gray;
+}
+
+.flag-like .ajax-progress.ajax-progress-throbber {
   display: none;
-}
-@media (max-width: 1098px) {
-  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-col,
-  .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-col,
-  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-col,
-  .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-col,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-col,
-  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-col,
-  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-col,
-  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-col,
-  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-col {
-    width: 48% !important;
-    margin-bottom: 20px;
-  }
-  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-field-addtoany-share,
-  .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-field-addtoany-share,
-  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-field-addtoany-share,
-  .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-field-addtoany-share,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-field-addtoany-share,
-  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-field-addtoany-share,
-  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-field-addtoany-share,
-  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-field-addtoany-share,
-  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-field-addtoany-share {
-    padding-left: 115px;
-  }
-  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-field-link-flag .flag.flag-like a,
-  .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-field-link-flag .flag.flag-like a,
-  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-field-link-flag .flag.flag-like a,
-  .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-field-link-flag .flag.flag-like a,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-field-link-flag .flag.flag-like a,
-  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-field-link-flag .flag.flag-like a,
-  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-field-link-flag .flag.flag-like a,
-  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-field-link-flag .flag.flag-like a,
-  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-field-link-flag .flag.flag-like a {
-    padding-left: 30px;
-  }
-}
-@media (max-width: 520px) {
-  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-col,
-  .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-col,
-  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-col,
-  .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-col,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-col,
-  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-col,
-  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-col,
-  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-col,
-  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-col {
-    width: 98% !important;
-  }
 }
 
 .action-flag,
@@ -14584,8 +14628,22 @@ header .block-block-content > .text-formatted p {
   .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes,
   .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes,
   .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links {
+    padding: 0;
+    margin: 0;
   }
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
@@ -14598,29 +14656,18 @@ header .block-block-content > .text-formatted p {
   .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul {
     font-size: 12px;
   }
-  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
-  .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
-  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
-  .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
-  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
-  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
-  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
-  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag {
-    flex: 1;
-  }
-}
-@media (max-width: 1060px) {
-  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links {
-    padding-left: 20px;
+  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag .flag-like,
+  .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag .flag-like,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag .flag-like,
+  .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag .flag-like,
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag .flag-like,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag .flag-like,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag .flag-like,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag .flag-like,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag .flag-like {
+    text-align: center;
+    padding: 0;
+    margin: 0;
   }
 }
 @media (max-width: 1024px) {
@@ -14658,39 +14705,6 @@ header .block-block-content > .text-formatted p {
   .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes {
     justify-content: space-around;
   }
-  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links {
-    padding-left: 40px;
-  }
-  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul {
-    font-size: 15px;
-  }
-  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
-  .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
-  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
-  .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
-  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
-  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
-  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag,
-  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag {
-    flex: auto;
-  }
 }
 @media (max-width: 900px) {
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row,
@@ -14717,28 +14731,6 @@ header .block-block-content > .text-formatted p {
   .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row {
     width: 250px;
   }
-  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links,
-  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links {
-    padding-left: 30px;
-  }
-  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul {
-    font-size: 12px;
-  }
 }
 @media (max-width: 600px) {
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row,
@@ -14763,16 +14755,16 @@ header .block-block-content > .text-formatted p {
   .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links {
     padding-left: 10px;
   }
-  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul,
-  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul {
-    font-size: 12px;
+  .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul li a,
+  .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul li a,
+  .block-views-blockmain-page-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul li a,
+  .block-views-blockall-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul li a,
+  .block-views-blockall-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul li a,
+  .block-views-blockall-people-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul li a,
+  .block-views-blockposition-people-term-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul li a,
+  .block-views-blockposition-people-term-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul li a,
+  .block-views-blockposition-people-term-block-1 .view-position-people-term .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field-field-social-links ul li a {
+    font-size: 15px;
   }
   .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag .flag-like,
   .block-views-blockmain-page-people-block-1 .view-all-people .view-content .views-row .views-field.views-field-fieldset .social-likes .views-field.views-field-link-flag .flag-like,
@@ -14805,7 +14797,6 @@ header .block-block-content > .text-formatted p {
   }
 }
 .block-views-blockall-clients-block-1 {
-  margin: auto !important;
   margin-top: 20px !important;
   max-width: 1250px !important;
   padding: 0 !important;
@@ -14904,6 +14895,33 @@ body.path-frontpage main .region-content {
 .social-media-links--platforms *:hover {
   transition: all 0.5s ease;
   color: rgba(0, 68, 255, 0.973);
+}
+
+.block-views-blockservice-project-term-block-1 .view-service-project-term .view-header a,
+.block-views-blockservice-project-term-block-1 .view-position-people-term .view-header a,
+.block-views-blockposition-people-term-block-1 .view-service-project-term .view-header a,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-header a {
+  color: #000;
+  font-size: 32px;
+  white-space: nowrap;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  display: flex;
+  gap: 10px;
+}
+.block-views-blockservice-project-term-block-1 .view-service-project-term .view-header a::before, .block-views-blockservice-project-term-block-1 .view-service-project-term .view-header a::after,
+.block-views-blockservice-project-term-block-1 .view-position-people-term .view-header a::before,
+.block-views-blockservice-project-term-block-1 .view-position-people-term .view-header a::after,
+.block-views-blockposition-people-term-block-1 .view-service-project-term .view-header a::before,
+.block-views-blockposition-people-term-block-1 .view-service-project-term .view-header a::after,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-header a::before,
+.block-views-blockposition-people-term-block-1 .view-position-people-term .view-header a::after {
+  content: " ";
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  width: 50%;
+  margin: auto 0;
 }
 
 .block-views-blockmain-page-articles-block-2 {
@@ -15405,6 +15423,9 @@ body.path-frontpage main .region-content {
 .block-system-main-block article[data-history-node-id="8"] .node__content {
   margin-bottom: 75px;
 }
+.block-system-main-block article[data-history-node-id="8"] .node__content .layout--onecol .block-field-blocknodepagetitle {
+  margin-bottom: 50px;
+}
 .block-system-main-block article[data-history-node-id="8"] .node__content .layout--onecol .block-field-blocknodepagetitle span {
   position: relative;
   white-space: nowrap;
@@ -15575,6 +15596,9 @@ body.path-frontpage main .region-content {
     flex-wrap: wrap;
     width: 100%;
   }
+  .block-system-main-block article[data-history-node-id="8"] .node__content .layout--twocol-section--50-50 .layout__region--first .block-webform-block form .form-actions {
+    text-align: center;
+  }
   .block-system-main-block article[data-history-node-id="8"] .node__content .layout--twocol-section--50-50 .layout__region--second .field--name-field-location iframe {
     width: 100% !important;
   }
@@ -15700,7 +15724,8 @@ footer .region-footer .navbar-brand .site-slogan {
   text-transform: initial;
   font-family: "Nexa", sans-serif;
   color: white;
-  font-size: 0.9em;
+  font-size: 0.8em;
+  margin-top: -10px;
 }
 footer .region-footer .block-social-media-links {
   display: flex;

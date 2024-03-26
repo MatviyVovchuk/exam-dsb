@@ -28,6 +28,7 @@
   }
   .view-all-services {
     .view-content {
+      justify-content: space-evenly !important;
       flex-wrap: wrap;
       .views-row {
         width: 300px !important;
@@ -39,6 +40,7 @@
     .view-content {
       display: flex;
       text-align: center;
+      justify-content: space-between;
       .views-row {
         width: 250px;
         display: flex;
