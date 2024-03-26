@@ -31,7 +31,7 @@
         background-color: #6e9bca;
         height: fit-content;
         padding-right: 6px;
-        border-radius: 3px;
+        transition: all 0.3s;
         span {
           margin-top: 0;
           a {
@@ -42,6 +42,14 @@
             margin: 0px;
             color: #fff;
             text-align: center;
+          }
+        }
+      }
+      .views-field.views-field-view-node:hover {
+        background-color: rgb(55, 54, 69);
+        span {
+          a {
+            color: #fff;
           }
         }
       }

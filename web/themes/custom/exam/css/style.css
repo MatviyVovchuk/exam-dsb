@@ -13471,7 +13471,7 @@ header .block-block-content > .text-formatted p {
   height: -moz-fit-content;
   height: fit-content;
   padding-right: 6px;
-  border-radius: 3px;
+  transition: all 0.3s;
 }
 .block-views-blockmain-page-about-block-1 .view-main-page-about .views-row .views-field.views-field-view-node span {
   margin-top: 0;
@@ -13484,6 +13484,12 @@ header .block-block-content > .text-formatted p {
   margin: 0px;
   color: #fff;
   text-align: center;
+}
+.block-views-blockmain-page-about-block-1 .view-main-page-about .views-row .views-field.views-field-view-node:hover {
+  background-color: rgb(55, 54, 69);
+}
+.block-views-blockmain-page-about-block-1 .view-main-page-about .views-row .views-field.views-field-view-node:hover span a {
+  color: #fff;
 }
 @media (max-width: 1240px) {
   .block-views-blockmain-page-about-block-1 .view-main-page-about .view-content {
@@ -13636,7 +13642,6 @@ header .block-block-content > .text-formatted p {
   width: 98px;
   margin: 0 auto;
   padding: 3px 0;
-  border-radius: 3px;
   transition: all 0.3s;
 }
 .block-views-blockmain-page-services-block-1 .view-main-page-services .view-content .views-field-view-node span a,
@@ -13900,7 +13905,6 @@ header .block-block-content > .text-formatted p {
   margin-top: 17px;
   background-color: rgb(55, 54, 69);
   padding: 3px 0;
-  border-radius: 3px;
   transition: all 0.3s;
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects .view-content .views-row .views-field-view-node span a,
@@ -14414,7 +14418,6 @@ header .block-block-content > .text-formatted p {
   display: inline-block;
   background-color: #373645;
   padding: 3px 0;
-  border-radius: 3px;
   transition: all 0.3s;
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people .view-content .views-row .views-field-view-node span a,
@@ -15191,7 +15194,6 @@ body.path-frontpage main .region-content {
 .block-views-blockmain-page-articles-block-2 .view-main-page-articles .view-content .views-row div.fieldset-news-node .views-field-view-node .field-content {
   padding: 7px 0.5em;
   background-color: #373645;
-  border-radius: 3px;
   transition: all 0.3s;
 }
 .block-views-blockmain-page-articles-block-1 .view-main-page-articles .view-content .views-row div.fieldset-news-node .views-field-view-node .field-content a,
