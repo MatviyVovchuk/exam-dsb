@@ -5,10 +5,10 @@
 
 .block-views-blockall-projects-block-1,
 .block-views-blockservice-project-term-block-1 {
-  margin: auto !important;
   margin-top: 20px !important;
   max-width: 1250px !important;
   padding: 0 !important;
+  margin-bottom: 50px !important;
   h2 {
     max-width: 1250px !important;
     padding: 0 !important;
@@ -87,13 +87,14 @@
       justify-content: space-between;
       gap: 10px;
       .views-row {
+        margin: 0 5px;
         border-bottom: 1px solid #373645;
         padding-bottom: 12px;
         background-color: #fff;
-        width: 250px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        // justify-content: space-between;
+
         .views-field-field-image {
           img {
             width: 290px;
@@ -107,7 +108,11 @@
             color: #000;
           }
         }
+        .views-field-field-service {
+          margin-top: auto;
+        }
         .views-field-view-node {
+          margin-top: 5px;
           span {
             display: inline-block;
             margin-top: 17px;
@@ -204,7 +209,7 @@
         justify-content: center;
         flex-wrap: wrap;
         .views-row {
-          margin: 0 90px;
+          margin: 0 50px;
         }
       }
     }
@@ -219,17 +224,17 @@
     .view-all-projects,
     .view-service-project-term {
       .view-content {
-        justify-content: center;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         .views-row {
-          margin: 0 50px;
+          margin: 0;
         }
       }
     }
   }
 }
 
-@media (max-width: 810px) {
+@media (max-width: 710px) {
   .block-views-blockmain-page-projects-block-1,
   .block-views-blockall-projects-block-1,
   .block-views-blockservice-project-term-block-1 {
@@ -238,7 +243,7 @@
     .view-service-project-term {
       .view-content {
         .views-row {
-          margin: 0 20px;
+          width: 250px;
         }
       }
     }
@@ -270,7 +275,7 @@
     .view-service-project-term {
       .view-content {
         .views-row {
-          width: 190px;
+          width: 200px;
           .views-field.views-field-title {
             a {
               font-size: 1.2rem;
@@ -282,7 +287,7 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 510px) {
   .block-views-blockmain-page-projects-block-1,
   .block-views-blockall-projects-block-1,
   .block-views-blockservice-project-term-block-1 {

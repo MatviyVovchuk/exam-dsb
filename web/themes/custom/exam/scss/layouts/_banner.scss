@@ -100,11 +100,12 @@ header {
     }
   }
 }
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   header {
     .contextual-region,
     .block-block-content {
       & > .text-formatted {
+        width: 100%;
         h2 {
           font-size: 40px;
           height: auto;

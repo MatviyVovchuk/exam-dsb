@@ -59,6 +59,23 @@
   }
 }
 
+@media (max-width: 770px) {
+  .block-views-blockall-clients-block-1 {
+    margin-top: 50px;
+    // margin-bottom: 0;
+    .view-all-clients {
+      .view-content {
+        .views-row {
+          .views-field-field-image {
+            max-width: 180px;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 500px) {
   .block-views-blockmain-page-clients-block-1,
   .block-views-blockall-clients-block-1 {
@@ -66,7 +83,7 @@
   }
   .block-views-blockall-clients-block-1 {
     margin-top: 50px;
-    margin-bottom: 0;
+    // margin-bottom: 0;
     .view-all-clients {
       .view-content {
         text-align: center;
@@ -78,6 +95,9 @@
           display: flex;
           align-items: center;
           margin: 0 auto;
+          .views-field-field-image {
+            padding: 20px;
+          }
         }
       }
     }

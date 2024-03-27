@@ -25,16 +25,15 @@ gulp.task("styles", () => {
 });
 
 // Concatenate and minify JS
-gulp.task("scripts", () => {
-  return gulp
-    .src("js/*.js")
-    .pipe(concat("main.js"))
-    .pipe(gulp.dest("js"))
-    .pipe(uglify())
-    .pipe(rename({ suffix: ".min" }))
-    .pipe(gulp.dest("js"))
-    .pipe(browserSync.stream());
-});
+// gulp.task("scripts", () => {
+//   return gulp
+//     .src("js/*.js")
+//     .pipe(concat("main.js"))
+//     .pipe(gulp.dest("js"))
+//     .pipe(uglify())
+//     .pipe(rename({ suffix: ".min" }))
+//     .pipe(gulp.dest("js"));
+// });
 
 // Watch for changes and reload browser
 gulp.task("watch", () => {
@@ -45,18 +44,18 @@ gulp.task("watch", () => {
   });
 
   gulp.watch("scss/**/*.scss", gulp.series("styles"));
-  gulp.watch("js/*.js", gulp.series("scripts"));
+  // gulp.watch("js/*.js", gulp.series("scripts"));
   gulp.watch("templates/**/*.twig").on("change", browserSync.reload); // Watch template files
 
   // You can add more watch tasks if needed
 
   gulp
-    .watch(["*.html", "css/*.css", "js/*.js"])
+    .watch(["*.html", "css/*.css"]) // , "js/*.js"
     .on("change", browserSync.reload);
 });
 
 // Default task
 gulp.task(
   "default",
-  gulp.series("styles", "scripts", "watch")
+  gulp.series("styles",  "watch") // "scripts",
 );

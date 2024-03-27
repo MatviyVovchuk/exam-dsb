@@ -5,7 +5,7 @@
 @mixin responsiveTop($map) {
   @each $query, $top in $map {
     @media (max-width: $query) {
-      top: $top;
+      top: $top !important;
     }
   }
 }

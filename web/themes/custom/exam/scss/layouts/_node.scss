@@ -14,6 +14,14 @@
     .node__content {
       .layout__region--content {
         padding: 0 20px;
+        .block-field-blocknodeproject {
+          &field-image {
+            float: right;
+            img {
+              width: 330px !important;
+            }
+          }
+        }
         .block-field-blocknodeservice,
         .block-field-blocknodeproject,
         .block-field-blocknodeclient {
@@ -22,9 +30,10 @@
             float: right;
             img {
               margin: 30px;
-              margin-top: 0;
-              width: 300px;
+              margin-top: -110px;
+              width: 220px;
               height: auto;
+              max-height: 400px;
             }
           }
           // TITLE BLOCK STYLE
@@ -240,6 +249,15 @@
           .block-extra-field-blocknodepeopleflag-like {
             width: 32.5%;
           }
+          .block-field-blocknodeproject {
+            // IMG STYLE
+            &field-image {
+              float: right;
+              img {
+                max-width: 200px;
+              }
+            }
+          }
         }
       }
     }
@@ -248,10 +266,7 @@
 
 @media (max-width: 770px) {
   .block-system-main-block {
-    .node--type-service.node--view-mode-full,
-    .node--type-project.node--view-mode-full,
-    .node--type-people.node--view-mode-full,
-    .node--type-client.node--view-mode-full {
+    .node--type-people.node--view-mode-full {
       .node__content {
         .layout__region--content {
           .block-field-blocknodepeoplefield-position,
@@ -259,6 +274,29 @@
           .block-extra-field-blocknodepeopleflag-like {
             display: block;
             width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .block-system-main-block {
+    .node--type-service.node--view-mode-full,
+    .node--type-project.node--view-mode-full,
+    .node--type-client.node--view-mode-full {
+      .node__content {
+        .layout__region--content {
+          .block-field-blocknodeservice,
+          .block-field-blocknodeproject,
+          .block-field-blocknodeclient {
+            // IMG STYLE
+            &field-image {
+              img {
+                margin-top: 0;
+              }
+            }
           }
         }
       }
@@ -310,6 +348,44 @@
   }
 }
 
+@media (max-width: 550px) {
+  .block-system-main-block {
+    .node--type-project.node--view-mode-full {
+      .node__content {
+        .layout__region--content {
+          .block-field-blocknodeproject {
+            // IMG STYLE
+            &field-image {
+              img {
+                max-width: 150px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 470px) {
+  .block-system-main-block {
+    .node--type-project.node--view-mode-full {
+      .node__content {
+        .layout__region--content {
+          .block-field-blocknodeproject {
+            // IMG STYLE
+            &field-image {
+              img {
+                max-width: 100px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 400px) {
   .block-system-main-block {
     .node--type-service.node--view-mode-full,
@@ -318,6 +394,14 @@
     .node--type-client.node--view-mode-full {
       .node__content {
         .layout__region--content {
+          .block-field-blocknodeproject {
+            // IMG STYLE
+            &field-image {
+              img {
+                max-width: 200px;
+              }
+            }
+          }
           .block-field-blocknodeservice,
           .block-field-blocknodeproject,
           .block-field-blocknodeclient {

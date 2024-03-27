@@ -3,13 +3,16 @@
 @import "../variables/variables";
 @import "../variables/mixins";
 
+// top: 39px !important;
+
 $mediaQueries: (
-  1350px: -400px,
-  1250px: -380px,
-  1200px: -370px,
-  1150px: -350px,
-  1080px: -330px,
-  1030px: -310px,
+  1350px: -460px,
+  1250px: -430px,
+  1200px: -410px,
+  1150px: -390px,
+  1080px: -370px,
+  1030px: -350px,
+  991px: 0px
 );
 
 body.path-frontpage {
@@ -56,7 +59,7 @@ header {
     }
   }
   .region-header {
-    margin-bottom: -50px;
+    margin-bottom: -10px;
   }
 
   .navbar {
@@ -147,7 +150,7 @@ header {
         border: 1px solid #cccccc;
         padding-top: 23px;
         padding-bottom: 15px;
-        border-radius: 0 3px 3px 0;
+        border-radius: 0;
         padding-right: 25px;
         background-color: transparent;
         transition: all 0.5s;
@@ -156,9 +159,8 @@ header {
         border-color: black;
       }
       input.form-search {
-        border-bottom-right-radius: 0;
-        border-top-right-radius: 0;
         border-right-width: 0;
+        border-radius: 0;
       }
     }
 
@@ -319,7 +321,7 @@ header {
       width: 100%;
       background-color: $grey;
       z-index: 1000;
-      transition: top 0.9s ease-in-out;
+      // transition: top 0.9s ease-in-out;
       .navbar-toggler {
         color: rgb(255, 255, 255, 0.5);
         border-color: white;
@@ -340,6 +342,7 @@ header {
       .navbar-collapse {
         transition: all 0.5s;
         background-color: rgb(60, 60, 69);
+        min-height: auto;
         .region-nav-main {
           nav {
             justify-content: center;
@@ -355,6 +358,11 @@ header {
           flex-direction: row;
           width: 100%;
           justify-content: center;
+          .block-social-media-links {
+            a {
+              font-size: 12px;
+            }
+          }
           .search-block-form {
             width: 70%;
             max-width: none;

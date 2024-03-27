@@ -2,6 +2,8 @@ global:
   css:
     theme:
       css/style.css: {}
+  js:
+    js/main.js: {}
     #   /libraries/font-awesome/css/all.min.css: { }
     # js:
     #   /libraries/font-awesome/js/all.min.js: { }
