@@ -3,16 +3,19 @@
 @import "../variables/variables";
 @import "../variables/mixins";
 
+// STYLE FOR MAIN BANNER
 header {
   .contextual-region,
   .block-block-content {
     position: relative;
 
+    // STYLE FOR IMAGE
     .field--name-field-image {
       img {
         width: 100%;
       }
     }
+    // STYLE FOR TEXT
     & > .text-formatted {
       position: absolute;
       top: 40%;
@@ -49,6 +52,7 @@ header {
         line-height: 16px;
         padding-right: 5px;
       }
+
       @media (max-width: 678px) {
         text-align: center;
         padding-left: 0;

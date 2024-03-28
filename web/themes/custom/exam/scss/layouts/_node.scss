@@ -10,6 +10,7 @@
   .node--type-people.node--view-mode-full,
   .node--type-client.node--view-mode-full {
     margin-top: 50px;
+    margin-bottom: 50px;
 
     .node__content {
       .layout__region--content {
@@ -52,7 +53,11 @@
           }
 
           &field-service {
-            font-size: 26px;
+            font-size: 18px;
+            a {
+              text-transform: uppercase;
+              text-decoration: none;
+            }
           }
         }
         // TEAM FIELD
@@ -130,6 +135,7 @@
     max-width: 1250px;
     margin: 0 auto;
     margin-top: 50px;
+    margin-bottom: 50px;
 
     .layout--twocol-section--25-75 {
       .layout__region {
@@ -223,10 +229,6 @@
             // CONTENT STYLE
             &body,
             &-nodefield-contents {
-              font-size: 24px;
-            }
-
-            &field-service {
               font-size: 24px;
             }
           }
@@ -332,7 +334,7 @@
             }
 
             &field-service {
-              font-size: 18px;
+              font-size: 16px;
             }
           }
           .block-field-blocknodeproject {
@@ -409,6 +411,9 @@
             &field-image {
               float: none;
               text-align: center;
+              img {
+                margin: 30px 0;
+              }
             }
             // TITLE BLOCK STYLE
             &title {

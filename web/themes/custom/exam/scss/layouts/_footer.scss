@@ -3,6 +3,7 @@
 @import "../variables/variables";
 @import "../variables/mixins";
 
+// FOOTER STYLE
 footer {
   padding: 0;
   background-color: #373645;
@@ -10,6 +11,7 @@ footer {
   .region-footer {
     flex-direction: row;
     justify-content: space-between;
+    // LOGO STYLE
     .navbar-brand {
       padding: 0;
       margin-right: 0;
@@ -30,6 +32,7 @@ footer {
         margin-top: -10px;
       }
     }
+    // SOCIAL LINK STYLE
     .block-social-media-links {
       display: flex;
       align-items: center;
@@ -44,6 +47,7 @@ footer {
   }
 }
 
+// ADAPTIVE FOR FOTTER
 @media (max-width: 1100px) {
   footer {
     .region-footer {
@@ -80,7 +84,6 @@ footer {
           font-size: 12px;
         }
       }
-
     }
   }
 }

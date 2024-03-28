@@ -1,32 +1,45 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Function to handle window resize
+  // Function to handle window resize and adjust navigation position
   function handleResize() {
-    // Check if the element with id=toolbar-administration exists
-    var toolbarAdmin = document.getElementById("toolbar-administration");
-    if (toolbarAdmin) {
-      // If the element exists, find the navigation menu with class .navbar
-      var nav = document.querySelector("header .navbar");
+    // Select the navigation menu element
+    var nav = document.querySelector("header .navbar");
 
-      if (nav) {
-        // Check the window width and change the position of the navigation menu using !important if the window width is less than 991px
-        if (window.innerWidth <= 991) {
-          nav.classList.add("navbar-fixed");
-          nav.setAttribute("style", "top: 39px !important; z-index: 9;");
+    // Select the toolbar administration element and its tray
+    var toolbarAdmin = document.getElementById("toolbar-administration");
+    var toolbarAdminNav = document.getElementById(
+      "toolbar-item-administration-tray"
+    );
+
+    // Check if the window width is less than 991px
+    if (window.innerWidth <= 991) {
+      // Check if toolbar administration is active and has a specific tray class
+
+      if (toolbarAdmin) {
+        console.log(toolbarAdmin);
+        if (toolbarAdminNav.classList.contains("is-active") && toolbarAdminNav.classList.contains("toolbar-tray-horizontal")) {
+          // If the element exists, find the navigation menu with class .navbar
+          // console.log("qqq");
+          if (nav) {
+            nav.setAttribute("style", "top: 79px !important;");
+          }
         } else {
-          // Check if it is front page
-          if (document.body.classList.contains("path-frontpage")) {
-            nav.setAttribute("style", "top: -75%; z-index: revert-layer;");
-          }
-          else {
-            nav.setAttribute("style", "top: 0; z-index: revert-layer;");
-          }
+          nav.setAttribute("style", "top: 39px !important;");
         }
+      } else {
+        // no admin
+        nav.setAttribute("style", "top: 0px !important;");
       }
+    } else {
+      // Set the navigation menu top position for larger screens
+      nav.setAttribute("style", "top: revert-layer !important;");
     }
   }
 
-  // Initial call to handleResize on page load
-  handleResize();
+  if (window.innerWidth <= 991) {
+    // Call to handleResize on page load
+    handleResize();
+    console.log("show")
+  }
 
   // Add event listener for window resize
   window.addEventListener("resize", handleResize);

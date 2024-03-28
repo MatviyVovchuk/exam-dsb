@@ -114,13 +114,17 @@
   }
 }
 
-@media (max-width: 524px) {
+@media (max-width: 525px) {
   .path-search {
     .block-system-main-block {
       margin-top: 20px;
       // SEARCH FORM
       form {
         .form-wrapper {
+          // SEARCH FORM
+          .form-type-search {
+            width: 100%;
+          }
           // SEARCH BTN
           .form-submit {
             margin: 10px 0 0 0;

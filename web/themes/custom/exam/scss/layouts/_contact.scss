@@ -4,7 +4,6 @@
 @import "../variables/mixins";
 
 // CONTACT PAGE
-
 .block-system-main-block {
   article[data-history-node-id="8"] {
     margin: 0 auto;
@@ -28,12 +27,13 @@
                 justify-content: center;
                 &::after {
                   content: " ";
+                  margin-top: 10px;
                   border: 2px solid $grey;
                   box-sizing: border-box;
                   width: 70px;
                   margin: auto 0;
                   position: absolute;
-                  bottom: 0;
+                  bottom: -10px;
                 }
               }
             }
@@ -109,7 +109,7 @@
                 }
 
                 p {
-                  margin-bottom: 0;
+                  margin-bottom: 30px;
                 }
               }
               .field--name-field-contact-info {

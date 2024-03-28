@@ -3,9 +3,12 @@
 @import "../variables/variables";
 @import "../variables/mixins";
 
+// STYLE FOR ABOUT TEASER BLOCK
 .block-views-blockmain-page-about-block-1 {
+  margin: 90px 0;
   @include own-container;
   .view-main-page-about {
+    // STYLE FOR CONTAINER
     .views-row {
       display: flex;
       justify-content: space-between;
@@ -15,18 +18,21 @@
       font-family: "Inter", sans-serif;
       border-top: 5px solid #000;
       border-bottom: 5px solid #6e9bca;
+      // STYLE FOR TITLE "ABOUT"
       span a {
         font-size: 30px;
         text-decoration: none;
         color: #000;
         font-weight: 700;
       }
+      // STYLE FOR MAIN TEXT
       .views-field-body {
         p {
           margin: 0;
           color: #cccccc;
         }
       }
+      // STYLE FOR BUTTON LINK
       .views-field.views-field-view-node {
         background-color: #6e9bca;
         height: fit-content;
@@ -54,6 +60,7 @@
         }
       }
     }
+    // ADAPTIVE ALL ELEMENTS
     @media (max-width: 1240px) {
       .view-content {
         padding: 0 10px;
