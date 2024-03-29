@@ -3,6 +3,7 @@
 @import "../variables/variables";
 @import "../variables/mixins";
 
+// TEAM ALL PAGE, TERM PAGE
 .block-views-blockall-people-block-1,
 .block-views-blockposition-people-term-block-1 {
   margin-top: 20px !important;
@@ -11,28 +12,21 @@
   margin-bottom: 50px;
 }
 
+// TEAM ALL PAGE, TERM PAGE, MAIN PAGE
 .block-views-blockmain-page-people-block-1,
 .block-views-blockall-people-block-1,
 .block-views-blockposition-people-term-block-1 {
   @include own-container;
-
   text-transform: uppercase;
   margin-top: 50px;
   margin-bottom: 50px;
   font-family: "Inter", sans-serif;
+  // TITLE
   & > h2 {
-    position: relative;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 50px;
-    display: flex;
-    white-space: nowrap;
-    gap: 10px;
-    &::before,
-    &::after {
-      @include line-title;
-    }
+    @include style-h2(700);
   }
+
+// TEAM ALL PAGE, TERM PAGE
   .view-all-people,
   .view-position-people-term {
     .view-content {
@@ -43,6 +37,7 @@
       }
     }
   }
+  // TEAM ALL PAGE, TERM PAGE, MAIN PAGE
   .view-main-page-people,
   .view-all-people,
   .view-position-people-term {
@@ -53,18 +48,19 @@
       text-align: center;
       display: flex;
       justify-content: space-between;
+      // TEAM ITEM
       .views-row {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         padding: 10px;
-
+        // LIKES
         .social-likes {
           .views-field-view-node-1 {
             display: none;
           }
         }
-
+        // IMAGE
         .views-field-field-image {
           a img {
             width: 290px;
@@ -78,6 +74,7 @@
             }
           }
         }
+        // TITLE
         .views-field.views-field-title {
           margin-top: 32px;
           a {
@@ -86,12 +83,14 @@
             color: #000;
           }
         }
+        // POSITION
         .views-field.views-field-field-position {
           font-size: 0.75rem;
           a {
             color: #cccccc;
           }
         }
+        // LINK
         .views-field-view-node {
           margin-top: auto;
           padding-top: 10px;
@@ -113,7 +112,9 @@
             }
           }
         }
+        // SOCIAL LINKS, LIKES
         .social-likes {
+          // SOCIAL LINKS
           .views-field-field-social-links {
             display: block;
             text-align: left;
@@ -132,6 +133,7 @@
               }
             }
           }
+          // LIKES
           .views-field-link-flag {
             .flag.flag-like {
               padding-top: 18px;
@@ -152,12 +154,14 @@
   }
 }
 
+// REMOVE PRELOADER ON SET OR UNSET LIKE
 .flag-like {
   .ajax-progress.ajax-progress-throbber {
     display: none;
   }
 }
 
+// LIKES
 .action-flag,
 .action-unflag {
   @include flag;
@@ -166,6 +170,7 @@
   }
 }
 
+// ADAPTIVE
 @media (max-width: 1200px) {
   .block-views-blockmain-page-people-block-1,
   .block-views-blockall-people-block-1,

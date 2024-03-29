@@ -5,110 +5,55 @@
 @mixin responsiveTop($map) {
   @each $query, $top in $map {
     @media (max-width: $query) {
-      top: $top; // !important;
+      top: $top;
     }
   }
 }
+
 @mixin own-container {
   max-width: 1275px;
   padding: 0 15px;
-  // padding-right: calc(var(--bs-gutter-x) * 0.5);
-  // padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
-  // margin: 0 auto;
 }
-// @mixin social-link {
-//     color: white;
-//     background-color: $blue;
-//     font-size: 15px;
-//     margin-left: 50px;
-// }
-// @mixin style-h2 {
-//     text-align: center;
-//     font-size: 30px;
-//     width: 178px;
-//     background-color: white;
-//     margin: $center;
-// }
-// @mixin style-line-title {
-//     content: "";
-//     display: block;
-//     height: 1px;
-//     background-color: black;
-//     opacity: 0.2;
-//     position: absolute;
-//     width: 1250px;
-//     margin-top: 18px;
-//     z-index: -2;
-//     margin-left: 18px;
-// }
-// @mixin style-line-about {
-//     content: "";
-//     display: block;
-//     height: 4px;
-//     position: absolute;
-//     width: 1270px;
-//     z-index: -2;
-// }
-// @mixin style-button-link {
-//     color: white;
-//     font-size: 15px;
-//     text-decoration: none;
-// }
-// @mixin style-img {
-//     width: 290px;
-//     height: 290px;
-// }
-// @mixin style-fa {
-//     color: white;
-//     background-color: $blue;
-//     width: 25px;
-//     height: 25px;
-//     font-size: 18px;
-//     padding-top: 5px;
-// }
-// @mixin news-name {
-//     font-size: 12px;
-//     padding-right: 4px;
-//     margin-top: 7px;
-// }
-// @mixin background {
-//     background-size: contain;
-//     background-repeat: no-repeat;
-// }
+
+@mixin style-h2($font-weight) {
+  font-family: "Inter", sans-serif;
+  position: relative;
+  font-weight: $font-weight;
+  text-align: center;
+  margin-bottom: 25px;
+  display: flex;
+  white-space: nowrap;
+  gap: 10px;
+  &::before,
+  &::after {
+    @include line-title;
+  }
+}
+
+@mixin line-background() {
+  margin-top: 25px;
+  padding-bottom: 70px;
+  background: repeating-linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.1),
+    #fff 2px,
+    #fff 10px,
+    #fff 0px
+  );
+}
+
+@mixin line-background-empty() {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+  background: none !important;
+}
 @mixin flag {
   text-align: end;
-  // margin-top: 20px;
   margin-right: 40px;
 }
-// @mixin flag-a {
-//     // background-image: url("../img/heart.png");
-//     font-size: 18px;
-//     // color: transparent !important;
-//     // @include background;
-// }
-// @mixin edit-submit {
-//     position: absolute;
-//     background-image: url("../img/search.png");
-//     background-color: transparent;
-//     border-color: black;
-//     font-size: 15px;
-//     height: $height-form;
-//     color: transparent;
-//     opacity: 0.2;
-//     @include background;
-//     margin-top: -56px;
-//     margin-left: 205px;
-//     width: 43px;
-// }
-// @mixin grid{
-//     display: grid;
-//     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-//     .views-col {
-//         width: 100% !important;
-//     }
-// }
+
 @mixin line-title {
   content: " ";
   border: 1px solid #ccc;
@@ -116,16 +61,3 @@
   width: 50%;
   margin: auto 0;
 }
-// @mixin alingnment {
-//   width: 1250px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   @media (max-width:1250px) {
-//       width: 100vw;
-//   }
-// }
-// @mixin alingnment-adaptive {
-//   width: 100vw;
-//   margin-left: auto;
-//   margin-right: auto;
-// }

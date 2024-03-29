@@ -15,17 +15,9 @@
             // STYLE FOR TITLE TEXT
             &nodepagetitle {
               span {
-                text-transform: uppercase;
+                @include style-h2(700);
                 font-size: calc(1rem + 1vw);
-                font-weight: 700;
-                text-align: center;
-                margin-bottom:  10px;
-                display: flex;
-                gap: 10px;
-                &::before,
-                &::after {
-                  @include line-title;
-                }
+                text-transform: uppercase;
               }
             }
             // STYLE FOR BODY TEXT

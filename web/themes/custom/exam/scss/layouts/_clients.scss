@@ -4,7 +4,7 @@
 @import "../variables/mixins";
 
 
-// STYLE
+// STYLE BLOCK ALL CLIENTS
 .block-views-blockall-clients-block-1 {
   margin-top: 20px !important;
   max-width: 1250px !important;
@@ -28,6 +28,7 @@
   }
 }
 
+// STYLE BLOCKS ALL CLIENTS AND MAIN PAGE CLIENTS
 .block-views-blockmain-page-clients-block-1,
 .block-views-blockall-clients-block-1 {
   @include own-container;
@@ -36,16 +37,10 @@
   margin-bottom: 160px;
   font-family: "Inter", sans-serif;
   & > h2 {
-    font-weight: 700;
-    text-align: center;
+    @include style-h2(700);
     margin-bottom: 50px;
-    display: flex;
-    gap: 10px;
-    &::before,
-    &::after {
-      @include line-title;
-    }
   }
+  // SLICK SLIDER STYLE
   .slick-track {
     display: flex;
     align-items: center;
@@ -61,6 +56,7 @@
   }
 }
 
+// ADAPTIVE
 @media (max-width: 800px) {
   .block-views-blockmain-page-clients-block-1 {
     margin-bottom: 100px;
@@ -90,7 +86,6 @@
   }
   .block-views-blockall-clients-block-1 {
     margin-top: 50px;
-    // margin-bottom: 0;
     .view-all-clients {
       .view-content {
         text-align: center;

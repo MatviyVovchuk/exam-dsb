@@ -12,9 +12,11 @@
     margin-top: 50px;
     margin-bottom: 50px;
 
+
     .node__content {
       .layout__region--content {
         padding: 0 20px;
+        // IMAGE FOR PROJECTS
         .block-field-blocknodeproject {
           &field-image {
             float: right;
@@ -102,11 +104,13 @@
               }
             }
           }
+          // BODY
           &body {
             font-size: 24px;
             font-family: "Inter", sans-serif;
           }
         }
+        // LIKES FOR TEAM
         .block-extra-field-blocknodepeopleflag-like {
           width: min-content;
           .flag-like {
@@ -117,6 +121,7 @@
             }
           }
         }
+        // STYLE FOR TEAM
         .block-field-blocknodepeoplefield-position,
         .block-field-blocknodepeoplefield-social-links,
         .block-extra-field-blocknodepeopleflag-like {
@@ -139,6 +144,7 @@
 
     .layout--twocol-section--25-75 {
       .layout__region {
+        // DATE, AUTHOR NAME, IMAGE, POSITION
         &--first {
           flex: 0 1 22%;
           margin-right: 30px;
@@ -160,15 +166,18 @@
               font-family: "Inter", sans-serif;
             }
           }
+          // AUTHOR STYLE
           .block-field-blocknodearticlefield-people {
             h2 {
               display: none;
             }
             .layout__region--content {
+              // AUTHOR IMAGE
               .block-field-blocknodepeoplefield-image {
                 width: 100%;
                 text-align: center;
               }
+              // AUTHOR TITLE, POSITION
               .block-field-blocknodepeopletitle,
               .block-field-blocknodepeoplefield-position {
                 text-align: center;
@@ -182,6 +191,7 @@
           }
         }
 
+        // NEWS TITLE, BODY
         &--second {
           flex: 1;
 
@@ -209,6 +219,9 @@
   }
 }
 
+// ADAPTIVE
+
+// SERVICE, PROJECT, CLIENT, TEAM
 @media (max-width: 1000px) {
   .block-system-main-block {
     .node--type-service.node--view-mode-full,
@@ -238,6 +251,7 @@
   }
 }
 
+// SERVICE, PROJECT, CLIENT, TEAM
 @media (max-width: 990px) {
   .block-system-main-block {
     .node--type-service.node--view-mode-full,
@@ -266,6 +280,7 @@
   }
 }
 
+// TEAM
 @media (max-width: 770px) {
   .block-system-main-block {
     .node--type-people.node--view-mode-full {
@@ -283,6 +298,7 @@
   }
 }
 
+// SERVICE, PROJECT, CLIENT
 @media (max-width: 767px) {
   .block-system-main-block {
     .node--type-service.node--view-mode-full,
@@ -306,6 +322,7 @@
   }
 }
 
+// SERVICE, PROJECT, CLIENT, TEAM
 @media (max-width: 700px) {
   .block-system-main-block {
     .node--type-service.node--view-mode-full,
@@ -350,6 +367,7 @@
   }
 }
 
+// PROJECT
 @media (max-width: 550px) {
   .block-system-main-block {
     .node--type-project.node--view-mode-full {
@@ -369,6 +387,7 @@
   }
 }
 
+// PROJECT
 @media (max-width: 470px) {
   .block-system-main-block {
     .node--type-project.node--view-mode-full {
@@ -388,6 +407,7 @@
   }
 }
 
+// SERVICE, PROJECT, CLIENT, TEAM
 @media (max-width: 400px) {
   .block-system-main-block {
     .node--type-service.node--view-mode-full,
@@ -426,6 +446,7 @@
   }
 }
 
+// TEAM
 @media (max-width: 400px) {
   .block-system-main-block {
     .node--type-people.node--view-mode-full {
@@ -448,6 +469,7 @@
   }
 }
 
+// NEWS
 @media (max-width: 770px) {
   .block-system-main-block {
     .node--type-article.node--view-mode-full {

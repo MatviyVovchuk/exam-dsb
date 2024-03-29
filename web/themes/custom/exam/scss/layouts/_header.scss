@@ -3,29 +3,17 @@
 @import "../variables/variables";
 @import "../variables/mixins";
 
-// top: 39px !important;
-
-// $mediaQueries: (
-//   1350px: -460px,
-//   1250px: -430px,
-//   1200px: -410px,
-//   1150px: -390px,
-//   1080px: -370px,
-//   1030px: -350px,
-//   // 991px: 0px,
-// );
-
+// STYLE FOR MAIN FRONT PAGE
 body.path-frontpage {
   header {
     .navbar {
       position: relative;
       top: -75% !important;
-      // top:
-      // @include responsiveTop($mediaQueries);
     }
   }
 }
 
+// STYLE FOR OTHER PAGES
 body.path-node {
   header {
     .navbar {
@@ -35,20 +23,25 @@ body.path-node {
   }
 }
 
+// HEADER STYLE
 header {
   width: 100%;
   .container.d-flex {
     max-width: 1275px;
   }
+  // NAVBAR STYLE
   .region-nav {
+    // STYLE FOR LOGO BLOCK
     &-branding {
       min-height: 114px;
       width: 240px;
       background-color: $grey;
     }
+    // STYLE FOR MAIN MENU BLOCK
     &-main {
       display: flex;
     }
+    // STYLE FOR SOCIAL LINKS ANF SEARCH BLOCK
     &-additional {
       display: flex;
       .block-social-media-links {
@@ -59,18 +52,18 @@ header {
       }
     }
   }
+
+  // BANNER BLOCK STYLE
   .region-header {
     margin-bottom: -131px;
   }
 
+  // STYLE FOR MAIN MENU NAVBAR
   .navbar {
     justify-content: center;
     text-transform: uppercase;
 
-    // .collapse {
-    //   padding: 0 10px;
-    // }
-
+    // STYLE FOR LOGO
     .region-nav-branding {
       justify-content: center;
       align-items: center;
@@ -97,6 +90,7 @@ header {
       }
     }
 
+    // STYLE FOR MAIN MENU
     .region-nav-main {
       display: contents;
       ul {
@@ -138,10 +132,12 @@ header {
       }
     }
 
+    // STYLE FOR ADDITIONAL MENU
     .region-nav-additional {
       align-items: center;
     }
 
+    // STYLE FOR SEARCH FORM
     form {
       & > div.form-actions {
         background-image: url("../img/search.png");
@@ -170,12 +166,15 @@ header {
       }
     }
 
+    // STYLE FOR MAIN NAV BLOCK
     &-collapse {
       background-color: white;
       min-height: 114px;
       justify-content: center !important;
     }
   }
+
+  // STYLE FOR LABEL AND SEARCH
   label {
     position: absolute;
     margin-left: 173px;
@@ -195,6 +194,7 @@ header {
   }
 }
 
+// ADAPTIVE
 @media (max-width: 1270px) {
   header {
     .navbar {

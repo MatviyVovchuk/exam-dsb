@@ -3,33 +3,31 @@
 @import "../variables/variables";
 @import "../variables/mixins";
 
+// SERVIVE ALL PAGE
 .block-views-blockall-services-block-1 {
   margin-top: 20px !important;
   max-width: 1250px !important;
   padding: 0 !important;
   margin-bottom: 50px !important;
 }
+// SERVIVE ALL PAGE, MAIN PAGE
 .block-views-blockmain-page-services-block-1,
 .block-views-blockall-services-block-1 {
   @include own-container;
   text-transform: uppercase;
   margin-top: 50px;
   font-family: "Inter", sans-serif;
+  // TITLE
   & > h2 {
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 50px;
-    display: flex;
-    gap: 10px;
-    &::before,
-    &::after {
-      @include line-title;
-    }
+    @include style-h2(700);
   }
+  // DIFF STYLE FOR ALL PAGE
   .view-all-services {
+    // CONTENT
     .view-content {
       justify-content: space-evenly !important;
       flex-wrap: wrap;
+      // SERVIVE ITEM
       .views-row {
         width: 300px !important;
       }
@@ -37,10 +35,12 @@
   }
   .view-main-page-services,
   .view-all-services {
+    // CONTENT
     .view-content {
       display: flex;
       text-align: center;
       justify-content: space-between;
+      // SERVIVE ITEM
       .views-row {
         width: 250px;
         display: flex;
@@ -54,6 +54,7 @@
           margin-top: 29px;
         }
       }
+      // TITLE
       .views-field.views-field-title {
         margin-top: 32px;
         a {
@@ -62,11 +63,13 @@
           color: #000;
         }
       }
+      // SHORT TEXT
       .views-field-body {
         font-size: 0.75rem;
         padding: 8px 19px 0;
         color: #cccccc;
       }
+      // LINK
       .views-field-view-node {
         margin-top: 21px;
         span {
@@ -93,6 +96,7 @@
   }
 }
 
+// ADAPTIVE
 @media (max-width: 1024px) {
   .block-views-blockmain-page-services-block-1,
   .block-views-blockall-services-block-1 {

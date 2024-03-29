@@ -107,7 +107,6 @@
                   color: black;
                   margin: 0;
                 }
-
                 p {
                   margin-bottom: 30px;
                 }
@@ -148,6 +147,7 @@
   }
 }
 
+// ADAPTIVE
 @media (max-width: 1200px) {
   .block-system-main-block {
     article[data-history-node-id="8"] {

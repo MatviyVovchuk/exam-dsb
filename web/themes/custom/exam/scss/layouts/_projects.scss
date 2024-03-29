@@ -3,6 +3,7 @@
 @import "../variables/variables";
 @import "../variables/mixins";
 
+// PROJECT ALL PAGE, TAXONOMY PAGE
 .block-views-blockall-projects-block-1,
 .block-views-blockservice-project-term-block-1 {
   margin-top: 20px !important;
@@ -14,18 +15,19 @@
     padding: 0 !important;
     font-weight: 700 !important;
   }
+  // BACKGROUND LINES STYLE EMPTY
   & > div:last-child {
-    margin-top: 0px !important;
-    padding-top: 0px !important;
-    background: none !important;
+    @include line-background-empty
   }
   .view-all-projects,
   .view-service-project-term {
     max-width: 1250px !important;
     padding: 0 !important;
+    // CONTENT
     .view-content {
       flex-wrap: wrap;
       gap: 0 !important;
+      // PROJECT ITEM
       .views-row {
         width: 300px !important;
         padding: 10px;
@@ -35,36 +37,22 @@
   }
 }
 
-
+// PROJECT ALL PAGE, TAXONOMY PAGE, MAIN PAGE
 .block-views-blockmain-page-projects-block-1,
 .block-views-blockall-projects-block-1,
 .block-views-blockservice-project-term-block-1 {
   text-transform: uppercase;
   margin-top: 50px;
   font-family: "Inter", sans-serif;
+  // TITLE
   & > h2 {
     @include own-container;
-    white-space: nowrap;
-    font-weight: 300;
-    text-align: center;
-    margin-bottom: 50px;
-    display: flex;
-    gap: 10px;
-    &::before,
-    &::after {
-      @include line-title;
-    }
+    @include style-h2(300);
   }
+// BACKGROUND LINES STYLE
   & > div:last-child {
-    margin-top: 18px;
-    padding-top: 69px;
-    background: repeating-linear-gradient(
-      135deg,
-      rgba(0, 0, 0, 0.1),
-      #fff 2px,
-      #fff 10px,
-      #fff 0px
-    );
+    @include line-background;
+    padding-top: 70px;
   }
 
   .view-all-projects,
@@ -74,6 +62,7 @@
     }
   }
 
+  // PROJECT ALL PAGE, TAXONOMY PAGE, MAIN PAGE
   .view-main-page-projects,
   .view-all-projects,
   .view-service-project-term {
@@ -81,11 +70,13 @@
     a {
       text-decoration: none;
     }
+    // CONTENT
     .view-content {
       text-align: center;
       display: flex;
       justify-content: space-between;
       gap: 10px;
+      // PROJECT ITEM
       .views-row {
         margin: 0 5px;
         border-bottom: 1px solid #373645;
@@ -93,13 +84,13 @@
         background-color: #fff;
         display: flex;
         flex-direction: column;
-        // justify-content: space-between;
-
+// IMAGE
         .views-field-field-image {
           img {
             width: 290px;
           }
         }
+        // TITLE
         .views-field.views-field-title {
           margin: 32px 0 3px;
           a {
@@ -108,9 +99,11 @@
             color: #000;
           }
         }
+        // SERVICE
         .views-field-field-service {
           margin-top: auto;
         }
+        // LINK
         .views-field-view-node {
           margin-top: 5px;
           span {
@@ -133,37 +126,8 @@
         }
       }
     }
-    nav {
-      ul.pagination {
-        gap: 10px;
-        margin-top: 40px;
-        li a {
-          border-radius: 20px;
-          color: rgba(100, 100, 100);
-          &:hover {
-            color: #fff;
-          }
-        }
-        .page-item.active .page-link {
-          background-color: #dddcdd;
-          border-color: transparent;
-          color: #000;
-        }
-        .page-item .page-link {
-          &:hover {
-            background-color: #646464;
-          }
-        }
-        .page-link {
-          background-color: transparent;
-          border: none;
-        }
-        li.disabled {
-          display: none;
-        }
-      }
-    }
   }
+  // PADDING FOR MAIN PAGE
   .view-main-page-projects {
     nav {
       padding-bottom: 100px;
@@ -171,6 +135,7 @@
   }
 }
 
+// COLOR LINKS FOR SERVICE
 .views-field-field-service,
 .field--name-field-service {
   a[href*="/service/term/web-development"] {
@@ -187,6 +152,7 @@
   }
 }
 
+// ADAPTIVE
 @media (max-width: 1200px) {
   .block-views-blockmain-page-projects-block-1,
   .block-views-blockall-projects-block-1,
@@ -231,21 +197,6 @@
     }
   }
 }
-
-// @media (max-width: 970px) {
-//   .block-views-blockmain-page-projects-block-1,
-//   .block-views-blockall-projects-block-1,
-//   .block-views-blockservice-project-term-block-1 {
-//     .view-main-page-projects,
-//     .view-all-projects,
-//     .view-service-project-term {
-//       .view-content {
-//         // justify-content: space-evenly;
-//         flex-wrap: wrap;
-//       }
-//     }
-//   }
-// }
 
 @media (max-width: 820px) {
   .block-views-blockmain-page-projects-block-1,
@@ -335,38 +286,6 @@
               font-size: 1.5rem;
             }
           }
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 424px) {
-  .block-views-blockmain-page-projects-block-1,
-  .block-views-blockall-projects-block-1,
-  .block-views-blockservice-project-term-block-1 {
-    .view-main-page-projects,
-    .view-all-projects,
-    .view-service-project-term {
-      nav.pager {
-        ul {
-          gap: 5px;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 390px) {
-  .block-views-blockmain-page-projects-block-1,
-  .block-views-blockall-projects-block-1,
-  .block-views-blockservice-project-term-block-1 {
-    .view-main-page-projects,
-    .view-all-projects,
-    .view-service-project-term {
-      nav.pager {
-        ul {
-          gap: 0;
         }
       }
     }

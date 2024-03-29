@@ -1,3 +1,4 @@
+// REMOVE DEFAULT BOOTSTRAP5 STYLE
 body.path-frontpage {
   main {
     .container,
@@ -9,37 +10,28 @@ body.path-frontpage {
   }
 }
 
+// HOVER FOR ALL SOCIAL MEDIA
 .social-media-links--platforms *:hover {
   transition: all 0.5s ease;
   color: rgba(0, 68, 255, 0.973);
 }
 
-
-
+// STYLE FOT TITLE ON TAXONOMY PAGES
 .block-views-blockservice-project-term-block-1,
 .block-views-blockposition-people-term-block-1 {
   .view-service-project-term,
   .view-position-people-term {
     .view-header {
       a {
+        @include style-h2(700);
         color: #000;
-        font-size: 32px;
-        white-space: nowrap;
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 50px;
-        display: flex;
-        gap: 10px;
-        &::before,
-        &::after {
-          @include line-title;
-        }
+        font-size: calc(1.325rem + 0.9vw);
       }
     }
   }
 }
 
-
+// SET ADMIN MENU POSITION
 #toolbar-administration {
   nav#toolbar-bar {
     position: fixed;

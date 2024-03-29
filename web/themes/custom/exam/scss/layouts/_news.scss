@@ -3,27 +3,37 @@
 @import "../variables/variables";
 @import "../variables/mixins";
 
+// STYLE FOR ALL NEWS PAGE
 .block-views-blockmain-page-articles-block-2 {
   margin: auto !important;
   margin-top: 20px !important;
   max-width: 1250px !important;
   padding: 0 !important;
   margin-bottom: 50px !important;
+  // TITLE
   h2 {
     max-width: 1250px !important;
     padding: 0 !important;
   }
+  // BACKGROUND LINES STYLE EMPTY
   & > div:last-child {
-    margin-top: 0px !important;
-    padding-top: 0px !important;
-    background: none !important;
+    @include line-background-empty;
   }
+  // CONTENT STYLE
   .view-main-page-articles {
     max-width: 1250px !important;
     padding: 0 !important;
     .view-content {
       justify-content: center;
       flex-wrap: wrap;
+      & > .views-row:first-child {
+        margin-left: 5px;
+      }
+
+      & > .views-row:last-child {
+        margin-right: 5px;
+      }
+      // NEWS ITEM
       .views-row {
         flex-basis: 48%;
         div.fieldsets-news {
@@ -40,16 +50,19 @@
   }
 }
 
+// STYLE FOR MAIN PAGE NEWS
 .block-views-blockall-projects-block-1 {
   & > div:last-child {
     margin-top: 18px;
     padding-top: 69px;
     background: none !important;
   }
+  // CONTENT STYLE
   .view-all-projects {
     .view-content {
       flex-wrap: wrap;
       gap: 0 !important;
+      // NEWS ITEM
       .views-row {
         padding: 10px;
         border-bottom: none !important;
@@ -58,42 +71,30 @@
   }
 }
 
+// STYLE FOR BOTH BLOCKS ALL NEWS AND MAIN PAGE
 .block-views-blockmain-page-articles-block-1,
 .block-views-blockmain-page-articles-block-2 {
   text-transform: uppercase;
   margin-top: 50px;
   font-family: "Inter", sans-serif;
+  // TITLE
   & > h2 {
     @include own-container;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 50px;
-    display: flex;
-    gap: 10px;
-    &::before,
-    &::after {
-      @include line-title;
-    }
+    @include style-h2(700);
   }
+  // BACKGROUND LINES STYLE
   & > div:last-child {
-    margin-top: 25px;
-    padding-bottom: 70px;
-    background: repeating-linear-gradient(
-      135deg,
-      rgba(0, 0, 0, 0.1),
-      #fff 2px,
-      #fff 10px,
-      #fff 0px
-    );
+    @include line-background;
   }
+  // CONTENT STYLE
   .view-main-page-articles {
     @include own-container;
     a {
       text-decoration: none;
     }
+    // SEARCH FORM
     form > div.form--inline.clearfix {
       display: flex;
-      padding-bottom: 20px;
       fieldset {
         border: none;
         legend {
@@ -122,15 +123,17 @@
         }
       }
     }
-
+    // IF NO ELEM FOUND
     .view-empty {
       background-color: white;
       padding: 20px;
       font-weight: 600;
     }
 
+    // CONTENT
     .view-content {
       display: flex;
+      // REMOVE FOR NEWS MARGIN IN MAIN PAGE
       & > .views-row:first-child {
         margin-left: 0;
       }
@@ -138,6 +141,7 @@
       & > .views-row:last-child {
         margin-right: 0;
       }
+      // NEWS ITEM
       .views-row {
         display: flex;
         background-color: #fff;
@@ -147,6 +151,7 @@
         padding: 20px;
         margin: 5px;
 
+        // DATE CREATED
         .fieldsets-authored-on {
           .news-created-month {
             display: flex;
@@ -170,18 +175,22 @@
             font-size: 15px;
           }
         }
+        // NEWS INFORMATION
         div.fieldset-news-author {
           display: flex;
           width: 100%;
           font-size: 0.75em;
           padding-left: 15px;
           border-left: 1px solid #ccc;
+          // IMAGE
           .views-field-field-image {
             width: 80px;
             height: auto;
           }
+          // AUTHOR NAME, POSITION, TIME AGO
           .views-field.views-field-fieldset-1 {
             flex: 1;
+
             div.name-position-time {
               display: flex;
               flex-direction: row;
@@ -191,6 +200,7 @@
                 .views-field-title-2 {
                   margin-left: 5px;
                   display: flex;
+                  // AUTHOR NAME
                   .field-content {
                     width: max-content;
                     a {
@@ -205,6 +215,7 @@
                     }
                   }
                 }
+                // AUTHOR POSITION
                 .views-field-field-position {
                   margin-left: 5px;
                   .field-content {
@@ -215,7 +226,7 @@
                   }
                 }
               }
-
+              // TIME AGO
               .views-field-created-1 {
                 text-align: right;
                 flex: 1;
@@ -225,14 +236,16 @@
             }
           }
         }
-
+        // NEWS TITLE, BODY, LINK
         div.fieldset-news-node {
           padding-left: 15px;
           border-left: 1px solid #ccc;
+          // NEWS TITLE
           .views-field-title-1 {
             font-size: 1.625em;
             margin: 10px 0 0;
           }
+          // NES BODY
           .views-field-body {
             font-size: 0.75em;
             line-height: 14px;
@@ -245,6 +258,7 @@
               }
             }
           }
+          // NEWS LINK
           .views-field-view-node {
             text-align: right;
             font-size: 0.9375em;
@@ -267,6 +281,7 @@
         }
       }
     }
+    // FORM ADAPTIVE
     @media (max-width: 1320px) {
       form > .form--inline.clearfix {
         justify-content: center;
@@ -278,6 +293,7 @@
   }
 }
 
+// ADAPTIVE
 @media (max-width: 1200px) {
   .block-views-blockmain-page-articles-block-2 {
     .view-main-page-articles {
@@ -461,8 +477,6 @@
     }
   }
 }
-
-//
 
 // IF EXISTS ADMIN TOOLBAR GIVE DIFF ADAPTIVE STYLE
 @if (selector-exists(".toolbar-administration")) {

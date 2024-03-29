@@ -33,31 +33,20 @@
           }
         }
       }
-
       a {
         font-size: 16px;
         font-weight: 400;
         color: black;
       }
     }
-
+    // TITLE
     h2 {
+      @include style-h2(700);
       margin-top: 20px;
-      font-family: "Inter", sans-serif;
       text-transform: uppercase;
-      position: relative;
-      font-weight: 700;
-      text-align: center;
-      margin-bottom: 20px;
-      display: flex;
-      white-space: nowrap;
-      gap: 10px;
-      &::before,
-      &::after {
-        @include line-title;
-      }
     }
 
+    // TITLE IN SEARCH RESULT
     .item-list {
       h3 {
         font-family: "Inter", sans-serif;
@@ -69,7 +58,7 @@
     .item-list {
       .node_search-results {
         padding: 0;
-
+        // SEARCH RESULT ITEM
         li {
           border-top: 1px solid $grey;
           padding: 10px;
@@ -86,25 +75,23 @@
             }
             background-color: $grey;
           }
-
+          // SEARCHED KEY WORD
           h3 {
-            a {
-              font-size: 24px;
-              font-family: 600;
-              color: #373645;
-            }
-
             text-align: left;
             white-space: normal;
-
             &:before,
             &:after {
               content: "";
               margin: 0;
               width: 0;
             }
+            a {
+              font-size: 24px;
+              font-family: 600;
+              color: #373645;
+            }
           }
-
+          // SEARCH WORDS CONTEXT
           p {
             margin-left: 10px;
           }
@@ -114,6 +101,7 @@
   }
 }
 
+// ADAPTIVE
 @media (max-width: 525px) {
   .path-search {
     .block-system-main-block {

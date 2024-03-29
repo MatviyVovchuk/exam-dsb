@@ -13448,7 +13448,18 @@ header .block-block-content > .text-formatted p {
   margin-right: auto;
   margin-left: auto;
 }
+@media (max-width: 1000px) {
+  .block-views-blockmain-page-about-block-1 {
+    margin: 70px 0;
+  }
+}
+@media (max-width: 800px) {
+  .block-views-blockmain-page-about-block-1 {
+    margin: 50px 0;
+  }
+}
 .block-views-blockmain-page-about-block-1 .view-main-page-about .views-row {
+  padding: 0 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13560,10 +13571,13 @@ header .block-block-content > .text-formatted p {
 .block-views-blockmain-page-services-block-1 > h2, .block-views-blockmain-page-services-block-1 > .h2,
 .block-views-blockall-services-block-1 > h2,
 .block-views-blockall-services-block-1 > .h2 {
+  font-family: "Inter", sans-serif;
+  position: relative;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   display: flex;
+  white-space: nowrap;
   gap: 10px;
 }
 .block-views-blockmain-page-services-block-1 > h2::before, .block-views-blockmain-page-services-block-1 > .h2::before, .block-views-blockmain-page-services-block-1 > h2::after, .block-views-blockmain-page-services-block-1 > .h2::after,
@@ -13780,11 +13794,13 @@ header .block-block-content > .text-formatted p {
   padding: 0 15px;
   margin-right: auto;
   margin-left: auto;
-  white-space: nowrap;
+  font-family: "Inter", sans-serif;
+  position: relative;
   font-weight: 300;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   display: flex;
+  white-space: nowrap;
   gap: 10px;
 }
 .block-views-blockmain-page-projects-block-1 > h2::before, .block-views-blockmain-page-projects-block-1 > .h2::before, .block-views-blockmain-page-projects-block-1 > h2::after, .block-views-blockmain-page-projects-block-1 > .h2::after,
@@ -13805,9 +13821,10 @@ header .block-block-content > .text-formatted p {
 .block-views-blockmain-page-projects-block-1 > div:last-child,
 .block-views-blockall-projects-block-1 > div:last-child,
 .block-views-blockservice-project-term-block-1 > div:last-child {
-  margin-top: 18px;
-  padding-top: 69px;
+  margin-top: 25px;
+  padding-bottom: 70px;
   background: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.1), #fff 2px, #fff 10px, #fff 0px);
+  padding-top: 70px;
 }
 .block-views-blockmain-page-projects-block-1 .view-all-projects .view-content,
 .block-views-blockmain-page-projects-block-1 .view-service-project-term .view-content,
@@ -13977,104 +13994,6 @@ header .block-block-content > .text-formatted p {
 .block-views-blockservice-project-term-block-1 .view-all-projects .view-content .views-row .views-field-view-node span:hover a,
 .block-views-blockservice-project-term-block-1 .view-service-project-term .view-content .views-row .views-field-view-node span:hover a {
   color: #fff;
-}
-.block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination,
-.block-views-blockmain-page-projects-block-1 .view-all-projects nav ul.pagination,
-.block-views-blockmain-page-projects-block-1 .view-service-project-term nav ul.pagination,
-.block-views-blockall-projects-block-1 .view-main-page-projects nav ul.pagination,
-.block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination,
-.block-views-blockall-projects-block-1 .view-service-project-term nav ul.pagination,
-.block-views-blockservice-project-term-block-1 .view-main-page-projects nav ul.pagination,
-.block-views-blockservice-project-term-block-1 .view-all-projects nav ul.pagination,
-.block-views-blockservice-project-term-block-1 .view-service-project-term nav ul.pagination {
-  gap: 10px;
-  margin-top: 40px;
-}
-.block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination li a,
-.block-views-blockmain-page-projects-block-1 .view-all-projects nav ul.pagination li a,
-.block-views-blockmain-page-projects-block-1 .view-service-project-term nav ul.pagination li a,
-.block-views-blockall-projects-block-1 .view-main-page-projects nav ul.pagination li a,
-.block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination li a,
-.block-views-blockall-projects-block-1 .view-service-project-term nav ul.pagination li a,
-.block-views-blockservice-project-term-block-1 .view-main-page-projects nav ul.pagination li a,
-.block-views-blockservice-project-term-block-1 .view-all-projects nav ul.pagination li a,
-.block-views-blockservice-project-term-block-1 .view-service-project-term nav ul.pagination li a {
-  border-radius: 20px;
-  color: rgb(100, 100, 100);
-}
-.block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination li a:hover,
-.block-views-blockmain-page-projects-block-1 .view-all-projects nav ul.pagination li a:hover,
-.block-views-blockmain-page-projects-block-1 .view-service-project-term nav ul.pagination li a:hover,
-.block-views-blockall-projects-block-1 .view-main-page-projects nav ul.pagination li a:hover,
-.block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination li a:hover,
-.block-views-blockall-projects-block-1 .view-service-project-term nav ul.pagination li a:hover,
-.block-views-blockservice-project-term-block-1 .view-main-page-projects nav ul.pagination li a:hover,
-.block-views-blockservice-project-term-block-1 .view-all-projects nav ul.pagination li a:hover,
-.block-views-blockservice-project-term-block-1 .view-service-project-term nav ul.pagination li a:hover {
-  color: #fff;
-}
-.block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination .page-item.active .page-link, .block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination .media-library-view--widget .view-header a.page-item.is-active .page-link, .media-library-view--widget .view-header .block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination a.page-item.is-active .page-link,
-.block-views-blockmain-page-projects-block-1 .view-all-projects nav ul.pagination .page-item.active .page-link,
-.block-views-blockmain-page-projects-block-1 .view-all-projects nav ul.pagination .media-library-view--widget .view-header a.page-item.is-active .page-link,
-.media-library-view--widget .view-header .block-views-blockmain-page-projects-block-1 .view-all-projects nav ul.pagination a.page-item.is-active .page-link,
-.block-views-blockmain-page-projects-block-1 .view-service-project-term nav ul.pagination .page-item.active .page-link,
-.block-views-blockmain-page-projects-block-1 .view-service-project-term nav ul.pagination .media-library-view--widget .view-header a.page-item.is-active .page-link,
-.media-library-view--widget .view-header .block-views-blockmain-page-projects-block-1 .view-service-project-term nav ul.pagination a.page-item.is-active .page-link,
-.block-views-blockall-projects-block-1 .view-main-page-projects nav ul.pagination .page-item.active .page-link,
-.block-views-blockall-projects-block-1 .view-main-page-projects nav ul.pagination .media-library-view--widget .view-header a.page-item.is-active .page-link,
-.media-library-view--widget .view-header .block-views-blockall-projects-block-1 .view-main-page-projects nav ul.pagination a.page-item.is-active .page-link,
-.block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination .page-item.active .page-link,
-.block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination .media-library-view--widget .view-header a.page-item.is-active .page-link,
-.media-library-view--widget .view-header .block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination a.page-item.is-active .page-link,
-.block-views-blockall-projects-block-1 .view-service-project-term nav ul.pagination .page-item.active .page-link,
-.block-views-blockall-projects-block-1 .view-service-project-term nav ul.pagination .media-library-view--widget .view-header a.page-item.is-active .page-link,
-.media-library-view--widget .view-header .block-views-blockall-projects-block-1 .view-service-project-term nav ul.pagination a.page-item.is-active .page-link,
-.block-views-blockservice-project-term-block-1 .view-main-page-projects nav ul.pagination .page-item.active .page-link,
-.block-views-blockservice-project-term-block-1 .view-main-page-projects nav ul.pagination .media-library-view--widget .view-header a.page-item.is-active .page-link,
-.media-library-view--widget .view-header .block-views-blockservice-project-term-block-1 .view-main-page-projects nav ul.pagination a.page-item.is-active .page-link,
-.block-views-blockservice-project-term-block-1 .view-all-projects nav ul.pagination .page-item.active .page-link,
-.block-views-blockservice-project-term-block-1 .view-all-projects nav ul.pagination .media-library-view--widget .view-header a.page-item.is-active .page-link,
-.media-library-view--widget .view-header .block-views-blockservice-project-term-block-1 .view-all-projects nav ul.pagination a.page-item.is-active .page-link,
-.block-views-blockservice-project-term-block-1 .view-service-project-term nav ul.pagination .page-item.active .page-link,
-.block-views-blockservice-project-term-block-1 .view-service-project-term nav ul.pagination .media-library-view--widget .view-header a.page-item.is-active .page-link,
-.media-library-view--widget .view-header .block-views-blockservice-project-term-block-1 .view-service-project-term nav ul.pagination a.page-item.is-active .page-link {
-  background-color: #dddcdd;
-  border-color: transparent;
-  color: #000;
-}
-.block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination .page-item .page-link:hover,
-.block-views-blockmain-page-projects-block-1 .view-all-projects nav ul.pagination .page-item .page-link:hover,
-.block-views-blockmain-page-projects-block-1 .view-service-project-term nav ul.pagination .page-item .page-link:hover,
-.block-views-blockall-projects-block-1 .view-main-page-projects nav ul.pagination .page-item .page-link:hover,
-.block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination .page-item .page-link:hover,
-.block-views-blockall-projects-block-1 .view-service-project-term nav ul.pagination .page-item .page-link:hover,
-.block-views-blockservice-project-term-block-1 .view-main-page-projects nav ul.pagination .page-item .page-link:hover,
-.block-views-blockservice-project-term-block-1 .view-all-projects nav ul.pagination .page-item .page-link:hover,
-.block-views-blockservice-project-term-block-1 .view-service-project-term nav ul.pagination .page-item .page-link:hover {
-  background-color: #646464;
-}
-.block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination .page-link,
-.block-views-blockmain-page-projects-block-1 .view-all-projects nav ul.pagination .page-link,
-.block-views-blockmain-page-projects-block-1 .view-service-project-term nav ul.pagination .page-link,
-.block-views-blockall-projects-block-1 .view-main-page-projects nav ul.pagination .page-link,
-.block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination .page-link,
-.block-views-blockall-projects-block-1 .view-service-project-term nav ul.pagination .page-link,
-.block-views-blockservice-project-term-block-1 .view-main-page-projects nav ul.pagination .page-link,
-.block-views-blockservice-project-term-block-1 .view-all-projects nav ul.pagination .page-link,
-.block-views-blockservice-project-term-block-1 .view-service-project-term nav ul.pagination .page-link {
-  background-color: transparent;
-  border: none;
-}
-.block-views-blockmain-page-projects-block-1 .view-main-page-projects nav ul.pagination li.disabled,
-.block-views-blockmain-page-projects-block-1 .view-all-projects nav ul.pagination li.disabled,
-.block-views-blockmain-page-projects-block-1 .view-service-project-term nav ul.pagination li.disabled,
-.block-views-blockall-projects-block-1 .view-main-page-projects nav ul.pagination li.disabled,
-.block-views-blockall-projects-block-1 .view-all-projects nav ul.pagination li.disabled,
-.block-views-blockall-projects-block-1 .view-service-project-term nav ul.pagination li.disabled,
-.block-views-blockservice-project-term-block-1 .view-main-page-projects nav ul.pagination li.disabled,
-.block-views-blockservice-project-term-block-1 .view-all-projects nav ul.pagination li.disabled,
-.block-views-blockservice-project-term-block-1 .view-service-project-term nav ul.pagination li.disabled {
-  display: none;
 }
 .block-views-blockmain-page-projects-block-1 .view-main-page-projects nav,
 .block-views-blockall-projects-block-1 .view-main-page-projects nav,
@@ -14248,32 +14167,6 @@ header .block-block-content > .text-formatted p {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 424px) {
-  .block-views-blockmain-page-projects-block-1 .view-main-page-projects nav.pager ul,
-  .block-views-blockmain-page-projects-block-1 .view-all-projects nav.pager ul,
-  .block-views-blockmain-page-projects-block-1 .view-service-project-term nav.pager ul,
-  .block-views-blockall-projects-block-1 .view-main-page-projects nav.pager ul,
-  .block-views-blockall-projects-block-1 .view-all-projects nav.pager ul,
-  .block-views-blockall-projects-block-1 .view-service-project-term nav.pager ul,
-  .block-views-blockservice-project-term-block-1 .view-main-page-projects nav.pager ul,
-  .block-views-blockservice-project-term-block-1 .view-all-projects nav.pager ul,
-  .block-views-blockservice-project-term-block-1 .view-service-project-term nav.pager ul {
-    gap: 5px;
-  }
-}
-@media (max-width: 390px) {
-  .block-views-blockmain-page-projects-block-1 .view-main-page-projects nav.pager ul,
-  .block-views-blockmain-page-projects-block-1 .view-all-projects nav.pager ul,
-  .block-views-blockmain-page-projects-block-1 .view-service-project-term nav.pager ul,
-  .block-views-blockall-projects-block-1 .view-main-page-projects nav.pager ul,
-  .block-views-blockall-projects-block-1 .view-all-projects nav.pager ul,
-  .block-views-blockall-projects-block-1 .view-service-project-term nav.pager ul,
-  .block-views-blockservice-project-term-block-1 .view-main-page-projects nav.pager ul,
-  .block-views-blockservice-project-term-block-1 .view-all-projects nav.pager ul,
-  .block-views-blockservice-project-term-block-1 .view-service-project-term nav.pager ul {
-    gap: 0;
-  }
-}
 .block-views-blockall-people-block-1,
 .block-views-blockposition-people-term-block-1 {
   margin-top: 20px !important;
@@ -14299,10 +14192,11 @@ header .block-block-content > .text-formatted p {
 .block-views-blockall-people-block-1 > .h2,
 .block-views-blockposition-people-term-block-1 > h2,
 .block-views-blockposition-people-term-block-1 > .h2 {
+  font-family: "Inter", sans-serif;
   position: relative;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   display: flex;
   white-space: nowrap;
   gap: 10px;
@@ -14861,11 +14755,15 @@ header .block-block-content > .text-formatted p {
 .block-views-blockmain-page-clients-block-1 > h2, .block-views-blockmain-page-clients-block-1 > .h2,
 .block-views-blockall-clients-block-1 > h2,
 .block-views-blockall-clients-block-1 > .h2 {
+  font-family: "Inter", sans-serif;
+  position: relative;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   display: flex;
+  white-space: nowrap;
   gap: 10px;
+  margin-bottom: 50px;
 }
 .block-views-blockmain-page-clients-block-1 > h2::before, .block-views-blockmain-page-clients-block-1 > .h2::before, .block-views-blockmain-page-clients-block-1 > h2::after, .block-views-blockmain-page-clients-block-1 > .h2::after,
 .block-views-blockall-clients-block-1 > h2::before,
@@ -14952,14 +14850,16 @@ body.path-frontpage main .region-content {
 .block-views-blockservice-project-term-block-1 .view-position-people-term .view-header a,
 .block-views-blockposition-people-term-block-1 .view-service-project-term .view-header a,
 .block-views-blockposition-people-term-block-1 .view-position-people-term .view-header a {
-  color: #000;
-  font-size: 32px;
-  white-space: nowrap;
+  font-family: "Inter", sans-serif;
+  position: relative;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   display: flex;
+  white-space: nowrap;
   gap: 10px;
+  color: #000;
+  font-size: calc(1.325rem + 0.9vw);
 }
 .block-views-blockservice-project-term-block-1 .view-service-project-term .view-header a::before, .block-views-blockservice-project-term-block-1 .view-service-project-term .view-header a::after,
 .block-views-blockservice-project-term-block-1 .view-position-people-term .view-header a::before,
@@ -15003,6 +14903,12 @@ body.path-frontpage main .region-content {
   justify-content: center;
   flex-wrap: wrap;
 }
+.block-views-blockmain-page-articles-block-2 .view-main-page-articles .view-content > .views-row:first-child {
+  margin-left: 5px;
+}
+.block-views-blockmain-page-articles-block-2 .view-main-page-articles .view-content > .views-row:last-child {
+  margin-right: 5px;
+}
 .block-views-blockmain-page-articles-block-2 .view-main-page-articles .view-content .views-row {
   flex-basis: 48%;
 }
@@ -15037,10 +14943,13 @@ body.path-frontpage main .region-content {
   padding: 0 15px;
   margin-right: auto;
   margin-left: auto;
+  font-family: "Inter", sans-serif;
+  position: relative;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   display: flex;
+  white-space: nowrap;
   gap: 10px;
 }
 .block-views-blockmain-page-articles-block-1 > h2::before, .block-views-blockmain-page-articles-block-1 > .h2::before, .block-views-blockmain-page-articles-block-1 > h2::after, .block-views-blockmain-page-articles-block-1 > .h2::after,
@@ -15074,7 +14983,6 @@ body.path-frontpage main .region-content {
 .block-views-blockmain-page-articles-block-1 .view-main-page-articles form > div.form--inline.clearfix,
 .block-views-blockmain-page-articles-block-2 .view-main-page-articles form > div.form--inline.clearfix {
   display: flex;
-  padding-bottom: 20px;
 }
 .block-views-blockmain-page-articles-block-1 .view-main-page-articles form > div.form--inline.clearfix fieldset,
 .block-views-blockmain-page-articles-block-2 .view-main-page-articles form > div.form--inline.clearfix fieldset {
@@ -15478,69 +15386,43 @@ body.path-frontpage main .region-content {
     margin-left: 0;
   }
 }
-.page-link {
-  position: relative;
-  display: block;
-  color: grey;
-  text-decoration: none;
+nav ul.pagination {
+  gap: 10px;
+  margin-top: 40px;
+}
+nav ul.pagination li a {
+  border-radius: 20px !important;
+  color: rgb(100, 100, 100);
+}
+nav ul.pagination li a:hover {
+  color: #fff;
+}
+nav ul.pagination .page-item.active .page-link, nav ul.pagination .media-library-view--widget .view-header a.page-item.is-active .page-link, .media-library-view--widget .view-header nav ul.pagination a.page-item.is-active .page-link {
+  background-color: #dddcdd;
+  border-color: transparent;
+  color: #000;
+}
+nav ul.pagination .page-item .page-link:hover {
+  background-color: #646464;
+}
+nav ul.pagination .page-link {
+  background-color: transparent;
   border: none;
-  border-radius: 100px;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+nav ul.pagination li.disabled {
+  display: none;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .page-link {
-    transition: none;
+@media (max-width: 424px) {
+  nav.pager ul {
+    gap: 5px;
   }
 }
-.page-link:hover {
-  z-index: 2;
-  color: grey;
-  border-color: #dee2e6;
-  border-radius: 60px;
+@media (max-width: 390px) {
+  nav.pager ul {
+    gap: 0;
+  }
 }
-
-.page-link:focus {
-  z-index: 3;
-  color: grey;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(0, 60, 197, 0.25);
-  border-radius: 60px;
-}
-
-.page-item:not(:first-child) .page-link {
-  margin-left: -1px;
-}
-
-.page-item.active .page-link, .media-library-view--widget .view-header a.page-item.is-active .page-link {
-  z-index: 3;
-  color: grey;
-  background-color: rgba(175, 174, 180, 0.4941176471);
-  border-color: transparent;
-  border-radius: 60px;
-  opacity: 0.8;
-}
-
-.page-item.disabled .page-link {
-  color: #6c757d;
-  pointer-events: none;
-  border-color: #dee2e6;
-  border-radius: 60px;
-  font-weight: 600;
-  background-color: transparent;
-}
-
-.page-link {
-  padding: 0.375rem 0.75rem;
-  border-radius: 50px;
-  font-size: 14px;
-  background-color: transparent;
-}
-
-.pagination {
-  margin-top: 29px;
-}
-
 .block-system-main-block article[data-history-node-id="8"] {
   margin: 0 auto;
 }
@@ -15757,16 +15639,16 @@ body.path-frontpage main .region-content {
   color: black;
 }
 .path-search .block-system-main-block h2, .path-search .block-system-main-block .h2 {
-  margin-top: 20px;
   font-family: "Inter", sans-serif;
-  text-transform: uppercase;
   position: relative;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   display: flex;
   white-space: nowrap;
   gap: 10px;
+  margin-top: 20px;
+  text-transform: uppercase;
 }
 .path-search .block-system-main-block h2::before, .path-search .block-system-main-block .h2::before, .path-search .block-system-main-block h2::after, .path-search .block-system-main-block .h2::after {
   content: " ";
@@ -15803,15 +15685,15 @@ body.path-frontpage main .region-content {
   text-align: left;
   white-space: normal;
 }
-.path-search .block-system-main-block .item-list .node_search-results li h3 a, .path-search .block-system-main-block .item-list .node_search-results li .h3 a {
-  font-size: 24px;
-  font-family: 600;
-  color: #373645;
-}
 .path-search .block-system-main-block .item-list .node_search-results li h3:before, .path-search .block-system-main-block .item-list .node_search-results li .h3:before, .path-search .block-system-main-block .item-list .node_search-results li h3:after, .path-search .block-system-main-block .item-list .node_search-results li .h3:after {
   content: "";
   margin: 0;
   width: 0;
+}
+.path-search .block-system-main-block .item-list .node_search-results li h3 a, .path-search .block-system-main-block .item-list .node_search-results li .h3 a {
+  font-size: 24px;
+  font-family: 600;
+  color: #373645;
 }
 .path-search .block-system-main-block .item-list .node_search-results li p {
   margin-left: 10px;
@@ -16439,13 +16321,16 @@ footer .region-footer .block-social-media-links ul a {
   }
 }
 .block-system-main-block article[data-history-node-id="6"] .node__content .layout--onecol .block-field-blocknodepagetitle span {
-  text-transform: uppercase;
-  font-size: calc(1rem + 1vw);
+  font-family: "Inter", sans-serif;
+  position: relative;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   display: flex;
+  white-space: nowrap;
   gap: 10px;
+  font-size: calc(1rem + 1vw);
+  text-transform: uppercase;
 }
 .block-system-main-block article[data-history-node-id="6"] .node__content .layout--onecol .block-field-blocknodepagetitle span::before, .block-system-main-block article[data-history-node-id="6"] .node__content .layout--onecol .block-field-blocknodepagetitle span::after {
   content: " ";
