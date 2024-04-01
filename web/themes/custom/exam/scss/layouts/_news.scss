@@ -55,7 +55,6 @@
 .block-views-blockmain-page-articles-block-1,
 .block-views-blockmain-page-articles-block-2,
 .block-system-main-block {
-  text-transform: uppercase;
   margin-top: 50px;
   font-family: "Inter", sans-serif;
   // TITLE
@@ -69,6 +68,7 @@
   }
   // CONTENT STYLE
   .view-main-page-articles {
+    text-transform: uppercase;
     @include own-container;
     a {
       text-decoration: none;

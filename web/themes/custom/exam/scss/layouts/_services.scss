@@ -16,7 +16,7 @@
 .block-views-blockall-services-block-1,
 .block-system-main-block {
   @include own-container;
-  text-transform: uppercase;
+
   margin-top: 50px;
   font-family: "Inter", sans-serif;
   // TITLE
@@ -37,6 +37,7 @@
   }
   .view-main-page-services,
   .view-all-services {
+    text-transform: uppercase;
     // CONTENT
     .view-content {
       gap: 100px 0;

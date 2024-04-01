@@ -18,6 +18,7 @@
 }
 
 @mixin style-h2($font-weight) {
+  text-transform: uppercase;
   font-family: "Inter", sans-serif;
   position: relative;
   font-weight: $font-weight;

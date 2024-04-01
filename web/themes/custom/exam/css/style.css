@@ -13566,7 +13566,6 @@ header .block-block-content > .text-formatted p {
   padding: 0 15px;
   margin-right: auto;
   margin-left: auto;
-  text-transform: uppercase;
   margin-top: 50px;
   font-family: "Inter", sans-serif;
 }
@@ -13575,6 +13574,7 @@ header .block-block-content > .text-formatted p {
 .block-views-blockall-services-block-1 > .h2,
 .block-system-main-block > h2,
 .block-system-main-block > .h2 {
+  text-transform: uppercase;
   font-family: "Inter", sans-serif;
   position: relative;
   font-weight: 700;
@@ -13609,6 +13609,14 @@ header .block-block-content > .text-formatted p {
 .block-views-blockall-services-block-1 .view-all-services .view-content .views-row,
 .block-system-main-block .view-all-services .view-content .views-row {
   width: 300px !important;
+}
+.block-views-blockmain-page-services-block-1 .view-main-page-services,
+.block-views-blockmain-page-services-block-1 .view-all-services,
+.block-views-blockall-services-block-1 .view-main-page-services,
+.block-views-blockall-services-block-1 .view-all-services,
+.block-system-main-block .view-main-page-services,
+.block-system-main-block .view-all-services {
+  text-transform: uppercase;
 }
 .block-views-blockmain-page-services-block-1 .view-main-page-services .view-content,
 .block-views-blockmain-page-services-block-1 .view-all-services .view-content,
@@ -13847,7 +13855,6 @@ header .block-block-content > .text-formatted p {
 .block-views-blockall-projects-block-1,
 .block-views-blockservice-project-term-block-1,
 .block-system-main-block {
-  text-transform: uppercase;
   margin-top: 50px;
   font-family: "Inter", sans-serif;
 }
@@ -13862,6 +13869,7 @@ header .block-block-content > .text-formatted p {
   padding: 0 15px;
   margin-right: auto;
   margin-left: auto;
+  text-transform: uppercase;
   font-family: "Inter", sans-serif;
   position: relative;
   font-weight: 300;
@@ -13921,6 +13929,7 @@ header .block-block-content > .text-formatted p {
 .block-system-main-block .view-main-page-projects,
 .block-system-main-block .view-all-projects,
 .block-system-main-block .view-service-project-term {
+  text-transform: uppercase;
   max-width: 1275px;
   padding: 0 15px;
   margin-right: auto;
@@ -14336,7 +14345,6 @@ header .block-block-content > .text-formatted p {
   padding: 0 15px;
   margin-right: auto;
   margin-left: auto;
-  text-transform: uppercase;
   margin-top: 50px;
   margin-bottom: 50px;
   font-family: "Inter", sans-serif;
@@ -14348,6 +14356,7 @@ header .block-block-content > .text-formatted p {
 .block-views-blockposition-people-term-block-1 > .h2,
 .block-system-main-block > h2,
 .block-system-main-block > .h2 {
+  text-transform: uppercase;
   font-family: "Inter", sans-serif;
   position: relative;
   font-weight: 700;
@@ -14396,6 +14405,20 @@ header .block-block-content > .text-formatted p {
 .block-system-main-block .view-all-people .view-content .views-row,
 .block-system-main-block .view-position-people-term .view-content .views-row {
   width: 300px !important;
+}
+.block-views-blockmain-page-people-block-1 .view-main-page-people,
+.block-views-blockmain-page-people-block-1 .view-all-people,
+.block-views-blockmain-page-people-block-1 .view-position-people-term,
+.block-views-blockall-people-block-1 .view-main-page-people,
+.block-views-blockall-people-block-1 .view-all-people,
+.block-views-blockall-people-block-1 .view-position-people-term,
+.block-views-blockposition-people-term-block-1 .view-main-page-people,
+.block-views-blockposition-people-term-block-1 .view-all-people,
+.block-views-blockposition-people-term-block-1 .view-position-people-term,
+.block-system-main-block .view-main-page-people,
+.block-system-main-block .view-all-people,
+.block-system-main-block .view-position-people-term {
+  text-transform: uppercase;
 }
 .block-views-blockmain-page-people-block-1 .view-main-page-people a,
 .block-views-blockmain-page-people-block-1 .view-all-people a,
@@ -15032,7 +15055,6 @@ header .block-block-content > .text-formatted p {
   padding: 0 15px;
   margin-right: auto;
   margin-left: auto;
-  text-transform: uppercase;
   margin-top: 25px;
   margin-bottom: 160px;
   font-family: "Inter", sans-serif;
@@ -15042,6 +15064,7 @@ header .block-block-content > .text-formatted p {
 .block-views-blockall-clients-block-1 > .h2,
 .block-system-main-block > h2,
 .block-system-main-block > .h2 {
+  text-transform: uppercase;
   font-family: "Inter", sans-serif;
   position: relative;
   font-weight: 700;
@@ -15151,6 +15174,7 @@ body.path-frontpage main .region-content {
 .block-views-blockservice-project-term-block-1 .view-position-people-term .view-header a,
 .block-views-blockposition-people-term-block-1 .view-service-project-term .view-header a,
 .block-views-blockposition-people-term-block-1 .view-position-people-term .view-header a {
+  text-transform: uppercase;
   font-family: "Inter", sans-serif;
   position: relative;
   font-weight: 700;
@@ -15181,6 +15205,7 @@ body.path-frontpage main .region-content {
 }
 
 .region-content .block-page-title-block h1, .region-content .block-page-title-block .h1 {
+  text-transform: uppercase;
   font-family: "Inter", sans-serif;
   position: relative;
   font-weight: 700;
@@ -15250,7 +15275,6 @@ body.path-frontpage main .region-content {
 .block-views-blockmain-page-articles-block-1,
 .block-views-blockmain-page-articles-block-2,
 .block-system-main-block {
-  text-transform: uppercase;
   margin-top: 50px;
   font-family: "Inter", sans-serif;
 }
@@ -15263,6 +15287,7 @@ body.path-frontpage main .region-content {
   padding: 0 15px;
   margin-right: auto;
   margin-left: auto;
+  text-transform: uppercase;
   font-family: "Inter", sans-serif;
   position: relative;
   font-weight: 700;
@@ -15297,6 +15322,7 @@ body.path-frontpage main .region-content {
 .block-views-blockmain-page-articles-block-1 .view-main-page-articles,
 .block-views-blockmain-page-articles-block-2 .view-main-page-articles,
 .block-system-main-block .view-main-page-articles {
+  text-transform: uppercase;
   max-width: 1275px;
   padding: 0 15px;
   margin-right: auto;
@@ -15863,6 +15889,7 @@ nav ul.pagination li.disabled {
   margin: auto 0;
   position: absolute;
   bottom: -10px;
+  opacity: 0.5;
 }
 .block-system-main-block article[data-history-node-id="8"] .node__content .layout--twocol-section--50-50 {
   flex-wrap: nowrap;
@@ -16054,6 +16081,7 @@ nav ul.pagination li.disabled {
   color: black;
 }
 .path-search .block-system-main-block h2, .path-search .block-system-main-block .h2 {
+  text-transform: uppercase;
   font-family: "Inter", sans-serif;
   position: relative;
   font-weight: 700;
@@ -16739,6 +16767,7 @@ footer .region-footer .block-social-media-links ul a {
   margin-bottom: 50px;
 }
 .block-system-main-block article[data-history-node-id="6"] .node__content .layout--onecol .block-field-blocknodepagetitle span {
+  text-transform: uppercase;
   font-family: "Inter", sans-serif;
   position: relative;
   font-weight: 700;
