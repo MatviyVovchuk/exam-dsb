@@ -4,7 +4,8 @@
 @import "../variables/mixins";
 
 // SERVIVE ALL PAGE
-.block-views-blockall-services-block-1 {
+.block-views-blockall-services-block-1,
+.block-system-main-block {
   margin-top: 20px !important;
   max-width: 1250px !important;
   padding: 0 !important;
@@ -12,7 +13,8 @@
 }
 // SERVIVE ALL PAGE, MAIN PAGE
 .block-views-blockmain-page-services-block-1,
-.block-views-blockall-services-block-1 {
+.block-views-blockall-services-block-1,
+.block-system-main-block {
   @include own-container;
   text-transform: uppercase;
   margin-top: 50px;
@@ -37,12 +39,13 @@
   .view-all-services {
     // CONTENT
     .view-content {
+      gap: 100px 0;
       display: flex;
       text-align: center;
       justify-content: space-between;
       // SERVIVE ITEM
       .views-row {
-        width: 250px;
+        width: 290px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -99,10 +102,12 @@
 // ADAPTIVE
 @media (max-width: 1024px) {
   .block-views-blockmain-page-services-block-1,
-  .block-views-blockall-services-block-1 {
+  .block-views-blockall-services-block-1,
+  .block-system-main-block {
     .view-main-page-services,
     .view-all-services {
       .view-content {
+        gap: 80px 0;
         justify-content: center;
         flex-wrap: wrap;
         .views-row {
@@ -115,10 +120,12 @@
 
 @media (max-width: 900px) {
   .block-views-blockmain-page-services-block-1,
-  .block-views-blockall-services-block-1 {
+  .block-views-blockall-services-block-1,
+  .block-system-main-block {
     .view-main-page-services,
     .view-all-services {
       .view-content {
+        gap: 50px 0;
         .views-row {
           width: 300px;
         }
@@ -129,7 +136,8 @@
 
 @media (max-width: 700px) {
   .block-views-blockmain-page-services-block-1,
-  .block-views-blockall-services-block-1 {
+  .block-views-blockall-services-block-1,
+  .block-system-main-block {
     .view-main-page-services,
     .view-all-services {
       .view-content {
@@ -143,7 +151,8 @@
 
 @media (max-width: 600px) {
   .block-views-blockmain-page-services-block-1,
-  .block-views-blockall-services-block-1 {
+  .block-views-blockall-services-block-1,
+  .block-system-main-block {
     .view-main-page-services,
     .view-all-services {
       .view-content {
@@ -157,7 +166,8 @@
 
 @media (max-width: 500px) {
   .block-views-blockmain-page-services-block-1,
-  .block-views-blockall-services-block-1 {
+  .block-views-blockall-services-block-1,
+  .block-system-main-block {
     padding: 0 20px;
     .view-main-page-services,
     .view-all-services {

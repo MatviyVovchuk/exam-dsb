@@ -37,3 +37,14 @@ body.path-frontpage {
     position: fixed;
   }
 }
+
+
+.region-content {
+  .block-page-title-block {
+    h1 {
+      @include style-h2(700);
+      text-transform: uppercase;
+      font-size: 2rem;
+    }
+  }
+}

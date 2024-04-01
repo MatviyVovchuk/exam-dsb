@@ -45,6 +45,7 @@
         "drupal/likeit": "^3.1",
         "drupal/paragraphs": "^1.17",
         "drupal/pathauto": "^1.12",
+        "drupal/quick_node_clone": "^1.18",
         "drupal/redirect": "^1.9",
         "drupal/simple_gmap": "^3.1",
         "drupal/slick": "^2.10",

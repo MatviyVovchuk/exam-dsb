@@ -9,6 +9,7 @@
 
 # Ignore local settings
 /web/sites/*/settings.local.php
+/web/sites/*/settings.php
 
 # Ignore Drupal's file directory
 /web/sites/*/files/
