@@ -1,0 +1,118 @@
+uuid: a2c5e6fa-428e-41f7-b77b-4d9c6dab5e65
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.people.title
+    - core.entity_view_mode.node.short
+    - field.field.node.people.body
+    - field.field.node.people.field_contents
+    - field.field.node.people.field_image
+    - field.field.node.people.field_position
+    - field.field.node.people.field_social_links
+    - image.style.thumbnail
+    - node.type.people
+  module:
+    - layout_builder
+    - layout_discovery
+    - media
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          25087b1a-035f-440a-8089-82d4a18a2268:
+            uuid: 25087b1a-035f-440a-8089-82d4a18a2268
+            region: content
+            configuration:
+              id: 'field_block:node:people:field_position'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          31b14a58-98ec-4634-b1a8-89bd8498231c:
+            uuid: 31b14a58-98ec-4634-b1a8-89bd8498231c
+            region: content
+            configuration:
+              id: 'field_block:node:people:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          0da33c32-4325-40ec-8e66-cb8df0252d9d:
+            uuid: 0da33c32-4325-40ec-8e66-cb8df0252d9d
+            region: content
+            configuration:
+              id: 'field_block:node:people:field_image'
+              label: Image
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: thumbnail
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.people.short
+targetEntityType: node
+bundle: people
+mode: short
+content:
+  field_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_position:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  field_contents: true
+  field_social_links: true
+  flag_like: true
+  likeit: true
+  links: true

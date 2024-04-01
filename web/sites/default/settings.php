@@ -780,4 +780,5 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
-$settings['config_sync_directory'] = 'sites/default/files/config_S_xRze--zRkfoBjtRkdNEMALv-QgDiTn5Re7Z7SnPVhI7dsmk54ddGLlsB4v0flzdkQJ1YM5rg/sync';
+$settings['config_sync_directory'] = '../config/sync';
+//$settings['config_sync_directory'] = 'sites/default/files/config_S_xRze--zRkfoBjtRkdNEMALv-QgDiTn5Re7Z7SnPVhI7dsmk54ddGLlsB4v0flzdkQJ1YM5rg/sync';

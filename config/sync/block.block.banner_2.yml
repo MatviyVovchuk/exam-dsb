@@ -1,0 +1,30 @@
+uuid: 17117550-5119-4535-be83-f73292db0054
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:banner_block_type:70c50532-c21f-4b92-bbf7-1540327089d2'
+  module:
+    - block_content
+    - system
+  theme:
+    - exam
+id: banner_2
+theme: exam
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:70c50532-c21f-4b92-bbf7-1540327089d2'
+settings:
+  id: 'block_content:70c50532-c21f-4b92-bbf7-1540327089d2'
+  label: Banner
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

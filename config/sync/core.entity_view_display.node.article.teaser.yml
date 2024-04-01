@@ -1,0 +1,156 @@
+uuid: 7e6c5822-13fa-40bb-8ee4-4a7cac065475
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_contents
+    - field.field.node.article.field_image
+    - field.field.node.article.field_people
+    - field.field.node.article.field_tags
+    - node.type.article
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          dd9880b5-d989-41f0-ac30-d332c25c5d92:
+            uuid: dd9880b5-d989-41f0-ac30-d332c25c5d92
+            region: content
+            configuration:
+              id: 'field_block:node:article:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 250
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          e3fd8c32-b604-43bb-9b37-1402596e6451:
+            uuid: e3fd8c32-b604-43bb-9b37-1402596e6451
+            region: content
+            configuration:
+              id: 'field_block:node:article:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          0955a962-4b38-474e-8755-990aeb9de35e:
+            uuid: 0955a962-4b38-474e-8755-990aeb9de35e
+            region: content
+            configuration:
+              id: 'field_block:node:article:created'
+              label: 'Authored on'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: timestamp_ago
+                label: hidden
+                settings:
+                  future_format: '@interval hence'
+                  past_format: '@interval ago'
+                  granularity: 2
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          b4e8ca05-b8b6-4321-876e-265708693473:
+            uuid: b4e8ca05-b8b6-4321-876e-265708693473
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_people'
+              label: People
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: hidden
+                settings:
+                  view_mode: short
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          aa09b17b-a03d-429c-a635-d5f1b685ef57:
+            uuid: aa09b17b-a03d-429c-a635-d5f1b685ef57
+            region: content
+            configuration:
+              id: 'field_block:node:article:created'
+              label: 'Authored on'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: timestamp
+                label: hidden
+                settings:
+                  date_format: custom
+                  custom_date_format: 'M d Y'
+                  timezone: ''
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+_core:
+  default_config_hash: 83jX5ChAGdMzOxiDA_B1NjgebVMuD8lNVDgClg_QVP8
+id: node.article.teaser
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  field_image:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_people:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  comment: true
+  field_contents: true
+  field_tags: true
+  links: true

@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: de683455-1c39-4006-86be-e36a40ed941e
+name: Quarantie
+mail: admin@example.com
+slogan: 'Software Development'
+page:
+  403: /node/1
+  404: ''
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

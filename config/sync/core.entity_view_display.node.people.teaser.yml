@@ -1,0 +1,164 @@
+uuid: 96e9a74e-90f2-455e-bca1-30b0c38196d2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.people.title
+    - core.entity_view_mode.node.teaser
+    - field.field.node.people.body
+    - field.field.node.people.field_contents
+    - field.field.node.people.field_image
+    - field.field.node.people.field_position
+    - field.field.node.people.field_social_links
+    - node.type.people
+  module:
+    - layout_builder
+    - layout_discovery
+    - social_media_links_field
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          6b2f4e21-2048-4f8c-8f53-b59065aac0f8:
+            uuid: 6b2f4e21-2048-4f8c-8f53-b59065aac0f8
+            region: content
+            configuration:
+              id: 'field_block:node:people:field_image'
+              label: Image
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: media_library
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          b54f07b4-8273-4f30-ab50-5c14dc3c3f5d:
+            uuid: b54f07b4-8273-4f30-ab50-5c14dc3c3f5d
+            region: content
+            configuration:
+              id: 'field_block:node:people:field_position'
+              label: Position
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          fb44cdf4-2964-48e5-bb3b-73dba839a0e1:
+            uuid: fb44cdf4-2964-48e5-bb3b-73dba839a0e1
+            region: content
+            configuration:
+              id: 'field_block:node:people:field_social_links'
+              label: 'Social Links'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: social_media_links_field_default
+                label: hidden
+                settings:
+                  appearance:
+                    orientation: h
+                    show_name: 0
+                  link_attributes:
+                    target: '<none>'
+                    rel: '<none>'
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          8e634e51-ea0d-497b-a52e-4b836b877560:
+            uuid: 8e634e51-ea0d-497b-a52e-4b836b877560
+            region: content
+            configuration:
+              id: 'field_block:node:people:title'
+              label: Name
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          d7b95e12-2645-4e99-95de-0de5490afbf0:
+            uuid: d7b95e12-2645-4e99-95de-0de5490afbf0
+            region: content
+            configuration:
+              id: 'extra_field_block:node:people:flag_like'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 6
+            additional: {  }
+        third_party_settings: {  }
+id: node.people.teaser
+targetEntityType: node
+bundle: people
+mode: teaser
+content:
+  field_image:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_position:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_social_links:
+    type: social_media_links_field_default
+    label: above
+    settings:
+      appearance: {  }
+      link_attributes: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  flag_like:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+hidden:
+  body: true
+  field_contents: true
+  likeit: true
+  links: true

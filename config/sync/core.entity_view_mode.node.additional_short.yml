@@ -1,0 +1,10 @@
+uuid: 5179d097-ecae-436c-86ea-0dca3b4d030d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.additional_short
+label: 'Additional Short'
+targetEntityType: node
+cache: true

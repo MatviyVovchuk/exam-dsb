@@ -1,0 +1,30 @@
+uuid: 88868eb4-eaa0-4711-a508-9a4f3f90d262
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.like
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_text:
+      children: {  }
+      label: Text
+      region: hidden
+      parent_name: ''
+      weight: 20
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+id: flagging.like.default
+targetEntityType: flagging
+bundle: like
+mode: default
+content: {  }
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: b10a0dd3-d8df-492e-b275-f9c1c54f1c6b
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: position_people
+label: 'Position People'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/position/term/[term:name]'
+selection_criteria:
+  3337ea2a-e8ab-4ba2-bc54-82071b6ec3ac:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 3337ea2a-e8ab-4ba2-bc54-82071b6ec3ac
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      positions: positions
+selection_logic: and
+weight: -5
+relationships: {  }

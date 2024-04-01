@@ -1,0 +1,29 @@
+uuid: f00bab9d-02ee-4809-a2b8-9143cf9d895c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_people
+    - node.type.article
+    - node.type.people
+id: node.article.field_people
+field_name: field_people
+entity_type: node
+bundle: article
+label: People
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      people: people
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

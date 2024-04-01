@@ -1,0 +1,15 @@
+uuid: cab10df9-32d5-47e9-9c89-06dd7ea95a49
+langcode: en
+status: true
+dependencies:
+  config:
+    - flag.flag.like
+  module:
+    - flag
+id: flag_action.like_flag
+label: 'Flag this item'
+type: node
+plugin: 'flag_action:like_flag'
+configuration:
+  flag_id: like
+  flag_action: flag

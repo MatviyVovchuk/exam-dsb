@@ -1,0 +1,8 @@
+uuid: 38b8fc5b-43ab-40fd-9d1c-51d9e06861ea
+langcode: en
+status: true
+dependencies: {  }
+id: main_page_news
+label: 'Main Page News'
+revision: 0
+description: ''

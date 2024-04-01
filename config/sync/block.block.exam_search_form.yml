@@ -1,0 +1,34 @@
+uuid: ed927c23-eaea-4f6f-a9b9-2d70dd572a48
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+    - user
+  theme:
+    - exam
+_core:
+  default_config_hash: HZJ8894mYbX0pdeltUdfnQjONb-BnkflWDqEm_x13m4
+id: exam_search_form
+theme: exam
+region: nav_additional
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous
+      authenticated: authenticated
+      content_editor: content_editor
+      administrator: administrator

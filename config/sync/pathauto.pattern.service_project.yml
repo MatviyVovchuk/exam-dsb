@@ -1,0 +1,22 @@
+uuid: b9d64011-4d51-4f66-ba97-22406603d90c
+langcode: en
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: service_project
+label: 'Service Project'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/service/term/[term:name]'
+selection_criteria:
+  9883157a-0dfb-42db-ab20-6e7233c67ce9:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 9883157a-0dfb-42db-ab20-6e7233c67ce9
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      services: services
+selection_logic: and
+weight: -5
+relationships: {  }

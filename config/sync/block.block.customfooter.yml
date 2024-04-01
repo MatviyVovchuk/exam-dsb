@@ -1,0 +1,25 @@
+uuid: 209cae4f-b608-4e00-81ab-e20c7f479d65
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:custom_footer_type:c6476bb9-018a-4ef9-a08a-67cffdd0c1d0'
+  module:
+    - block_content
+  theme:
+    - exam
+id: customfooter
+theme: exam
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:c6476bb9-018a-4ef9-a08a-67cffdd0c1d0'
+settings:
+  id: 'block_content:c6476bb9-018a-4ef9-a08a-67cffdd0c1d0'
+  label: 'Custom Footer'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,104 @@
+uuid: c1c8c882-5db8-495d-a3c4-b18630c6153b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.service.body
+    - field.field.node.service.field_contents
+    - field.field.node.service.field_image
+    - field.field.node.service.field_service
+    - node.type.service
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          3d30b7c9-5ce2-4cdd-8b1c-71207b99b544:
+            uuid: 3d30b7c9-5ce2-4cdd-8b1c-71207b99b544
+            region: content
+            configuration:
+              id: 'field_block:node:service:field_image'
+              label: Image
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: media_thumbnail
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: medium
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          7c06618a-60d2-4592-af8c-4347cdd9cba6:
+            uuid: 7c06618a-60d2-4592-af8c-4347cdd9cba6
+            region: content
+            configuration:
+              id: 'field_block:node:service:title'
+              label: Title
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          f6950270-8c08-46d5-9ef4-001a925272d3:
+            uuid: f6950270-8c08-46d5-9ef4-001a925272d3
+            region: content
+            configuration:
+              id: 'field_block:node:service:body'
+              label: Body
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 150
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: node.service.teaser
+targetEntityType: node
+bundle: service
+mode: teaser
+content:
+  field_image:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_contents: true
+  field_service: true
+  links: true

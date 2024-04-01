@@ -1,0 +1,8 @@
+uuid: 8026a3bb-6ef4-44dd-ae83-0d80b5def7d0
+langcode: en
+status: true
+dependencies: {  }
+name: Positions
+vid: positions
+description: ''
+weight: 0

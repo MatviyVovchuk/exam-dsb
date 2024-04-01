@@ -1,0 +1,32 @@
+uuid: 3dc01c0e-b457-4958-b252-16f4e76a1bf0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: like
+label: Like
+bundles:
+  - people
+entity_type: node
+global: false
+flag_short: '<i class="fa-regular fa-heart"></i>'
+flag_long: ''
+flag_message: ''
+unflag_short: '<i class="fa-solid fa-heart"></i>'
+unflag_long: ''
+unflag_message: ''
+unflag_denied_text: ''
+weight: 0
+flag_type: 'entity:node'
+link_type: ajax_link
+flagTypeConfig:
+  show_in_links:
+    full: full
+    teaser: teaser
+  show_as_field: true
+  show_on_form: true
+  show_contextual_link: true
+  extra_permissions:
+    owner: '0'
+linkTypeConfig: {  }

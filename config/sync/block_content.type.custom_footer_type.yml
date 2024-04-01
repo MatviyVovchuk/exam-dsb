@@ -1,0 +1,8 @@
+uuid: 7a9993c4-ec98-4faf-8c5e-7c89161a02cb
+langcode: en
+status: true
+dependencies: {  }
+id: custom_footer_type
+label: 'Custom Footer Type'
+revision: 0
+description: ''

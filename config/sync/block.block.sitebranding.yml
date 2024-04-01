@@ -1,0 +1,23 @@
+uuid: b86d6e34-6893-4f4d-9f97-2dd74f6ed3cc
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - exam
+id: sitebranding
+theme: exam
+region: footer
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

@@ -1,0 +1,49 @@
+uuid: 57dc311f-b8c6-49e4-9023-2ef9fc140d91
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.positions
+    - views.view.position_people_term
+  module:
+    - layout_builder
+    - layout_discovery
+    - text
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          55ce536c-e4eb-4c34-97cc-0ed9cfbd550e:
+            uuid: 55ce536c-e4eb-4c34-97cc-0ed9cfbd550e
+            region: content
+            configuration:
+              id: 'views_block:position_people_term-block_1'
+              label: ''
+              label_display: '0'
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: taxonomy_term.positions.default
+targetEntityType: taxonomy_term
+bundle: positions
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

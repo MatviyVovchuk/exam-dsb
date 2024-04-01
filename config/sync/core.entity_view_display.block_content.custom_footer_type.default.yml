@@ -1,0 +1,201 @@
+uuid: fe30ead3-1368-4ac1-a6eb-b79eae480224
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.custom_footer_type
+    - field.field.block_content.custom_footer_type.body
+  module:
+    - layout_builder
+    - social_media_links
+    - system
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          72d9c28f-a17c-40f0-8739-d20be184dacd:
+            uuid: 72d9c28f-a17c-40f0-8739-d20be184dacd
+            region: first
+            configuration:
+              id: system_branding_block
+              label: 'Site branding'
+              label_display: '0'
+              provider: system
+              context_mapping: {  }
+              use_site_logo: true
+              use_site_name: false
+              use_site_slogan: false
+            weight: 0
+            additional: {  }
+          238fb2bd-2a57-458c-ad46-297e9c774e5c:
+            uuid: 238fb2bd-2a57-458c-ad46-297e9c774e5c
+            region: second
+            configuration:
+              id: social_media_links_block
+              label: 'Social Media Links'
+              label_display: '0'
+              provider: social_media_links
+              context_mapping: {  }
+              platforms:
+                facebook:
+                  value: oxitschool
+                  description: ''
+                  weight: '-20'
+                goodreads:
+                  value: ''
+                  description: ''
+                  weight: '-10'
+                googleplay:
+                  value: ''
+                  description: ''
+                  weight: '-9'
+                linkedin:
+                  value: oxitschool
+                  description: ''
+                  weight: '-8'
+                xing:
+                  value: ''
+                  description: ''
+                  weight: '-7'
+                youtube:
+                  value: ''
+                  description: ''
+                  weight: '-6'
+                tumblr:
+                  value: ''
+                  description: ''
+                  weight: '-5'
+                gitlab:
+                  value: ''
+                  description: ''
+                  weight: '-4'
+                patreon:
+                  value: ''
+                  description: ''
+                  weight: '-3'
+                amazon:
+                  value: ''
+                  description: ''
+                  weight: '-2'
+                website:
+                  value: ''
+                  description: ''
+                  weight: '-1'
+                googleplus:
+                  value: ''
+                  description: ''
+                  weight: '0'
+                mastodon:
+                  value: ''
+                  description: ''
+                  weight: '1'
+                youtube_channel:
+                  value: ''
+                  description: ''
+                  weight: '2'
+                pinterest:
+                  value: ''
+                  description: ''
+                  weight: '3'
+                rss:
+                  value: ''
+                  description: ''
+                  weight: '4'
+                instagram:
+                  value: ''
+                  description: ''
+                  weight: '5'
+                flickr:
+                  value: ''
+                  description: ''
+                  weight: '6'
+                tiktok:
+                  value: ''
+                  description: ''
+                  weight: '7'
+                whatsapp:
+                  value: ''
+                  description: ''
+                  weight: '8'
+                twitter:
+                  value: oxitschool
+                  description: ''
+                  weight: '-19'
+                bitbucket:
+                  value: ''
+                  description: ''
+                  weight: '10'
+                vkontakte:
+                  value: ''
+                  description: ''
+                  weight: '12'
+                github:
+                  value: ''
+                  description: ''
+                  weight: '13'
+                telegram:
+                  value: ''
+                  description: ''
+                  weight: '14'
+                vimeo:
+                  value: ''
+                  description: ''
+                  weight: '15'
+                contact:
+                  value: ''
+                  description: ''
+                  weight: '16'
+                glassdoor:
+                  value: ''
+                  description: ''
+                  weight: '17'
+                email:
+                  value: ''
+                  description: ''
+                  weight: '18'
+                slideshare:
+                  value: ''
+                  description: ''
+                  weight: '19'
+                behance:
+                  value: ''
+                  description: ''
+                  weight: '20'
+                meetup:
+                  value: ''
+                  description: ''
+                  weight: '21'
+                drupal:
+                  value: ''
+                  description: ''
+                  weight: '22'
+              appearance:
+                orientation: h
+                show_name: 0
+                suggestion: ''
+              link_attributes:
+                target: _blank
+                rel: '<none>'
+              iconset:
+                style: 'fontawesome:2x'
+                installed_iconsets:
+                  fontawesome:
+                    examples: ''
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: block_content.custom_footer_type.default
+targetEntityType: block_content
+bundle: custom_footer_type
+mode: default
+content: {  }
+hidden:
+  body: true

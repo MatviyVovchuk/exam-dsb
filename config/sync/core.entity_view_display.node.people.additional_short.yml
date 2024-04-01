@@ -1,0 +1,45 @@
+uuid: 6689ffa8-c0ed-4403-89cd-4e80d26469da
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.additional_short
+    - field.field.node.people.body
+    - field.field.node.people.field_contents
+    - field.field.node.people.field_image
+    - field.field.node.people.field_position
+    - field.field.node.people.field_social_links
+    - image.style.thumbnail
+    - node.type.people
+  module:
+    - layout_builder
+    - media
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.people.additional_short
+targetEntityType: node
+bundle: people
+mode: additional_short
+content:
+  field_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_contents: true
+  field_position: true
+  field_social_links: true
+  flag_like: true
+  likeit: true
+  links: true

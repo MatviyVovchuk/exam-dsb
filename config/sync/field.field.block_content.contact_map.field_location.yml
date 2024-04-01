@@ -1,0 +1,19 @@
+uuid: be8a3c5b-5b16-47c5-9e71-9287a01bb940
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_map
+    - field.storage.block_content.field_location
+id: block_content.contact_map.field_location
+field_name: field_location
+entity_type: block_content
+bundle: contact_map
+label: Location
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

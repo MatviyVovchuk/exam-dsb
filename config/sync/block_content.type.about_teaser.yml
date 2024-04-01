@@ -1,0 +1,8 @@
+uuid: 9a46f2d4-562f-4ab4-bccb-eaa522c55f99
+langcode: en
+status: true
+dependencies: {  }
+id: about_teaser
+label: 'About Teaser'
+revision: 0
+description: ''
